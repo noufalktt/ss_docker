@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?> <!--For Discrete boolean, the count should always be multiple of 8 and the inner registers should be less than or equal to the 
+count. In between missing registers should be filled with dummy data, as the reading is done for continuous registers.--> <modbusMachineAdapterConfig>
+	<name>Onsite monitor modbus nodes</name>
+	<description>Onsite monitor modbus nodes</description>
+	<vesselId>1000007</vesselId>
+	<dataNodeConfigs>
+		<channel protocol="TCP_IP" tcpIpAddress="192.168.2.36" tcpIpPort="502">
+			<unit id="3">
+				<register name="CHS_BOOLEAN_DATA" dataType="BOOLEAN" method="CONTINUOUS" address="120" registerType="DISCRETE" 
+description="BOOLEAN_DATA" count="120" innerRegisters="1"/>
+			</unit>
+			<innerRegisters id="1">
+				<register name="DWP_2S_U_WINDING_TEMPERATURE_HIGH_HIGH" address="120" description="DWP -2S 'U' Winding Temperature High High"/>
+				<register name="DWP_2S_V_WINDING_TEMPERATURE_HIGH" address="121" description="DWP -2S 'V' Winding Temperature High"/>
+				<register name="DWP_2S_V_WINDING_TEMPERATURE_HIGH_HIGH" address="122" description="DWP -2S 'V' Winding Temperature High High"/>
+				<register name="DWP_2S_W_WINDING_TEMPERATURE_HIGH" address="123" description="DWP -2S 'W' Winding Temperature High"/>
+				<register name="DWP_2S_W_WINDING_TEMPERATURE_HIGH_HIGH" address="124" description="DWP -2S 'W' Winding Temperature High High"/>
+				<register name="DWP_2P_U_WINDING_TEMPERATURE_HIGH" address="125" description="DWP -2P 'U' Winding Temperature High"/>
+				<register name="DWP_2P_U_WINDING_TEMPERATURE_HIGH_HIGH" address="126" description="DWP -2P 'U' Winding Temperature High High"/>
+				<register name="DWP_2P_V_WINDING_TEMPERATURE_HIGH" address="127" description="DWP -2P 'V' Winding Temperature High"/>
+				<register name="DWP_2P_V_WINDING_TEMPERATURE_HIGH_HIGH" address="128" description="DWP -2P 'V' Winding Temperature High High"/>
+				<register name="DWP_2P_W_WINDING_TEMPERATURE_HIGH" address="129" description="DWP -2P 'W' Winding Temperature High"/>
+				<register name="DWP_2P_W_WINDING_TEMPERATURE_HIGH_HIGH" address="130" description="DWP -2P 'W' Winding Temperature High High"/>
+				<register name="CARGO_TANK_2_HOLD_SPACE_PRESSURE_LOW" address="131" description="Cargo Tank 2 hold space pressure Low"/>
+				<register name="CARGO_TANK_2_HOLD_SPACE_PRESSURE_HIGH" address="132" description="Cargo Tank 2 hold space pressure High"/>
+				<register name="CARGO_TANK_2_HOLD_SPACE_TEMPERATURE_LOW" address="133" description="Cargo Tank 2 hold space temperature Low"/>
+				<register name="CARGO_COND_RELIQ_UNIT_1_SW_DIFF_OUTLET_TEMP_HIGH_3" address="134" description="Cargo cond. Reliq. Unit 1 SW. Diff. 
+Outlet Temp. High"/>
+				<register name="CARGO_COND_RELIQ_UNIT_1_SW_DIFF_OUTLET_TEMP_HIGH_3_2" address="135" description="Cargo cond. Reliq. Unit 1 SW. Diff. 
+Outlet Temp. High"/>
+				<register name="RELIQ_UNIT_2_KO_DRUM_LEVEL_HIGH" address="136" description="Reliq. Unit 2 KO Drum level High"/>
+				<register name="RELIQ_UNIT_2_KO_DRUM_LEVEL_HIGH_HIGH" address="137" description="Reliq. Unit 2 KO Drum level High High"/>
+				<register name="RELIQ_UNIT_2_CARGO_COMPRESSOR_BULKHEAD_SEAL_TEMP_HIGH" address="138" description="Reliq. Unit 2 Cargo compressor 
+bulkhead seal temp. high"/>
+				<register name="RELIQ_UNIT_2_CARGO_COMPRESSOR_BULKHEAD_SEAL_TEMP_HIGH_HIGH" address="139" description="Reliq. Unit 2 Cargo compressor 
+bulkhead seal temp. High High"/>
+				<register name="RELIQ_UNIT_2_CARGO_COMPRESSOR_STAGE_1_SUCTION_PRESSURE_LOW_LOW" address="140" description="Reliq. Unit 2 Cargo 
+Compressor Stage 1 Suction Pressure Low Low"/>
+				<register name="RELIQ_UNIT_2_CARGO_COMPRESSOR_STAGE_1_SUCTION_PRESSURE_LOW" address="141" description="Reliq. Unit 2 Cargo Compressor 
+Stage 1 Suction Pressure Low"/>
+				<register name="RELIQ_UNIT_2_CARGO_COMPRESSOR_STAGE_1_SUCTION_PRESSURE_HIGH" address="142" description="Reliq. Unit 2 Cargo 
+Compressor Stage 1 Suction Pressure High"/>
+				<register name="RELIQ_UNIT_2_CARGO_COMPRESSOR_STAGE_1_SUCTION_PRESSURE_HIGH_HIGH" address="143" description="Reliq. Unit 2 Cargo 
+Compressor Stage 1 Suction Pressure High High"/>
+				<register name="DUMMY_DATA" address="144" description="Dummy Data"/>
+				<register name="DUMMY_DATA" address="145" description="Dummy Data"/>
+				<register name="RELIQ_UNIT_2_CARGO_COMPRESSOR_STAGE_1_DISCHARGE_TEMPERATURE_HIGH" address="146" description="Reliq. Unit 2 Cargo 
+Compressor Stage 1 Discharge Temperature High"/>
+				<register name="RELIQ_UNIT_2_CARGO_COMPRESSOR_STAGE_1_DISCHARGE_TEMPERATURE_HIGH_HIGH" address="147" description="Reliq. Unit 2 Cargo 
+Compressor Stage 1 Discharge Temperature High High"/>
+				<register name="RELIQ_UNIT_2_CARGO_COMPRESSOR_STAGE_2_SUCTION_PRESSURE_LOW" address="148" description="Reliq. Unit 2 Cargo Compressor 
+Stage 2 Suction Pressure Low"/>
+				<register name="RELIQ_UNIT_2_CARGO_COMPRESSOR_STAGE_2_SUCTION_PRESSURE_LOW_LOW" address="149" description="Reliq. Unit 2 Cargo 
+Compressor Stage 2 Suction Pressure Low Low"/>
+				<register name="RELIQ_UNIT_2_CARGO_COMPRESSOR_STAGE_2_DISCHARGE_PRESSURE_HIGH" address="150" description="Reliq. Unit 2 Cargo 
+Compressor Stage 2 Discharge Pressure High"/>
+				<register name="RELIQ_UNIT_2_CARGO_COMPRESSOR_STAGE_2_DISCHARGE_PRESSURE_HIGH_HIGH" address="151" description="Reliq. Unit 2 Cargo 
+Compressor Stage 2 Discharge Pressure High High"/>
+				<register name="RELIQ_UNIT_2_CARGO_COMPRESSOR_STAGE_2_DISCHARGE_TEMPERATURE_HIGH" address="152" description="Reliq. Unit 2 Cargo 
+Compressor Stage 2 Discharge Temperature High"/>
+				<register name="RELIQ_UNIT_2_CARGO_COMPRESSOR_STAGE_2_DISCHARGE_TEMPERATURE_HIGH_HIGH" address="153" description="Reliq. Unit 2 Cargo 
+Compressor Stage 2 Discharge Temperature High High"/>
+				<register name="RELIQ_UNIT_2_INTERCOOLER_LEVEL_LOW" address="154" description="Reliq. Unit 2 Intercooler Level Low"/>
+				<register name="RELIQ_UNIT_2_INTERCOOLER_LEVEL_HIGH" address="155" description="Reliq. Unit 2 Intercooler Level High"/>
+				<register name="RELIQ_UNIT_2_INTERCOOLER_LEVEL_HIGH_HIGH" address="156" description="Reliq. Unit 2 Intercooler Level High High"/>
+				<register name="RELIQ_UNIT_2_CONDENSATE_OUTLET_PRESSURE_HIGH" address="157" description="Reliq. Unit 2 condensate / outlet pressure 
+High"/>
+				<register name="RELIQ_UNIT_2_CONDENSATE_OUTLET_PRESSURE_HIGH_HIGH" address="158" description="Reliq. Unit 2 condensate / outlet 
+pressure High High"/>
+				<register name="RELIQ_UNIT_2_LIQUID_RECEIVER_1_LEVEL_HIGH" address="159" description="Reliq. Unit 2 Liquid Receiver 1 Level High"/>
+				<register name="RELIQ_UNIT_2_LIQUID_RECEIVER_1_LEVEL_HIGH_HIGH" address="160" description="Reliq. Unit 2 Liquid Receiver 1 Level High 
+High"/>
+				<register name="RELIQ_UNIT_2_CARGO_GLYCOL_OUTLET_FLOW" address="161" description="Reliq Unit 2 Cargo Glycol Outlet Flow"/>
+				<register name="RELIQ_UNIT_2_LIQUID_RECEIVER_PRESSURE_HIGH" address="162" description="Reliq. Unit 2 Liquid Receiver Pressure High"/>
+				<register name="RELIQ_UNIT_2_CARGO_COMP_LUBE_OIL_DIFFERENTIAL_PRESSURE_LOW" address="163" description="Reliq. Unit 2 Cargo Comp. Lube 
+Oil Differential Pressure Low"/>
+				<register name="RELIQ_UNIT_2_CARGO_COMP_LUBE_OIL_DIFFERENTIAL_PRESSURE_LOW_LOW" address="164" description="Reliq. Unit 2 Cargo Comp. 
+Lube Oil Differential Pressure Low Low"/>
+				<register name="COMPRESSOR_2_GLYCOL_COOING_INLET_WATER_TEMP_LOW_LOW" address="165" description="Compressor 2 Glycol cooing inlet 
+water temp Low Low"/>
+				<register name="COMPRESSOR_2_GLYCOL_COOING_INLET_WATER_TEMP_LOW" address="166" description="Compressor 2 Glycol cooing inlet water 
+temp Low"/>
+				<register name="COMPRESSOR_2_GLYCOL_COOING_INLET_WATER_TEMP_HIGH" address="167" description="Compressor 2 Glycol cooing inlet water 
+temp High"/>
+				<register name="COMPRESSOR_2_GLYCOL_COOING_INLET_WATER_TEMP_HIGH_HIGH" address="168" description="Compressor 2 Glycol cooing inlet 
+water temp High High"/>
+				<register name="COMPRESSOR_2_MOTOR_OVERLOAD_ALARM" address="169" description="Compressor 2 Motor Overload Alarm"/>
+				<register name="COMPRESSOR_2_PUMP_MOTOR_U_WINDING_TEMPERATURE_HIGH" address="170" description="Compressor 2 Pump Motor 'U' Winding 
+Temperature High"/>
+				<register name="COMPRESSOR_2_PUMP_MOTOR_U_WINDING_TEMPERATURE_HIGH_HIGH" address="171" description="Compressor 2 Pump Motor 'U' 
+Winding Temperature High High"/>
+				<register name="COMPRESSOR_2_PUMP_MOTOR_V_WINDING_TEMPERATURE_HIGH" address="172" description="Compressor 2 Pump Motor 'V' Winding 
+Temperature High"/>
+				<register name="COMPRESSOR_2_PUMP_MOTOR_V_WINDING_TEMPERATURE_HIGH_HIGH" address="173" description="Compressor 2 Pump Motor 'V' 
+Winding Temperature High High"/>
+				<register name="COMPRESSOR_2_PUMP_MOTOR_W_WINDING_TEMPERATURE_HIGH" address="174" description="Compressor 2 Pump Motor 'W' Winding 
+Temperature High"/>
+				<register name="COMPRESSOR_2_PUMP_MOTOR_W_WINDING_TEMPERATURE_HIGH_HIGH" address="175" description="Compressor 2 Pump Motor 'W' 
+Winding Temperature High High"/>
+				<register name="CARGO_TANK_3_95_PERCENT_LEVEL_STB_ALARM" address="176" description="Cargo tank 3 95% level Stb Alarm"/>
+				<register name="CARGO_TANK_3_99_PERCENT_LEVEL_STB_ALARM" address="177" description="Cargo tank 3 99% level Stb Alarm"/>
+				<register name="CARGO_TANK_3_95_PERCENT_LEVEL_PORT_ALARM" address="178" description="Cargo tank 3 95% level Port Alarm"/>
+				<register name="CARGO_TANK_3_99_PERCENT_LEVEL_PORT_ALARM" address="179" description="Cargo tank 3 99% level Port Alarm"/>
+				<register name="NO3_S_CARGO_TANK_LEVEL_ALARM" address="180" description="NO.3 (S) Cargo Tank Level Alarm"/>
+				<register name="NO3_P_CARGO_TANK_LEVEL_ALARM" address="181" description="NO.3 (P) Cargo Tank Level Alarm"/>
+				<register name="NO3_CARGO_TANK_PRESSURE_LOW" address="182" description="NO.3 Cargo Tank Pressure Low"/>
+				<register name="NO3_CARGO_TANK_PRESSURE_HIGH" address="183" description="NO.3 Cargo Tank Pressure High"/>
+				<register name="NO3_CARGO_TANK_PRESSURE_LOWLOW" address="184" description="NO.3 Cargo Tank Pressure LowLow"/>
+				<register name="NO3_CARGO_TANK_PRESSURE_HIGHHIGH" address="185" description="NO.3 Cargo Tank Pressure HighHigh"/>
+				<register name="NO3_TANK_HOLD_SPACE_LEVEL_HIGH" address="186" description="NO.3 Tank Hold Space Level High"/>
+				<register name="CARGO_TANK_3_STBD_SIDE_LIQUID_TEMP_LOW_AT_BOTTOM" address="187" description="Cargo Tank 3 stbd side liquid temp low 
+at bottom"/>
+				<register name="CARGO_TANK_3_STBD_SIDE_LIQUID_TEMP_HIGH_AT_BOTTOM" address="188" description="Cargo Tank 3 stbd side liquid temp high 
+at bottom"/>
+				<register name="CARGO_TANK_3_PORT_SIDE_LIQUID_TEMP_LOW_AT_BOTTOM" address="189" description="Cargo Tank 3 port side liquid temp low 
+at bottom"/>
+				<register name="CARGO_TANK_3_PORT_SIDE_LIQUID_TEMP_HIGH_AT_BOTTOM" address="190" description="Cargo Tank 3 port side liquid temp high 
+at bottom"/>
+				<register name="CARGO_TANK_3_STBD_SIDE_LIQUID_TEMP_LOW_AT_MIDDLE" address="191" description="Cargo Tank 3 stbd side liquid temp low 
+at middle"/>
+				<register name="CARGO_TANK_3_STBD_SIDE_LIQUID_TEMP_HIGH_AT_MIDDLE" address="192" description="Cargo Tank 3 stbd side liquid temp high 
+at middle"/>
+				<register name="CARGO_TANK_3_PORT_SIDE_LIQUID_TEMP_LOW_AT_MIDDLE" address="193" description="Cargo Tank 3 port side liquid temp low 
+at middle"/>
+				<register name="CARGO_TANK_3_PORT_SIDE_LIQUID_TEMP_HIGH_AT_MIDDLE" address="194" description="Cargo Tank 3 port side liquid temp high 
+at middle"/>
+				<register name="CARGO_TANK_3_STBD_SIDE_LIQUID_TEMP_LOW_AT_TOP" address="195" description="Cargo Tank 3 stbd side liquid temp low at 
+top"/>
+				<register name="CARGO_TANK_3_STBD_SIDE_LIQUID_TEMP_HIGH_AT_TOP" address="196" description="Cargo Tank 3 stbd side liquid temp high at 
+top"/>
+				<register name="CARGO_TANK_3_PORT_SIDE_LIQUID_TEMP_LOW_AT_TOP" address="197" description="Cargo Tank 3 port side liquid temp low at 
+top"/>
+				<register name="CARGO_TANK_3_PORT_SIDE_LIQUID_TEMP_HIGH_AT_TOP" address="198" description="Cargo Tank 3 port side liquid temp high at 
+top"/>
+				<register name="CARGO_TANK_3_STBD_SIDE_VAPOUR_TEMP_AT_100_PERCENT" address="199" description="Cargo Tank 3 stbd side vapour temp at 
+100%"/>
+				<register name="CARGO_TANK_3_STBD_SIDE_VAPOUR_TEMP_AT_100_PERCENT_2" address="200" description="Cargo Tank 3 stbd side vapour temp at 
+100%"/>
+				<register name="CARGO_TANK_3_DW_PUMP_MOTOR_CURRENT_STB" address="201" description="Cargo Tank 3 DW Pump Motor Current Stb."/>
+				<register name="CARGO_TANK_3_DW_PUMP_MOTOR_CURRENT_PORT" address="202" description="Cargo Tank 3 DW Pump Motor Current Port."/>
+				<register name="CARGO_TANK_3_DW_STB_PUMP_MOTOR_UNDERCURRENT_ALARM" address="203" description="Cargo Tank 3 DW (Stb) Pump Motor 
+Undercurrent Alarm"/>
+				<register name="CARGO_TANK_3_DW_PORT_PUMP_MOTOR_UNDERCURRENT_ALARM" address="204" description="Cargo Tank 3 DW (Port) Pump Motor 
+Undercurrent Alarm"/>
+				<register name="CARGO_TANK_3_DW_STB_PUMP_MOTOR_OVERLOAD_ALARM" address="205" description="Cargo Tank 3 DW (Stb) Pump Motor Overload 
+Alarm"/>
+				<register name="CARGO_TANK_3_DW_PORT_PUMP_MOTOR_OVERLOAD_ALARM" address="206" description="Cargo Tank 3 DW (Port) Pump Motor Overload 
+Alarm"/>
+				<register name="DWP_3S_U_WINDING_TEMPERATURE_HIGH" address="207" description="DWP -3S 'U' Winding Temperature High"/>
+				<register name="DWP_3S_U_WINDING_TEMPERATURE_HIGH_HIGH" address="208" description="DWP -3S 'U' Winding Temperature High High"/>
+				<register name="DWP_3S_V_WINDING_TEMPERATURE_HIGH" address="209" description="DWP -3S 'V' Winding Temperature High"/>
+				<register name="DWP_3S_V_WINDING_TEMPERATURE_HIGH_HIGH" address="210" description="DWP -3S 'V' Winding Temperature High High"/>
+				<register name="DWP_3S_W_WINDING_TEMPERATURE_HIGH" address="211" description="DWP -3S 'W' Winding Temperature High"/>
+				<register name="DWP_3S_W_WINDING_TEMPERATURE_HIGH_HIGH" address="212" description="DWP -3S 'W' Winding Temperature High High"/>
+				<register name="DWP_3P_U_WINDING_TEMPERATURE_HIGH" address="213" description="DWP -3P 'U' Winding Temperature High"/>
+				<register name="DWP_3P_U_WINDING_TEMPERATURE_HIGH_HIGH" address="214" description="DWP -3P 'U' Winding Temperature High High"/>
+				<register name="DWP_3P_V_WINDING_TEMPERATURE_HIGH" address="215" description="DWP -3P 'V' Winding Temperature High"/>
+				<register name="DWP_3P_V_WINDING_TEMPERATURE_HIGH_HIGH" address="216" description="DWP -3P 'V' Winding Temperature High High"/>
+				<register name="DWP_3P_W_WINDING_TEMPERATURE_HIGH" address="217" description="DWP -3P 'W' Winding Temperature High"/>
+				<register name="DWP_3P_W_WINDING_TEMPERATURE_HIGH_HIGH" address="218" description="DWP -3P 'W' Winding Temperature High High"/>
+				<register name="CARGO_TANK_3_HOLD_SPACE_PRESSURE_LOW" address="219" description="Cargo Tank 3 hold space pressure Low"/>
+				<register name="CARGO_TANK_3_HOLD_SPACE_PRESSURE_HIGH" address="220" description="Cargo Tank 3 hold space pressure High"/>
+				<register name="CARGO_TANK_3_HOLD_SPACE_TEMPERATURE_LOW" address="221" description="Cargo Tank 3 hold space temperature Low"/>
+				<register name="CARGO_COND_RELIQ_UNIT_3_SW_DIFF_OUTLET_TEMP_HIGH" address="222" description="Cargo cond. Reliq. Unit 3 SW. Diff. 
+Outlet Temp. High"/>
+				<register name="CARGO_COND_RELIQ_UNIT_3_SW_DIFF_OUTLET_TEMP_HIGH_HIGH" address="223" description="Cargo cond. Reliq. Unit 3 SW. Diff. 
+Outlet Temp. High High"/>
+				<register name="RELIQ_UNIT_3_KO_DRUM_LEVEL_HIGH" address="224" description="Reliq. Unit 3 KO Drum level High"/>
+				<register name="RELIQ_UNIT_3_KO_DRUM_LEVEL_HIGH_HIGH" address="225" description="Reliq. Unit 3 KO Drum level High High"/>
+				<register name="RELIQ_UNIT_3_CARGO_COMPRESSOR_BULKHEAD_SEAL_TEMP_HIGH" address="226" description="Reliq. Unit 3 Cargo compressor 
+bulkhead seal temp. high"/>
+				<register name="RELIQ_UNIT_3_CARGO_COMPRESSOR_BULKHEAD_SEAL_TEMP_HIGH_HIGH" address="227" description="Reliq. Unit 3 Cargo compressor 
+bulkhead seal temp. High High"/>
+				<register name="RELIQ_UNIT_3_CARGO_COMPRESSOR_STAGE_1_SUCTION_PRESSURE_LOW_LOW" address="228" description="Reliq. Unit 3 Cargo 
+Compressor Stage 1 Suction Pressure Low Low"/>
+				<register name="RELIQ_UNIT_3_CARGO_COMPRESSOR_STAGE_1_SUCTION_PRESSURE_LOW" address="229" description="Reliq. Unit 3 Cargo Compressor 
+Stage 1 Suction Pressure Low"/>
+				<register name="RELIQ_UNIT_3_CARGO_COMPRESSOR_STAGE_1_SUCTION_PRESSURE_HIGH" address="230" description="Reliq. Unit 3 Cargo 
+Compressor Stage 1 Suction Pressure High"/>
+				<register name="RELIQ_UNIT_3_CARGO_COMPRESSOR_STAGE_1_SUCTION_PRESSURE_HIGH_HIGH" address="231" description="Reliq. Unit 3 Cargo 
+Compressor Stage 1 Suction Pressure High High"/>
+				<register name="DUMMY_DATA" address="232" description="Dummy Data"/>
+				<register name="DUMMY_DATA" address="233" description="Dummy Data"/>
+				<register name="RELIQ_UNIT_3_CARGO_COMPRESSOR_STAGE_1_DISCHARGE_TEMPERATURE_HIGH" address="234" description="Reliq. Unit 3 Cargo 
+Compressor Stage 1 Discharge Temperature High"/>
+				<register name="RELIQ_UNIT_3_CARGO_COMPRESSOR_STAGE_1_DISCHARGE_TEMPERATURE_HIGH_HIGH" address="235" description="Reliq. Unit 3 Cargo 
+Compressor Stage 1 Discharge Temperature High High"/>
+				<register name="RELIQ_UNIT_3_CARGO_COMPRESSOR_STAGE_2_SUCTION_PRESSURE_LOW" address="236" description="Reliq. Unit 3 Cargo Compressor 
+Stage 2 Suction Pressure Low"/>
+				<register name="RELIQ_UNIT_3_CARGO_COMPRESSOR_STAGE_2_SUCTION_PRESSURE_LOW_LOW" address="237" description="Reliq. Unit 3 Cargo 
+Compressor Stage 2 Suction Pressure Low Low"/>
+				<register name="RELIQ_UNIT_3_CARGO_COMPRESSOR_STAGE_2_DISCHARGE_PRESSURE_HIGH" address="238" description="Reliq. Unit 3 Cargo 
+Compressor Stage 2 Discharge Pressure High"/>
+				<register name="RELIQ_UNIT_3_CARGO_COMPRESSOR_STAGE_2_DISCHARGE_PRESSURE_HIGH_HIGH" address="239" description="Reliq. Unit 3 Cargo 
+Compressor Stage 2 Discharge Pressure High High"/>
+			</innerRegisters>
+		</channel>
+    </dataNodeConfigs>
+	<dataSubscriptionConfigs>
+		<dataSubscriptionConfig name="ModBusSubscription">
+			<nodeName>CHS_BOOLEAN_DATA</nodeName>
+		</dataSubscriptionConfig>
+	</dataSubscriptionConfigs>
+</modbusMachineAdapterConfig>

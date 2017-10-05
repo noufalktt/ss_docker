@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cassandraAggregationConfig>
+	<name>AggregationConfigFile</name>
+    <description>This configuration file is for running aggregation queries against sensor tags in cassandra</description>
+	<vesselId>1000007</vesselId>
+	<tableName>tsrawstring</tableName>
+	<aggregationConfig>
+		<key sourceTagName="AIS_LNG_RANGE_POS_SPARE" desinationTagName="AIS_LNG_RANGE_POS_SPARE_Normal_10" runningFrequency="10" aggregationOperation="NORMAL" aggregationFrequency="10"/>
+		<key sourceTagName="PJRCM_NEXT_PORT" desinationTagName="AIS_VSD_DESTINATION_Normal_10" runningFrequency="10" aggregationOperation="NORMAL" aggregationFrequency="10"/>
+		<key sourceTagName="GPS_GLL_LATTITUDE_DIRECTION" desinationTagName="GPS_GLL_LATTITUDE_DIRECTION_Normal_10" runningFrequency="10" aggregationOperation="NORMAL" aggregationFrequency="10"/>
+		<key sourceTagName="GPS_GLL_LONGITUDE_DIRECTION" desinationTagName="GPS_GLL_LONGITUDE_DIRECTION_Normal_10" runningFrequency="10" aggregationOperation="NORMAL" aggregationFrequency="10"/>
+		<key sourceTagName="AIS_VDO_SCH_POS_NAV_STATUS" desinationTagName="AIS_VDO_SCH_POS_NAV_STATUS_Normal_10" runningFrequency="10" aggregationOperation="NORMAL" aggregationFrequency="10"/>
+
+	</aggregationConfig>
+</cassandraAggregationConfig>

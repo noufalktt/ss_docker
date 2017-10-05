@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modbusMachineAdapterConfig>
+   <name>Onsite monitor modbus nodes</name>
+   <description>Onsite monitor modbus nodes</description>
+   <vesselId>1000007</vesselId>
+   <defaultUpdateInterval>1</defaultUpdateInterval>
+   <dataNodeConfigs>
+      <channel protocol="TCP_IP" tcpIpAddress="192.168.1.22" tcpIpPort="502" regBaseAddress="1">
+         <unit id="1">
+            <register name="GDS_DATA" dataType="SHORT" method="CONTINUOUS" address="326" registerType="HOLDING" description="GDS1" count="19" innerRegisters="1" />
+         </unit>
+
+                 <!--Inner Registers are used for continuous reading of addresses. The number of innerRegisters should match with the count given in parent
+                 register. The id of innerRegisters should match with the id of parent register. The data type of parent register should be of type ORIGINAL-->
+                 <innerRegisters id="1">
+                  <register name="GDS_CARGO_COMP_RM_TOP" dataType="SHORT" address="326" registerType="HOLDING" description="GDS_CARGO_COMP_RM_TOP"/>
+                  <register name="GDS_CARGO_COMP_RM_BOTTOM" dataType="SHORT" address="327" registerType="HOLDING" description="GDS_CARGO_COMP_RM_BOTTOM"/>
+                  <register name="GDS_ELEC_MOTOR_ROOM_TOP" dataType="SHORT" address="328" registerType="HOLDING" description="GDS_ELEC_MOTOR_ROOM_TOP"/>
+                  <register name="GDS_ELEC_MOTOR_ROOM_BOTTOM" dataType="SHORT" address="329" registerType="HOLDING" description="GDS_ELEC_MOTOR_ROOM_BOTTOM"/>
+                  <register name="GDS_ELEC_MOTOR_ROOM_AIR_LOCK_TOP" dataType="SHORT" address="330" registerType="HOLDING" description="GDS_ELEC_MOTOR_ROOM_AIR_LOCK_TOP"/>
+                  <register name="GDS_ELEC_MOTOR_ROOM_AIR_LOCK_BOTTOM" dataType="SHORT" address="331" registerType="HOLDING" description="GDS_ELEC_MOTOR_ROOM_AIR_LOCK_BOTTOM"/>
+                  <register name="GDS_FWD_PUMP_ROOM_BOTTOM" dataType="SHORT" address="332" registerType="HOLDING" description="GDS_FWD_PUMP_ROOM_BOTTOM"/>
+                  <register name="GDS_AIR_INTAKE_FOR_AIR_CONDITION" dataType="SHORT" address="333" registerType="HOLDING" description="GDS_AIR_INTAKE_FOR_AIR_CONDITION"/>
+                  <register name="GDS_AIR_INTAKE_FOR_NO1_ENGINE_ROOM" dataType="SHORT" address="334" registerType="HOLDING" description="GDS_AIR_INTAKE_FOR_NO1_ENGINE_ROOM"/>
+                  <register name="GDS_AIR_INTAKE_FOR_NO2_ENGINE_ROOM" dataType="SHORT" address="335" registerType="HOLDING" description="GDS_AIR_INTAKE_FOR_NO2_ENGINE_ROOM"/>
+                  <register name="GDS_FW_GLYCOL_TANK_IN_MOTOR_ROOM" dataType="SHORT" address="336" registerType="HOLDING" description="GDS_FW_GLYCOL_TANK_IN_MOTOR_ROOM"/>
+                  <register name="GDS_DECK_STORE_TOP" dataType="SHORT" address="337" registerType="HOLDING" description="GDS_DECK_STORE_TOP"/>
+                  <register name="GDS_DECK_STORE_BOTTOM" dataType="SHORT" address="338" registerType="HOLDING" description="GDS_DECK_STORE_BOTTOM"/>
+                  <register name="GDS_AIR_INTAKER_FOR_GALLEY" dataType="SHORT" address="339" registerType="HOLDING" description="GDS_AIR_INTAKER_FOR_GALLEY"/>
+                  <register name="GDS_MECHANICAL_SUPPLY_FOR_GALLEY" dataType="SHORT" address="340" registerType="HOLDING" description="GDS_MECHANICAL_SUPPLY_FOR_GALLEY"/>
+                  <register name="GDS_FWD_PUMP_ROOM_TOP" dataType="SHORT" address="341" registerType="HOLDING" description="GDS_FWD_PUMP_ROOM_TOP"/>
+                  <register name="GDS_SPARE" dataType="SHORT" address="342" registerType="HOLDING" description="GDS_SPARE"/>
+                  <register name="GDS_PANEL_INSIDE" dataType="SHORT" address="343" registerType="HOLDING" description="GDS_PANEL_INSIDE"/>
+                 </innerRegisters>
+      </channel>
+   </dataNodeConfigs>
+   <dataSubscriptionConfigs>
+      <dataSubscriptionConfig name="ModBusSubscription">
+         <nodeName>GDS_DATA</nodeName>
+      </dataSubscriptionConfig>
+   </dataSubscriptionConfigs>
+</modbusMachineAdapterConfig>

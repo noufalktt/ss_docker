@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modbusMachineAdapterConfig>
+	<name>Onsite monitor modbus nodes</name>
+	<description>Onsite monitor modbus nodes</description>
+	<vesselId>1000007</vesselId>
+	<dataNodeConfigs>
+		<channel protocol="TCP_IP" tcpIpAddress="192.168.1.23" tcpIpPort="502" regBaseAddress="1">
+			<unit id="5">				
+				<register name="BOILER_SHORT_HOLDING_DATA_1" dataType="SHORT" method="CONTINUOUS" address="1" registerType="HOLDING" description="BOILER_INTEGER_HOLDING_DATA_1" count="103" innerRegisters="1"/>
+				<register name="BOILER_SHORT_HOLDING_DATA_2" dataType="SHORT" method="CONTINUOUS" address="204" registerType="HOLDING" description="BOILER_INTEGER_HOLDING_DATA_2" count="32" innerRegisters="2"/>
+				<register name="BOILER_SHORT_HOLDING_DATA_3" dataType="SHORT" method="CONTINUOUS" address="302" registerType="HOLDING" description="BOILER_SHORT_HOLDING_DATA_3" count="32" innerRegisters="3"/>
+			</unit>
+			<innerRegisters id="1">
+				<register name="BOILER_CONTROLLER_BOILER_T_STEAM_PRESSURE_SET_POINT" address="1" description="BOILER_CONTROLLER_BOILER_T_STEAM_PRESSURE_SET_POINT"/>
+				<register name="BOILER_CONTROLLER_STEAM_DUMP_T_PRESSURE_SET_POINT" address="2" description="BOILER_CONTROLLER_STEAM_DUMP_T_PRESSURE_SET_POINT"/>
+				<register name="BOILER_CONTROLLER_BURNER_OPERATION_MODE" address="3" description="BOILER_CONTROLLER_BURNER_OPERATION_MODE"/>
+				<register name="BOILER_CONTROLLER_START_STOP_BURNER_ONLY_IN_MANUAL_MODE" address="4" description="BOILER_CONTROLLER_START_STOP_BURNER_ONLY_IN_MANUAL_MODE"/>
+				<register name="BOILER_CONTROLLER_USE_MANUAL_BURNER_LOAD" address="5" description="BOILER_CONTROLLER_USE_MANUAL_BURNER_LOAD"/>
+				<register name="BOILER_CONTROLLER_MANUAL_BURNER_LOAD" address="6" description="BOILER_CONTROLLER_MANUAL_BURNER_LOAD"/>
+				<register name="BOILER_CONTROLLER_CURRENT_FUEL_TYPE" address="101" description="BOILER_CONTROLLER_CURRENT_FUEL_TYPE"/>
+				<register name="BOILER_CONTROLLER_BURNER_STATE" address="102" description="BOILER_CONTROLLER_BURNER_STATE"/>
+			</innerRegisters>
+			<innerRegisters id="2">	
+				<register name="BOILER_CONTROLLER_F222_T_PREHEATER_FUEL_OIL_TEMPERATURE" address="204" description="BOILER_CONTROLLER_F222_T_PREHEATER_FUEL_OIL_TEMPERATURE"/>
+				<register name="BOILER_CONTROLLER_F225_T_BURNER_FUEL_OIL_PRESSURE" address="205" description="BOILER_CONTROLLER_F225_T_BURNER_FUEL_OIL_PRESSURE"/>
+				<register name="BOILER_CONTROLLER_F36_T_BURNER_TEMPERATURE_WINDBOX" address="206" description="BOILER_CONTROLLER_F36_T_BURNER_TEMPERATURE_WINDBOX"/>
+				<register name="BOILER_CONTROLLER_F212_T_BURNER_FUEL_OIL_TEMPERATURE" address="207" description="BOILER_CONTROLLER_F212_T_BURNER_FUEL_OIL_TEMPERATURE"/>
+				<register name="BOILER_CONTROLLER_R16_T_AIR_DAMPER_POSITION" address="208" description="BOILER_CONTROLLER_R16_T_AIR_DAMPER_POSITION"/>
+				<register name="BOILER_CONTROLLER_F208_T_OIL_SERVO_VALVE_POSTION" address="209" description="BOILER_CONTROLLER_F208_T_OIL_SERVO_VALVE_POSTION"/>
+				<register name="BOILER_CONTROLLER_W16_T_BOILER_WATER_LEVEL" address="210" description="BOILER_CONTROLLER_W16_T_BOILER_WATER_LEVEL"/>
+				<register name="BOILER_CONTROLLER_C48_T_BOILER_PRESSURE" address="214" description="BOILER_CONTROLLER_C48_T_BOILER_PRESSURE"/>
+				<register name="BOILER_CONTROLLER_G274_T_FUEL_TEMPERATURE" address="233" description="BOILER_CONTROLLER_G274_T_FUEL_TEMPERATURE"/>
+				<register name="BOILER_CONTROLLER_M146_T_SALINITY_TRANSMITTER" address="235" description="BOILER_CONTROLLER_M146_T_SALINITY_TRANSMITTER"/>
+			</innerRegisters>
+			<innerRegisters id="3">	
+				<register name="TAG_GROUP_302" address="302" description="TAG_GROUP_302"/>
+				<register name="TAG_GROUP_303" address="303" description="TAG_GROUP_303"/>
+				<register name="TAG_GROUP_304" address="304" description="TAG_GROUP_304"/>
+				<register name="TAG_GROUP_305" address="305" description="TAG_GROUP_305"/>
+				<register name="TAG_GROUP_306" address="306" description="TAG_GROUP_306"/>
+				<register name="TAG_GROUP_307" address="307" description="TAG_GROUP_307"/>
+				<register name="TAG_GROUP_308" address="308" description="TAG_GROUP_308"/>
+				<register name="TAG_GROUP_309" address="309" description="TAG_GROUP_309"/>
+				<register name="TAG_GROUP_310" address="310" description="TAG_GROUP_310"/>
+				<register name="TAG_GROUP_311" address="311" description="TAG_GROUP_311"/>
+				<register name="TAG_GROUP_312" address="312" description="TAG_GROUP_312"/>
+				<register name="TAG_GROUP_323" address="323" description="TAG_GROUP_323"/>
+				<register name="TAG_GROUP_324" address="324" description="TAG_GROUP_324"/>
+				<register name="TAG_GROUP_327" address="327" description="TAG_GROUP_327"/>
+				<register name="TAG_GROUP_328" address="328" description="TAG_GROUP_328"/>
+				<register name="TAG_GROUP_329" address="329" description="TAG_GROUP_329"/>
+				<register name="TAG_GROUP_330" address="330" description="TAG_GROUP_330"/>
+				<register name="TAG_GROUP_331" address="331" description="TAG_GROUP_331"/>
+				<register name="TAG_GROUP_332" address="332" description="TAG_GROUP_332"/>
+			</innerRegisters>
+		</channel>
+	</dataNodeConfigs>
+	<dataSubscriptionConfigs>
+		<dataSubscriptionConfig name="BoilerSubscription">
+			<nodeName>BOILER_SHORT_HOLDING_DATA_1</nodeName>
+			<nodeName>BOILER_SHORT_HOLDING_DATA_2</nodeName>
+			<nodeName>BOILER_SHORT_HOLDING_DATA_3</nodeName>
+		</dataSubscriptionConfig>
+	</dataSubscriptionConfigs>
+</modbusMachineAdapterConfig>

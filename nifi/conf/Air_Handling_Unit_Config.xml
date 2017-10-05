@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modbusMachineAdapterConfig>
+	<name>Onsite monitor modbus nodes</name>
+	<description>Onsite monitor modbus nodes</description>
+	<vesselId>1000007</vesselId>
+	<dataNodeConfigs>
+		<channel protocol="TCP_IP" tcpIpAddress="192.168.1.21" tcpIpPort="502">
+			<unit id="6">
+				<register name="SMART_SHIP_MODBUS_LINK_TO_AHU_PANEL_PLC" method="NORMAL" dataType="BOOLEAN" address="26" registerType="DISCRETE" description="Smart_Ship_Modbus_Link_to_AHU_Panel_PLC"/>
+				<register name="SMART_SHIP_AHU_PANEL_MODE_OF_OPERATION_AUTO_SAFE_PLC" method="NORMAL" dataType="BOOLEAN" address="27" registerType="DISCRETE" description="Smart_Ship_AHU_Panel_Mode_of_Operation_Auto_safe_PLC"/>
+				<register name="SMART_SHIP_AHU_PANEL_MODE_OF_OPERATION_AUTO_NORMAL_PLC" method="NORMAL" dataType="BOOLEAN" address="28" registerType="DISCRETE" description="Smart_Ship_AHU_Panel_Mode_of_Operation_Auto_Normal_PLC"/>
+				<register name="SMART_SHIP_AHU_PANEL_MODE_OF_OPERATION_AUTO_ALERT_PLC" method="NORMAL" dataType="BOOLEAN" address="29" registerType="DISCRETE" description="Smart_Ship_AHU_Panel_Mode_of_Operation_Auto_Alert_PLC"/>
+				<register name="SMART_SHIP_AHU_PANEL_MANUL_OVERRIDE_MODE_PLC" method="NORMAL" dataType="BOOLEAN" address="30" registerType="DISCRETE" description="Smart_Ship_AHU_Panel_Manul_Override_mode_PLC"/>
+				<register name="SMART_SHIP_AHU_PANEL_COMMON_ABN_PLC" method="NORMAL" dataType="BOOLEAN" address="31" registerType="DISCRETE" description="Smart_Ship_AHU_Panel_Common_ABN_PLC"/>
+				<register name="DIFFERENTIAL_PRESSURE_BETWEEN_ACCOMODATION_AND_ATM_PLC" method="NORMAL" dataType="SHORT" address="66" registerType="HOLDING" description="Differential_Pressure_between_Accomodation_and_Atm_PLC"/>
+				<register name="AHU_DAMPER_POSITION_FRESH_AIR_PLC" method="NORMAL" dataType="SHORT" address="70" registerType="HOLDING" description="AHU_Damper_Position_Fresh_Air_PLC"/>
+				<register name="AHU_DAMPER_POSITION_RECIRCULATION_AIR_PLC" method="NORMAL" dataType="SHORT" address="74" registerType="HOLDING" description="AHU_Damper_Position_Recirculation_Air_PLC"/>
+				<register name="AHU_RECIRCULATION_AIR_TEMP_PLC" method="NORMAL" dataType="SHORT" address="78" registerType="HOLDING" description="AHU_Recirculation_Air_Temp_PLC"/>
+			</unit>
+		</channel>
+	</dataNodeConfigs>
+	<dataSubscriptionConfigs>
+		<dataSubscriptionConfig name="ModBusSubscription" updateInterval="5" startPointUnit="MINUTES" startPointOffset="-1">
+			<nodeName>SMART_SHIP_MODBUS_LINK_TO_AHU_PANEL_PLC</nodeName>
+			<nodeName>SMART_SHIP_AHU_PANEL_MODE_OF_OPERATION_AUTO_SAFE_PLC</nodeName>
+			<nodeName>SMART_SHIP_AHU_PANEL_MODE_OF_OPERATION_AUTO_NORMAL_PLC</nodeName>
+			<nodeName>SMART_SHIP_AHU_PANEL_MODE_OF_OPERATION_AUTO_ALERT_PLC</nodeName>
+			<nodeName>SMART_SHIP_AHU_PANEL_MANUL_OVERRIDE_MODE_PLC</nodeName>
+			<nodeName>SMART_SHIP_AHU_PANEL_COMMON_ABN_PLC</nodeName>
+			<nodeName>DIFFERENTIAL_PRESSURE_BETWEEN_ACCOMODATION_AND_ATM_PLC</nodeName>
+			<nodeName>AHU_DAMPER_POSITION_FRESH_AIR_PLC</nodeName>
+			<nodeName>AHU_DAMPER_POSITION_RECIRCULATION_AIR_PLC</nodeName>
+			<nodeName>AHU_RECIRCULATION_AIR_TEMP_PLC</nodeName>
+		</dataSubscriptionConfig>
+	</dataSubscriptionConfigs>
+</modbusMachineAdapterConfig>

@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reportConfig>
+	<name>ReportConfigFile</name>
+	<description>This configuration file is for generating the 
+	report configuration details based on schedule information stored in database</description>
+	<vesselId>1000007</vesselId>
+	<reportElements>
+		<reporttemplateid>1</reporttemplateid>
+		<element elementname="generatedtime" operation="none" tablename="tsrawnumeric">
+		</element>
+		<element elementname="aftbearingtemp" operation="none" tablename="tsrawnumeric">
+		</element>
+		<element elementname="callsign" operation="none" tablename="tsrawnumeric">
+		</element>
+		<element elementname="controlairpressure" operation="none" tablename="tsrawnumeric">
+		</element>
+		<element elementname="exhaustgasouttemp" operation="none" tablename="tsrawnumeric">
+		</element>
+		<element elementname="flag" operation="none" tablename="tsrawnumeric">
+		</element>
+		<element elementname="fwdbearingtemp" operation="none" tablename="tsrawnumeric">
+		</element>
+		<element elementname="gefoconsumption" operation="none" tablename="tsrawnumeric">
+		<value tagName="ME_FO_FLOWMETER_86400" type="tag"/>
+		<value tagName="1000" type="numeric"/>
+		</element>
+		<element elementname="gt" operation="none" tablename="tsrawnumeric">
+		</element>
+		<element elementname="hfoservicetanktemp" operation="none" tablename="tsrawnumeric">
+		<value tagName="NO1_HFO_PURIFIER_HEATER_OUT_TEMP" type="tag"/>
+		</element>
+		<element elementname="hfosettlingtanktemp" operation="none" tablename="tsrawnumeric">
+		<value tagName="NO2_HFO_PURIFIER_HEATER_OUT_TEMP" type="tag"/>
+		</element>
+		<element elementname="imonumber" operation="none" tablename="tsrawnumeric">
+		</element>
+		<element elementname="intershaftbearingtemp" operation="none" tablename="tsrawnumeric">
+		</element>	
+		<element elementname="isemailsent" operation="none" tablename="tsrawnumeric">
+		</element>
+		<element elementname="meexhaustmaxperunitno" operation="none" tablename="tsrawnumeric">
+		</element>
+		<element elementname="meexhaustminperunitno" operation="none" tablename="tsrawnumeric">
+		</element>
+		<element elementname="mefoconsumption" operation="none" tablename="tsrawnumeric">
+		</element>
+		<element elementname="mefuelindex" operation="none" tablename="tsrawnumeric">
+		<value tagName="ME_FUEL_INDEX" type="tag"/>
+		</element>
+		<element elementname="meinletpressure" operation="none" tablename="tsrawnumeric">
+		<value tagName="ME_FO_INLET_PRESS" type="tag"/>
+		</element>
+		<element elementname="mejcwintemp" operation="none" tablename="tsrawnumeric">
+		<value tagName="ME_JCFW_INLET_TEMP" type="tag"/>
+		</element>
+		<element elementname="mejcwouttemp" operation="none" tablename="tsrawnumeric">
+		</element>
+		<element elementname="mejwpressure" operation="none" tablename="tsrawnumeric">
+		<value tagName="ME_JCFW_INLET_PRESS" type="tag"/>
+		</element>
+		<element elementname="melopressure" operation="none" tablename="tsrawnumeric">
+		<value tagName="ME_LO_AND_PCO_INLET_PRESS" type="tag"/>
+		</element>
+		<element elementname="merpm" operation="none" tablename="tsrawnumeric">
+		<value tagName="ME_RPM" type="tag"/>
+		</element>
+		<element elementname="mescavengepressure" operation="none" tablename="tsrawnumeric">
+		</element>
+		<element elementname="mescavengertemp" operation="none" tablename="tsrawnumeric">
+		<value tagName="ME_SCAV_AIR_RECEIVER_INLET_TEMP" type="tag"/>
+		</element>
+		<element elementname="owner" operation="none" tablename="tsrawnumeric">
+		</element>
+		<element elementname="pressure" operation="none" tablename="tsrawnumeric">
+		</element>
+		<element elementname="purifier1heateroutlettemp" operation="none" tablename="tsrawnumeric">
+		<value tagName="HFO_SERV_TK_TEMP" type="tag"/>
+		</element>
+		<element elementname="purifier2heateroutlettemp" operation="none" tablename="tsrawnumeric">
+		<value tagName="HFO_SETT_TK_TEMP" type="tag"/>
+		</element>
+		<element elementname="serviceairpressure" operation="none" tablename="tsrawnumeric">
+		</element>
+		<element elementname="steampressure" operation="none" tablename="tsrawnumeric">
+		</element>
+		<element elementname="temperture" operation="none" tablename="tsrawnumeric">
+		</element>
+		<element elementname="terntemperture" operation="none" tablename="tsrawnumeric">
+		</element>
+		<element elementname="totalfw" operation="none" tablename="tsrawnumeric">
+		</element>	
+		<element elementname="totalmgo" operation="none" tablename="tsrawnumeric">
+		</element>
+		<element elementname="totalhfo" operation="none" tablename="tsrawnumeric">
+		</element>
+		<element elementname="vesselcourse" operation="none" tablename="tsrawnumeric">
+		<value tagName="HE_HDT_HEADING_DEGREES_TRUE" type="tag"/>
+		</element>
+		<element elementname="vesselname" operation="none" tablename="tsrawnumeric">
+		</element>
+		<element elementname="vesselposition" operation="concat" tablename="tsrawnumeric">
+		<value tagName="GPS_GLL_LATITUDE" type="tag"/>		
+		<value tagName=" " type="string"/>
+		<value tagName="GPS_GLL_LONGITUDE" type="tag"/>
+		</element>
+		<element elementname="vesseltype" operation="none" tablename="tsrawnumeric">
+		</element>
+		<element elementname="viscosity" operation="none" tablename="tsrawnumeric">
+		<value tagName="ME_FO_VISCOSITY" type="tag"/>
+		</element>
+		<element elementname="weatherconditions" operation="none" tablename="tsrawnumeric">
+		</element>
+		<element elementname="waterlevel" operation="none" tablename="tsrawnumeric">
+		</element>		
+	</reportElements>
+	<reportElements>
+		<reporttemplateid>2</reporttemplateid>
+		<element elementname="generatedtime" operation="none" tablename="tsrawnumeric">
+		</element>
+		<element elementname="isemailsent" operation="none" tablename="tsrawnumeric">
+		</element>		
+		<element elementname="aeccconsumption" operation="none" tablename="tsrawnumeric">
+		</element>		
+		<element elementname="aefohsconsumption" operation="none" tablename="tsrawnumeric">
+		</element>		
+		<element elementname="anchorageifanchored" operation="none" tablename="tsrawnumeric">
+		</element>		
+		<element elementname="berth" operation="none" tablename="tsrawnumeric">
+		</element>		
+		<element elementname="blrfohsconsumption" operation="none" tablename="tsrawnumeric">
+		</element>		
+		<element elementname="callsign" operation="none" tablename="tsrawnumeric">
+		</element>		
+		<element elementname="cargo" operation="none" tablename="tsrawnumeric">
+		<value tagName="LCTSW_CARGO_WEIGHT" type="tag"/>
+		</element>		
+		<element elementname="cargoloadunload" operation="none" tablename="tsrawnumeric">
+		</element>		
+		<element elementname="displacement" operation="none" tablename="tsrawnumeric">
+		<value tagName="LCVSW_DISPLACEMENT" type="tag"/>
+		</element>		
+		<element elementname="draftaft" operation="none" tablename="tsrawnumeric">
+		<value tagName="LCODF_ONLINE_DRAFT_MID_AFTERWARD" type="tag"/>
+		</element>		
+		<element elementname="draftfwd" operation="none" tablename="tsrawnumeric">
+		<value tagName="LCODF_ONLINE_DRAFT_FORWARD" type="tag"/>
+		</element>		
+		<element elementname="enginedistance" operation="none" tablename="tsrawnumeric">
+		</element>		
+		<element elementname="exhaustmaxtemp" operation="none" tablename="tsrawnumeric">
+		</element>		
+		<element elementname="exhaustmintemp" operation="none" tablename="tsrawnumeric">
+		</element>		
+		<element elementname="flag" operation="none" tablename="tsrawnumeric">
+		</element>		
+		<element elementname="fromport" operation="none" tablename="tsrawnumeric">
+		</element>		
+		<element elementname="futureports" operation="none" tablename="tsrawnumeric">
+		</element>		
+		<element elementname="fwconsumption" operation="none" tablename="tsrawnumeric">
+		</element>		
+		<element elementname="fwproduction" operation="none" tablename="tsrawnumeric">
+		</element>		
+		<element elementname="gm" operation="none" tablename="tsrawnumeric">
+		<value tagName="LCSTB_GM" type="tag"/>
+		</element>		
+		<element elementname="gt" operation="none" tablename="tsrawnumeric">
+		</element>		
+		<element elementname="imonumber" operation="none" tablename="tsrawnumeric">
+		</element>		
+		<element elementname="latitude" operation="none" tablename="tsrawnumeric">
+		<value tagName="GPS_GLL_LATITUDE" type="tag"/>
+		</element>		
+		<element elementname="longitude" operation="none" tablename="tsrawnumeric">
+		<value tagName="GPS_GLL_LONGITUDE" type="tag"/>
+		</element>		
+		<element elementname="meccconsumption" operation="none" tablename="tsrawnumeric">
+		</element>		
+		<element elementname="mecylconsumption" operation="none" tablename="tsrawnumeric">
+		</element>		
+		<element elementname="mecyllsconsumption" operation="none" tablename="tsrawnumeric">
+		</element>		
+		<element elementname="mefohsconsumption" operation="none" tablename="tsrawnumeric">
+		</element>		
+		<element elementname="merpm" operation="none" tablename="tsrawnumeric">
+		<value tagName="ME_RPM" type="tag"/>
+		</element>		
+		<element elementname="metc1rpm" operation="none" tablename="tsrawnumeric">
+		<value tagName="ME_TC_RPM" type="tag"/>
+		</element>	
+		<element elementname="metc2rpm" operation="none" tablename="tsrawnumeric">
+		</element>
+		<element elementname="metc3rpm" operation="none" tablename="tsrawnumeric">
+		</element>
+		<element elementname="observeddistance" operation="none" tablename="tsrawnumeric">
+		</element>
+		<element elementname="owner" operation="none" tablename="tsrawnumeric">
+		</element>
+		<element elementname="port" operation="none" tablename="tsrawnumeric">
+		</element>
+		<element elementname="portactivity" operation="none" tablename="tsrawnumeric">
+		</element>
+		<element elementname="reportdate" operation="none" tablename="tsrawnumeric">
+		</element>
+		<element elementname="robaecc" operation="none" tablename="tsrawnumeric">
+		</element>
+		<element elementname="robfohs" operation="none" tablename="tsrawnumeric">
+		</element>
+		<element elementname="robfw" operation="none" tablename="tsrawnumeric">
+		</element>
+		<element elementname="robmecc" operation="none" tablename="tsrawnumeric">
+		</element>
+		<element elementname="robmecyl" operation="none" tablename="tsrawnumeric">
+		</element>
+		<element elementname="robmecylls" operation="none" tablename="tsrawnumeric">
+		</element>
+		<element elementname="scavengepressure" operation="none" tablename="tsrawnumeric">
+		<value tagName="ME_SCAV_AIR_RECEIVER_IN_PRESS" type="tag"/>
+		</element>	
+		<element elementname="slip" operation="none" tablename="tsrawnumeric">
+		</element>	
+		<element elementname="speed" operation="none" tablename="tsrawnumeric">
+		</element>	
+		<element elementname="status" operation="none" tablename="tsrawnumeric">
+		<value tagName="LCSTS_STATUS" type="tag"/>
+		</element>	
+		<element elementname="steamingdistance" operation="none" tablename="tsrawnumeric">
+		</element>	
+		<element elementname="steamingtime" operation="none" tablename="tsrawnumeric">
+		</element>	
+		<element elementname="swelldirection" operation="none" tablename="tsrawnumeric">
+		</element>	
+		<element elementname="swellheight" operation="none" tablename="tsrawnumeric">
+		</element>		
+		<element elementname="timezone" operation="none" tablename="tsrawnumeric">
+		</element>	
+		<element elementname="toport" operation="none" tablename="tsrawnumeric">
+		<value tagName="PJRCM_NEXT_PORT" type="tag"/>
+		</element>	
+		<element elementname="totalcargoonboard" operation="none" tablename="tsrawnumeric">
+		</element>	
+		<element elementname="truecourse" operation="none" tablename="tsrawnumeric">
+		</element>	
+		<element elementname="vesselname" operation="none" tablename="tsrawnumeric">
+		<value tagName="AIS_VDO_SHIP_NAME" type="tag"/>
+		</element>	
+		<element elementname="vesseltype" operation="none" tablename="tsrawnumeric">
+		</element>	
+		<element elementname="winddirection" operation="none" tablename="tsrawnumeric">
+		</element>			
+		<element elementname="windforce" operation="none" tablename="tsrawnumeric">
+		</element>			
+	</reportElements>
+	<reportElements>
+		<reporttemplateid>3</reporttemplateid>
+		<element elementname="generatedtime" operation="none" tablename="tsrawnumeric">
+		</element>
+		<element elementname="isemailsent" operation="none" tablename="tsrawnumeric">
+		</element>	
+		<element elementname="callsign" operation="none" tablename="tsrawnumeric">
+		</element>	
+		<element elementname="changeovertime" operation="none" tablename="tsrawnumeric">
+		</element>
+		<element elementname="flag" operation="none" tablename="tsrawnumeric">
+		</element>
+		<element elementname="fueltanklevels" operation="none" tablename="tsrawnumeric">
+		</element>		
+		<element elementname="gt" operation="none" tablename="tsrawnumeric">
+		</element>
+		<element elementname="heading" operation="none" tablename="tsrawnumeric">
+		<value tagName="HE_HCR_HEADING" type="tag"/>
+		</element>
+		<element elementname="imonumber" operation="none" tablename="tsrawnumeric">
+		</element>
+		<element elementname="oilwaterseperator" operation="none" tablename="tsrawnumeric">
+		</element>	
+		<element elementname="owner" operation="none" tablename="tsrawnumeric">
+		</element>	
+		<element elementname="statusofoperation" operation="none" tablename="tsrawnumeric">
+		</element>			
+		<element elementname="vesselposition" operation="concat" tablename="tsrawnumeric">
+		<value tagName="GPS_GLL_LATITUDE" type="tag"/>		
+		<value tagName=" " type="string"/>
+		<value tagName="GPS_GLL_LONGITUDE" type="tag"/>
+		</element>	
+		<element elementname="vesselcource" operation="none" tablename="tsrawnumeric">
+		<value tagName="HE_HDT_HEADING_DEGREES_TRUE" type="tag"/>
+		</element>
+		<element elementname="vesselname" operation="none" tablename="tsrawnumeric">
+		</element>
+		<element elementname="vesseltype" operation="none" tablename="tsrawnumeric">
+		</element>	
+	</reportElements>
+</reportConfig>
+

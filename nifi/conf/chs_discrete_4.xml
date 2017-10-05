@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?> <!--For Discrete boolean, the count should always be multiple of 8 and the inner registers should be less than or equal to the 
+count. In between missing registers should be filled with dummy data, as the reading is done for continuous registers.--> <modbusMachineAdapterConfig>
+	<name>Onsite monitor modbus nodes</name>
+	<description>Onsite monitor modbus nodes</description>
+	<vesselId>1000007</vesselId>
+	<dataNodeConfigs>
+		<channel protocol="TCP_IP" tcpIpAddress="192.168.1.21" tcpIpPort="502">
+			<unit id="3">
+				<register name="CHS_BOOLEAN_DATA" dataType="BOOLEAN" method="CONTINUOUS" address="360" registerType="DISCRETE" 
+description="BOOLEAN_DATA" count="88" innerRegisters="1"/>
+			</unit>
+			<innerRegisters id="1">
+				<register name="CARGO_TANK_3_CONDENSATE_VALVE_OPEN" address="360" description="Cargo Tank 3 Condensate valve Open"/>
+				<register name="CARGO_TANK_3_CONDENSATE_VALVE_CLOSE" address="361" description="Cargo Tank 3 Condensate valve Close"/>
+				<register name="CARGO_TANK_3_VAPOUR_VALVE_OPEN" address="362" description="Cargo Tank 3 Vapour valve Open"/>
+				<register name="CARGO_TANK_3_VAPOUR_VALVE_CLOSE" address="363" description="Cargo Tank 3 Vapour valve Close"/>
+				<register name="CARGO_TANK_3_LIQUID_TO_CONDENSATE_VALVE_OPEN" address="364" description="Cargo Tank 3 Liquid to Condensate valve 
+Open"/>
+				<register name="CARGO_TANK_3_LIQUID_TO_CONDENSATE_VALVE_CLOSE" address="365" description="Cargo Tank 3 Liquid to Condensate valve 
+Close"/>
+				<register name="DUMMY_DATA" address="366" registerType="DISCRETE" description="Dummy Data"/>
+				<register name="DUMMY_DATA" address="367" registerType="DISCRETE" description="Dummy Data"/>
+				<register name="DECK_TANK_1_LIQUID_FILLING_VALVE_OPEN" address="368" description="Deck Tank 1 Liquid filling valve Open"/>
+				<register name="DECK_TANK_1_LIQUID_FILLING_VALVE_CLOSE" address="369" description="Deck Tank 1 Liquid filling valve Close"/>
+				<register name="DECK_TANK_1_LIQUID_FILLING_VALVE_OPEN_2" address="370" description="Deck Tank 1 Liquid filling valve Open"/>
+				<register name="DECK_TANK_1_LIQUID_FILLING_VALVE_CLOSE_2" address="371" description="Deck Tank 1 Liquid filling valve Close"/>
+				<register name="DECK_TANK_1_VAPOUR_FILLING_VALVE_OPEN" address="372" description="Deck Tank 1 Vapour filling valve Open"/>
+				<register name="DECK_TANK_1_VAPOUR_FILLING_VALVE_CLOSE" address="373" description="Deck Tank 1 Vapour filling valve Close"/>
+				<register name="DUMMY_DATA" address="374" registerType="DISCRETE" description="Dummy Data"/>
+				<register name="DUMMY_DATA" address="375" registerType="DISCRETE" description="Dummy Data"/>
+				<register name="DECK_TANK_2_LIQUID_FILLING_VALVE_OPEN" address="376" description="Deck Tank 2 Liquid filling valve Open"/>
+				<register name="DECK_TANK_2_LIQUID_FILLING_VALVE_CLOSE" address="377" description="Deck Tank 2 Liquid filling valve Close"/>
+				<register name="DECK_TANK_2_LIQUID_FILLING_VALVE_OPEN_2" address="378" description="Deck Tank 2 Liquid filling valve Open"/>
+				<register name="DECK_TANK_2_LIQUID_FILLING_VALVE_CLOSE_2" address="379" description="Deck Tank 2 Liquid filling valve Close"/>
+				<register name="DECK_TANK_2_VAPOUR_FILLING_VALVE_OPEN" address="380" description="Deck Tank 2 Vapour filling valve Open"/>
+				<register name="DECK_TANK_2_VAPOUR_FILLING_VALVE_CLOSE" address="381" description="Deck Tank 2 Vapour filling valve Close"/>
+				<register name="DUMMY_DATA" address="382" registerType="DISCRETE" description="Dummy Data"/>
+				<register name="DUMMY_DATA" address="383" registerType="DISCRETE" description="Dummy Data"/>
+				<register name="CROSSOVER_1_LIQUID_VALVE_STB_OPEN" address="384" description="CrossOver 1 Liquid valve (Stb) Open"/>
+				<register name="CROSSOVER_1_LIQUID_VALVE_STB_CLOSE" address="385" description="CrossOver 1 Liquid valve (Stb) Close"/>
+				<register name="CROSSOVER_1_LIQUID_VALVE_PORT_OPEN" address="386" description="CrossOver 1 Liquid valve (Port) Open"/>
+				<register name="CROSSOVER_1_LIQUID_VALVE_PORT_CLOSE" address="387" description="CrossOver 1 Liquid valve (Port) Close"/>
+				<register name="CROSSOVER_2_LIQUID_VALVE_STB_OPEN" address="388" description="CrossOver 2 Liquid valve (Stb) Open"/>
+				<register name="CROSSOVER_2_LIQUID_VALVE_STB_CLOSE" address="389" description="CrossOver 2 Liquid valve (Stb) Close"/>
+				<register name="CROSSOVER_2_LIQUID_VALVE_PORT_OPEN" address="390" description="CrossOver 2 Liquid valve (Port) Open"/>
+				<register name="CROSSOVER_2_LIQUID_VALVE_PORT_CLOSE" address="391" description="CrossOver 2 Liquid valve (Port) Close"/>
+				<register name="CROSSOVER_1_VAPOUR_VALVE_STB_OPEN" address="392" description="CrossOver 1 Vapour valve (Stb) Open"/>
+				<register name="CROSSOVER_1_VAPOUR_VALVE_STB_CLOSE" address="393" description="CrossOver 1 Vapour valve (Stb) Close"/>
+				<register name="CROSSOVER_1_VAPOUR_VALVE_PORT_OPEN" address="394" description="CrossOver 1 Vapour valve (Port) Open"/>
+				<register name="CROSSOVER_1_VAPOUR_VALVE_PORT_CLOSE" address="395" description="CrossOver 1 Vapour valve (Port) Close"/>
+				<register name="CROSSOVER_2_VAPOUR_VALVE_STB_OPEN" address="396" description="CrossOver 2 Vapour valve (Stb) Open"/>
+				<register name="CROSSOVER_2_VAPOUR_VALVE_STB_CLOSE" address="397" description="CrossOver 2 Vapour valve (Stb) Close"/>
+				<register name="CROSSOVER_2_VAPOUR_VALVE_PORT_OPEN" address="398" description="CrossOver 2 Vapour valve (Port) Open"/>
+				<register name="CROSSOVER_2_VAPOUR_VALVE_PORT_CLOSE" address="399" description="CrossOver 2 Vapour valve (Port) Close"/>
+				<register name="CARGO_HEATER_VAPORIZER_INLET_VALVE_OPEN" address="400" description="Cargo Heater / Vaporizer Inlet Valve Open"/>
+				<register name="CARGO_HEATER_VAPORIZER_INLET_VALVE_CLOSE" address="401" description="Cargo Heater / Vaporizer Inlet Valve Close"/>
+				<register name="CARGO_AND_BALLAST_CONTROL_CONSOLE_COMMON_ALARM" address="402" description="Cargo and Ballast Control Console Common 
+Alarm"/>
+				<register name="DUMMY_DATA" address="403" registerType="DISCRETE" description="Dummy Data"/>
+				<register name="DUMMY_DATA" address="404" registerType="DISCRETE" description="Dummy Data"/>
+				<register name="DUMMY_DATA" address="405" registerType="DISCRETE" description="Dummy Data"/>
+				<register name="DUMMY_DATA" address="406" registerType="DISCRETE" description="Dummy Data"/>
+				<register name="DUMMY_DATA" address="407" registerType="DISCRETE" description="Dummy Data"/>
+				<register name="CARGO_TANK_1S_DW_RUNNING" address="408" description="Cargo Tank 1S DW 'Running'"/>
+				<register name="CARGO_TANK_1S_DW_SHUTDOWN" address="409" description="Cargo Tank 1S DW 'Shutdown'"/>
+				<register name="CARGO_TANK_1P_DW_RUNNING" address="410" description="Cargo Tank 1P DW 'Running'"/>
+				<register name="CARGO_TANK_1P_DW_SHUTDOWN" address="411" description="Cargo Tank 1P DW 'Shutdown'"/>
+				<register name="CARGO_TANK_2S_DW_RUNNING" address="412" description="Cargo Tank 2S DW 'Running'"/>
+				<register name="CARGO_TANK_2S_DW_SHUTDOWN" address="413" description="Cargo Tank 2S DW 'Shutdown'"/>
+				<register name="CARGO_TANK_2P_DW_RUNNING" address="414" description="Cargo Tank 2P DW 'Running'"/>
+				<register name="CARGO_TANK_2P_DW_SHUTDOWN" address="415" description="Cargo Tank 2P DW 'Shutdown'"/>
+				<register name="CARGO_TANK_3S_DW_RUNNING" address="416" description="Cargo Tank 3S DW 'Running'"/>
+				<register name="CARGO_TANK_3S_DW_SHUTDOWN" address="417" description="Cargo Tank 3S DW 'Shutdown'"/>
+				<register name="CARGO_TANK_3P_DW_RUNNING" address="418" description="Cargo Tank 3P DW 'Running'"/>
+				<register name="CARGO_TANK_3P_DW_SHUTDOWN" address="419" description="Cargo Tank 3P DW 'Shutdown'"/>
+				<register name="BOOSTER_PUMP_1_RUNNING" address="416" description="Booster Pump 1 'Running'"/>
+				<register name="BOOSTER_PUMP_1_SHUTDOWN" address="417" description="Booster Pump 1 'Shutdown'"/>
+				<register name="BOOSTER_PUMP_2_RUNNING" address="418" description="Booster Pump 2 'Running'"/>
+				<register name="BOOSTER_PUMP_2_SHUTDOWN" address="419" description="Booster Pump 2 'Shutdown'"/>
+				<register name="CARGO_COMPRESSOR_1_RUNNING" address="420" description="Cargo Compressor 1 'Running'"/>
+				<register name="CARGO_COMPRESSOR_1_SHUTDOWN" address="421" description="Cargo Compressor 1 'Shutdown'"/>
+				<register name="CARGO_COMPRESSOR_2_RUNNING" address="422" description="Cargo Compressor 2 'Running'"/>
+				<register name="CARGO_COMPRESSOR_2_SHUTDOWN" address="423" description="Cargo Compressor 2 'Shutdown'"/>
+				<register name="CARGO_COMPRESSOR_3_RUNNING" address="424" description="Cargo Compressor 3 'Running'"/>
+				<register name="CARGO_COMPRESSOR_3_SHUTDOWN" address="425" description="Cargo Compressor 3 'Shutdown'"/>
+				<register name="GLYCOL_PUMP_COOLING_1_RUNNING" address="426" description="Glycol Pump (Cooling) 1 'Running'"/>
+				<register name="GLYCOL_PUMP_COOLING_1_SHUTDOWN" address="427" description="Glycol Pump (Cooling) 1 'Shutdown'"/>
+				<register name="GLYCOL_PUMP_COOLING_2_RUNNING" address="428" description="Glycol Pump (Cooling) 2 'Running'"/>
+				<register name="GLYCOL_PUMP_COOLING_2_SHUTDOWN" address="429" description="Glycol Pump (Cooling) 2 'Shutdown'"/>
+				<register name="GLYCOL_PUMP_HEATING_RUNNING" address="430" description="Glycol Pump (Heating) 'Running'"/>
+				<register name="GLYCOL_PUMP_HEATING_SHUTDOWN" address="431" description="Glycol Pump (Heating) 'Shutdown'"/>
+				<register name="GAS_FREE_FAN_1_RUNNING" address="432" description="Gas Free Fan 1 'Running'"/>
+				<register name="GAS_FREE_FAN_1_SHUTDOWN" address="433" description="Gas Free Fan 1 'Shutdown'"/>
+				<register name="GAS_FREE_FAN_2_RUNNING" address="434" description="Gas Free Fan 2 'Running'"/>
+				<register name="GAS_FREE_FAN_2_SHUTDOWN" address="435" description="Gas Free Fan 2 'Shutdown'"/>
+				<register name="OVERFILL_AND_HIGH_LEVEL_POWER_FAILURE" address="436" description="Overfill and High Level Power Failure"/>
+				<register name="OVERFILL_AND_HIGH_LEVEL_LOOP_FAILURE" address="437" description="Overfill and High Level Loop Failure"/>
+				<register name="ESD_RELEASED_ALARM" address="438" description="ESD Released Alarm"/>
+				<register name="CBCC_POWER_FAILURE" address="439" description="CBCC Power Failure"/>
+			</innerRegisters>
+		</channel>
+	</dataNodeConfigs>
+	<dataSubscriptionConfigs>
+		<dataSubscriptionConfig name="ModBusSubscription">
+			<nodeName>CHS_BOOLEAN_DATA</nodeName>
+		</dataSubscriptionConfig>
+	</dataSubscriptionConfigs>
+</modbusMachineAdapterConfig>

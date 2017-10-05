@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tagUpdateConfig>
+	<name>TagConfigFile</name>
+	<description>This configuration file is for updateing destination tag
+		related to source tag</description>
+	<vesselId>1000007</vesselId>
+	<tableName>tsrawstring</tableName>
+	<tagConfig>
+		<key sourceTagName="AIS_VDO_SCH_POS_NAV_STATUS" sourceTagValue="Underway Using Engine" sourceTagForDestination="PJRCM_NEXT_PORT">
+			<subkey sourceFieldName="PJRCM_NEXT_PORT" destinationTagName="PJRCM_LAST_PORT" />
+			<subkey sourceFieldName="EVENT_TIME" destinationTagName="OUT_DATE" />
+		</key>
+	</tagConfig>
+</tagUpdateConfig>

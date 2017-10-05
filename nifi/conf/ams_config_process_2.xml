@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modbusMachineAdapterConfig>
+   <name>Onsite monitor modbus nodes</name>
+   <description>Onsite monitor modbus nodes</description>
+   <vesselId>1000007</vesselId>
+   <defaultUpdateInterval>1</defaultUpdateInterval>
+   <dataNodeConfigs>
+      <channel protocol="TCP_IP" tcpIpAddress="192.168.2.36" tcpIpPort="502" regBaseAddress="0">
+         <unit id="20">
+            <register name="AMS_DATA" dataType="SHORT" method="CONTINUOUS" address="84" registerType="HOLDING" description="AMS1" count="65" innerRegisters="1" />
+         </unit>
+		 
+		 <!--Inner Registers are used for continuous reading of addresses. The number of innerRegisters should match with the count given in parent
+		 register. The id of innerRegisters should match with the id of parent register. The data type of parent register should be of type ORIGINAL-->
+		 <innerRegisters id="1">
+
+	<register name="GE1_HTFW_OUT_TEMP" address="84"/>
+	<register name="GE1_LO_IN_TEMP" address="85"/>
+	<register name="GE1_CYL_1_3_TC_EXH_GAS_IN_T" address="86"/>
+	<register name="GE1_CYL_4_6_TC_EXH_GAS_IN_T" address="87"/>
+	<register name="GE1_EXH_GAS_TC_OUT_TEMP" address="88"/>
+	<register name="GE1_NO1_CYL_EXH_GAS_OUT_TEMP" address="89"/>
+	<register name="GE1_NO2_CYL_EXH_GAS_OUT_TEMP" address="90"/>
+	<register name="GE1_NO3_CYL_EXH_GAS_OUT_TEMP" address="91"/>
+	<register name="GE1_NO4_CYL_EXH_GAS_OUT_TEMP" address="92"/>
+	<register name="GE1_NO5_CYL_EXH_GAS_OUT_TEMP" address="93"/>
+	<register name="GE1_NO6_CYL_EXH_GAS_OUT_TEMP" address="94"/>
+	<register name="GEN1_ALT_WINDING_TEMP_R_PHASE" address="95"/>
+	<register name="GEN1_ALT_WINDING_TEMP_S_PHASE" address="96"/>
+	<register name="GEN1_ALT_WINDING_TEMP_T_PHASE" address="97"/>
+	<register name="GEN1_BEARING_TEMP_NDE" address="98"/>
+	<register name="GE2_HTFW_OUT_TEMP" address="99"/>
+	<register name="GE2_LO_IN_TEMP" address="100"/>
+	<register name="GE2_CYL_1_3_TC_EXH_GAS_IN_T" address="101"/>
+	<register name="GE2_CYL_4_6_TC_EXH_GAS_IN_T" address="102"/>
+	<register name="GE2_EXH_GAS_TC_OUT_TEMP" address="103"/>
+	<register name="GE2_NO1_CYL_EXH_GAS_OUT_TEMP" address="104"/>
+	<register name="GE2_NO2_CYL_EXH_GAS_OUT_TEMP" address="105"/>
+	<register name="GE2_NO3_CYL_EXH_GAS_OUT_TEMP" address="106"/>
+	<register name="GE2_NO4_CYL_EXH_GAS_OUT_TEMP" address="107"/>
+	<register name="GE2_NO5_CYL_EXH_GAS_OUT_TEMP" address="108"/>
+	<register name="GE2_NO6_CYL_EXH_GAS_OUT_TEMP" address="109"/>
+	<register name="GEN2_ALT_WINDING_TEMP_R_PHASE" address="110"/>
+	<register name="GEN2_ALT_WINDING_TEMP_S_PHASE" address="111"/>
+	<register name="GEN2_ALT_WINDING_TEMP_T_PHASE" address="112"/>
+	<register name="GEN2_BEARING_TEMP_NDE" address="113"/>
+	<register name="GE3_HTFW_OUT_TEMP" address="114"/>
+	<register name="GE3_LO_IN_TEMP" address="115"/>
+	<register name="GE3_CYL_1_3_TC_EXH_GAS_IN_T" address="116"/>
+	<register name="GE3_CYL_4_6_TC_EXH_GAS_IN_T" address="117"/>
+	<register name="GE3_EXH_GAS_TC_OUT_TEMP" address="118"/>
+	<register name="GE3_NO1_CYL_EXH_GAS_OUT_TEMP" address="119"/>
+	<register name="GE3_NO2_CYL_EXH_GAS_OUT_TEMP" address="120"/>
+	<register name="GE3_NO3_CYL_EXH_GAS_OUT_TEMP" address="121"/>
+	<register name="GE3_NO4_CYL_EXH_GAS_OUT_TEMP" address="122"/>
+	<register name="GE3_NO5_CYL_EXH_GAS_OUT_TEMP" address="123"/>
+	<register name="GE3_NO6_CYL_EXH_GAS_OUT_TEMP" address="124"/>
+	<register name="GEN3_ALT_WINDING_TEMP_R_PHASE" address="125"/>
+	<register name="GEN3_ALT_WINDING_TEMP_S_PHASE" address="126"/>
+	<register name="GEN3_ALT_WINDING_TEMP_T_PHASE" address="127"/>
+	<register name="GEN3_BEARING_TEMP_NDE" address="128"/>
+	<register name="AUX_BOILER_EXH_GAS_OUT_TEMP" address="129"/>
+	<register name="ECONOMIZER_EXH_GAS_OUT_TEMP" address="130"/>
+	<register name="INTER_SHAFT_BEARING_TEMP" address="131"/>
+	<register name="ST_AFT_BEARING_TEMP" address="132"/>
+	<register name="ST_FWD_BEARING_TEMP" address="133"/>
+	<register name="ME_LO_SETT_TK_TEMP" address="134"/>
+	<register name="HFO_OVERFLOW_TK_TEMP" address="135"/>
+	<register name="HFO_SETT_TK_TEMP" address="136"/>
+	<register name="HFO_SERV_TK_TEMP" address="137"/>
+	<register name="AFT_HFO_TANK_S_TEMP" address="138"/>
+	<register name="AFT_HFO_TANK_P_TEMP" address="139"/>
+	<register name="FORE_HFO_TANK_S_TEMP" address="140"/>
+	<register name="FORE_HFO_TANK_P_TEMP" address="141"/>
+	<register name="MEAT_ROOM_TEMP" address="142"/>
+	<register name="VEGETABLE_ROOM_TEMP" address="143"/>
+	<register name="FISH_ROOM_TEMP" address="144"/>
+	<register name="DAIRY_ROOM_TEMP" address="145"/>
+	<register name="MAIN_CSW_PUMP_INLET_TEMP" address="146"/>
+	<register name="MAIN_CSW_PUMP_OUT_PRESS_GAUGE" address="147"/>
+	<register name="ME_RPM" address="148"/>
+	
+		 </innerRegisters>
+      </channel>
+   </dataNodeConfigs>
+   <dataSubscriptionConfigs>
+      <dataSubscriptionConfig name="ModBusSubscription">
+         <nodeName>AMS_DATA</nodeName>
+      </dataSubscriptionConfig>
+   </dataSubscriptionConfigs>
+</modbusMachineAdapterConfig>

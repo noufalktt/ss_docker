@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<authorizations>
+    <policies>
+        <policy identifier="b7e577ea-5af4-3e13-b98d-aa7bd70ea0bf" resource="/flow" action="R">
+            <user identifier="fc21d25c-dd81-30ef-a4fa-c96daff42ee7"/>
+        </policy>
+        <policy identifier="7ba48909-c186-30ce-b186-1f25b3340e81" resource="/data/process-groups/95437b51-015e-1000-fa65-1e087a21fe15" action="R">
+            <user identifier="fc21d25c-dd81-30ef-a4fa-c96daff42ee7"/>
+        </policy>
+        <policy identifier="793d89e2-053b-315f-a502-09b9c795c7c0" resource="/data/process-groups/95437b51-015e-1000-fa65-1e087a21fe15" action="W">
+            <user identifier="fc21d25c-dd81-30ef-a4fa-c96daff42ee7"/>
+        </policy>
+        <policy identifier="b4eda4b9-016b-310d-b049-1f14ade50102" resource="/process-groups/95437b51-015e-1000-fa65-1e087a21fe15" action="R">
+            <user identifier="fc21d25c-dd81-30ef-a4fa-c96daff42ee7"/>
+        </policy>
+        <policy identifier="5389f5d1-5381-338d-934e-ea31499ea56b" resource="/process-groups/95437b51-015e-1000-fa65-1e087a21fe15" action="W">
+            <user identifier="fc21d25c-dd81-30ef-a4fa-c96daff42ee7"/>
+        </policy>
+        <policy identifier="1d696807-1162-3020-9381-de85a2913e2e" resource="/restricted-components" action="W">
+            <user identifier="fc21d25c-dd81-30ef-a4fa-c96daff42ee7"/>
+        </policy>
+        <policy identifier="ba1f1bb0-2919-352a-851f-c1b428fbd6e0" resource="/tenants" action="R">
+            <user identifier="fc21d25c-dd81-30ef-a4fa-c96daff42ee7"/>
+        </policy>
+        <policy identifier="2149bff8-c569-32d9-bc21-14ce399207e6" resource="/tenants" action="W">
+            <user identifier="fc21d25c-dd81-30ef-a4fa-c96daff42ee7"/>
+        </policy>
+        <policy identifier="825950ea-4f41-3d93-996f-a59fc725d41c" resource="/policies" action="R">
+            <user identifier="fc21d25c-dd81-30ef-a4fa-c96daff42ee7"/>
+        </policy>
+        <policy identifier="055d89eb-2719-3ff9-965e-f6ab33753f00" resource="/policies" action="W">
+            <user identifier="fc21d25c-dd81-30ef-a4fa-c96daff42ee7"/>
+        </policy>
+        <policy identifier="3c97f399-e3d9-36b2-a33a-7e214850c88d" resource="/controller" action="R">
+            <user identifier="fc21d25c-dd81-30ef-a4fa-c96daff42ee7"/>
+        </policy>
+        <policy identifier="a3485b02-2bd4-3564-a53e-cf55502e7dca" resource="/controller" action="W">
+            <user identifier="fc21d25c-dd81-30ef-a4fa-c96daff42ee7"/>
+        </policy>
+    </policies>
+</authorizations>

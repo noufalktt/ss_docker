@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ahuconfig>
+			<channel tcpIpAddress="192.168.1.21" tcpIpPort="502" unit="6">
+				<register name="AUTO_SAFE" dataType="BOOLEAN" address="49" registerType="COIL" description="GPS GLL Latitude"/>
+				<register name="AUTO_NORMAL" dataType="BOOLEAN" address="50" registerType="COIL" description="GPS GLL Latitude Direction" />
+				<register name="AUTO_ALERT" dataType="BOOLEAN" address="51" registerType="COIL" description="GPS GLL Longitude"/>
+				<register name="AUTO_CHECK" dataType="BOOLEAN" address="52" registerType="COIL" description="GPS GLL Longitude Direction" />						
+			</channel>
+</ahuconfig>
+	

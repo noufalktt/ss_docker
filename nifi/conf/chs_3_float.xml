@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modbusMachineAdapterConfig>
+	<name>Onsite monitor modbus nodes</name>
+	<description>Onsite monitor modbus nodes</description>
+	<vesselId>1000007</vesselId>
+	<defaultUpdateInterval>1</defaultUpdateInterval>
+	<dataNodeConfigs>
+		<channel protocol="TCP_IP" tcpIpAddress="192.168.2.36" tcpIpPort="502" regBaseAddress="0">
+			<unit id="16">
+				<register name="CHS_DATA" dataType="FLOAT" method="CONTINUOUS" address="232" registerType="HOLDING" description="CHS1" count="100" innerRegisters="1" />
+			</unit>
+
+			<!--Inner Registers are used for continuous reading of addresses. The number of innerRegisters should match with the count given in parent
+			register. The id of innerRegisters should match with the id of parent register. The data type of parent register should be of type ORIGINAL-->
+			<innerRegisters id="1">
+	<register name="COMPRESSOR_2_PUMP_MOTOR_U_WINDING_TEMPERATURE" address="232"/>
+	<register name="COMPRESSOR_2_PUMP_MOTOR_V_WINDING_TEMPERATURE" address="234"/>
+	<register name="COMPRESSOR_2_PUMP_MOTOR_W_WINDING_TEMPERATURE" address="236"/>
+	<register name="CARGO_TANK_3_DW_PUMP_MOTOR_CURRENT_STB_2" address="238"/>
+	<register name="CARGO_TANK_3_DW_PUMP_MOTOR_CURRENT_PORT_2" address="240"/>
+	<register name="CARGO_TANK_3S_DISCHARGE_VALVE_POSITION" address="242"/>
+	<register name="CARGO_TANK_3P_DISCHARGE_VALVE_POSITION" address="244"/>
+	<register name="CARGO_TANK_3_HOLD_SPACE_PRESSURE" address="246"/>
+	<register name="CARGO_TANK_3_HOLD_SPACE_TEMPERATURE" address="248"/>
+	<register name="RELIQ_UNIT_3_CARGO_COND_SW_OUTLET_TEMP" address="250"/>
+	<register name="RELIQ_UNIT_3_KO_DRUM_LEVEL_SWITCH" address="252"/>
+	<register name="RELIQ_UNIT_3_CARGO_COMPRESSOR_BULKHEAD_SEAL_TEMP" address="254"/>
+	<register name="RELIQ_UNIT_3_CARGO_COMPRESSOR_STAGE_1_SUCTION_PRESSURE" address="256"/>
+	<register name="RELIQ_UNIT_3_CARGO_COMPRESSOR_STAGE_1_DISCHARGE_PRESSURE" address="258"/>
+	<register name="RELIQ_UNIT_3_CARGO_COMPRESSOR_STAGE_1_SUCTION_TEMPERATURE" address="260"/>
+	<register name="RELIQ_UNIT_3_CARGO_COMPRESSOR_STAGE_1_DISCHARGE_TEMPERATURE" address="262"/>
+	<register name="RELIQ_UNIT_3_CARGO_COMPRESSOR_STAGE_2_SUCTION_PRESSURE" address="264"/>
+	<register name="RELIQ_UNIT_3_CARGO_COMPRESSOR_STAGE_2_DISCHARGE_PRESSURE" address="266"/>
+	<register name="RELIQ_UNIT_3_CARGO_COMPRESSOR_STAGE_2_SUCTION_TEMPERATURE" address="268"/>
+	<register name="RELIQ_UNIT_3_CARGO_COMPRESSOR_STAGE_2_DISCHARGE_TEMPERATURE" address="270"/>
+	<register name="RELIQ_UNIT_3_INTERCOOLER_1_LEVEL_INDICATOR" address="272"/>
+	<register name="RELIQ_UNIT_3_INTERCOOLER_1_TEMPERATURE" address="274"/>
+	<register name="RELIQ_UNIT_3_INTERCOOLER_1_COIL_INLET_TEMPERATURE" address="276"/>
+	<register name="RELIQ_UNIT_3_INTERCOOLER_1_COIL_OUTLET_TEMPERATURE" address="278"/>
+	<register name="RELIQ_UNIT_3_CONDENSATE_OUTLET_PRESSURE_INDICATOR" address="280"/>
+	<register name="RELIQ_UNIT_3_LIQUID_RECEIVER_1_LEVEL_INDICATOR" address="282"/>
+	<register name="RELIQ_UNIT_3_LIQUID_RECEIVER_PRESSURE_INDICATOR" address="284"/>
+	<register name="RELIQ_UNIT_3_CARGO_COMP_LUBE_OIL_DIFFERENTIAL_PRESSURE" address="286"/>
+	<register name="RELIQ_UNIT_3_GLYCOL_COOING_WATER_COMPRESSOR_INLET_TEMP" address="288"/>
+	<register name="DWP_3S_U_WINDING_TEMPERATURE" address="290"/>
+	<register name="DWP_3S_V_WINDING_TEMPERATURE" address="292"/>
+	<register name="DWP_3S_W_WINDING_TEMPERATURE" address="294"/>
+	<register name="DWP_3P_U_WINDING_TEMPERATURE" address="296"/>
+	<register name="DWP_3P_V_WINDING_TEMPERATURE" address="298"/>
+	<register name="DWP_3P_W_WINDING_TEMPERATURE" address="300"/>
+	<register name="COMPRESSOR_3_PUMP_MOTOR_U_WINDING_TEMPERATURE" address="302"/>
+	<register name="COMPRESSOR_3_PUMP_MOTOR_V_WINDING_TEMPERATURE" address="304"/>
+	<register name="COMPRESSOR_3_PUMP_MOTOR_W_WINDING_TEMPERATURE" address="306"/>
+	<register name="CO_VAPOUR_1_LINE_TEMPERATURE" address="308"/>
+	<register name="CO_VAPOUR_1_LINE_PRESSURE" address="310"/>
+	<register name="CO_LIQUID_1_LINE_PRESSURE" address="312"/>
+	<register name="CO_LIQUID_1_LINE_TEMPERATURE" address="314"/>
+	<register name="CO_VAPOUR_2_LINE_PRESSURE" address="316"/>
+	<register name="CO_VAPOUR_2_LINE_TEMPERATURE" address="318"/>
+	<register name="CO_LIQUID_2_LINE_PRESSURE" address="320"/>
+	<register name="CO_LIQUID_2_LINE_TEMPERATURE" address="322"/>
+	<register name="CARGO_HEATER_OUTLET_PRESSURE" address="324"/>
+	<register name="CARGO_HEATER_OUTLET_VAPOUR_PRESSURE" address="326"/>
+	<register name="CARGO_HEATER_OUTLET_TEMPERARTURE" address="328"/>
+	<register name="CARGO_HEATER_SEAWATER_OUTLET_TEMPERATURE" address="330"/>
+
+			</innerRegisters>
+		</channel>
+	</dataNodeConfigs>
+<dataSubscriptionConfigs>
+	<dataSubscriptionConfig name="ModBusSubscription">
+		<nodeName>CHS_DATA</nodeName>
+	</dataSubscriptionConfig>
+</dataSubscriptionConfigs>
+</modbusMachineAdapterConfig>

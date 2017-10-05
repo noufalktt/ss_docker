@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modbusMachineAdapterConfig>
+   <name>Onsite monitor modbus nodes</name>
+   <description>Onsite monitor modbus nodes</description>
+   <vesselId>1000007</vesselId>
+   <dataNodeConfigs>
+      <channel protocol="TCP_IP" tcpIpAddress="192.168.1.100" tcpIpPort="502" regBaseAddress="1">
+         <unit id="100">
+            <register name="AMS_DATA" dataType="CUSTOM" address="1" registerType="HOLDING" description="AMS1" count="127" innerRegisters="1" />
+         </unit>
+		 <!--Inner Registers are used for continuous reading of addresses. The number of innerRegisters should match with the count given in parent
+		 register. The id of innerRegisters should match with the id of parent register. The data type of parent register should be of type ORIGINAL-->
+	<innerRegisters id="1">
+<register name="ME_LO_AND_PCO_INLET_PRESS1" dataType="INTEGER" address="1" description="ME_LO_AND_PCO_INLET_PRESS1"/>
+<register name="ME_TC_LO_IN_PRESS2" dataType="INTEGER" address="2" description="ME_TC_LO_IN_PRESS2"/>
+<register name="ME_FO_INLET_PRESS4" dataType="INTEGER" address="4" description="ME_FO_INLET_PRESS4"/>
+<register name="ME_JCFW_INLET_PRESS5" dataType="INTEGER" address="5" description="ME_JCFW_INLET_PRESS5"/>
+<register name="ME_AIR_COOLER_CW_IN_PRESS6" dataType="INTEGER" address="6" description="ME_AIR_COOLER_CW_IN_PRESS6"/>
+<register name="ME_JCFW_ACROSS_CYL_LINER_DIFF_P7" dataType="INTEGER" address="7" description="ME_JCFW_ACROSS_CYL_LINER_DIFF_P7"/>
+<register name="ME_JCFW_ACRO_CYL_CVREXH_VV_D_P8" dataType="INTEGER" address="8" description="ME_JCFW_ACRO_CYL_CVREXH_VV_D_P8"/>
+<register name="ME_SCAV_AIR_RECEIVER_IN_PRESS9" dataType="INTEGER" address="9" description="ME_SCAV_AIR_RECEIVER_IN_PRESS9"/>
+<register name="WIO_ME_LO_FORE_WATER_ACTIVITY10" dataType="INTEGER" address="10" description="WIO_ME_LO_FORE_WATER_ACTIVITY10"/>
+<register name="ME_CONTROL_AIR_INLET_PRESS11" dataType="INTEGER" address="11" description="ME_CONTROL_AIR_INLET_PRESS11"/>
+<register name="ME_STARTING_AIR_INLET_PRESS12" dataType="INTEGER" address="12" description="ME_STARTING_AIR_INLET_PRESS12"/>
+<register name="ME_EXH_VV_SPRING_AIR_IN_PRESS13" dataType="INTEGER" address="13" description="ME_EXH_VV_SPRING_AIR_IN_PRESS13"/>
+<register name="ME_TC_RPM14" dataType="INTEGER" address="14" description="ME_TC_RPM14"/>
+<register name="ME_FUEL_INDEX15" dataType="INTEGER" address="15" description="ME_FUEL_INDEX15"/>
+<register name="GE1_START_AIR_IN_PRESS16" dataType="INTEGER" address="16" description="GE1_START_AIR_IN_PRESS16"/>
+<register name="GE1_HT_FW_PRESS17" dataType="INTEGER" address="17" description="GE1_HT_FW_PRESS17"/>
+<register name="GE1_LO_IN_PRESS18" dataType="INTEGER" address="18" description="GE1_LO_IN_PRESS18"/>
+<register name="GE2_START_AIR_IN_PRESS19" dataType="INTEGER" address="19" description="GE2_START_AIR_IN_PRESS19"/>
+<register name="GE2_HT_FW_PRESS20" dataType="INTEGER" address="20" description="GE2_HT_FW_PRESS20"/>
+<register name="GE2_LO_IN_PRESS21" dataType="INTEGER" address="21" description="GE2_LO_IN_PRESS21"/>
+<register name="GE3_START_AIR_IN_PRESS22" dataType="INTEGER" address="22" description="GE3_START_AIR_IN_PRESS22"/>
+<register name="GE3_HT_FW_PRESS23" dataType="INTEGER" address="23" description="GE3_HT_FW_PRESS23"/>
+<register name="GE3_LO_IN_PRESS24" dataType="INTEGER" address="24" description="GE3_LO_IN_PRESS24"/>
+<register name="AUX_BOILER_STEAM_PRESS25" dataType="INTEGER" address="25" description="AUX_BOILER_STEAM_PRESS25"/>
+<register name="AUX_BOILER_WATER_LEVEL26" dataType="INTEGER" address="26" description="AUX_BOILER_WATER_LEVEL26"/>
+<register name="NO1_ME_LO_PURIFIER_HEATER_OUT_TEMP27" dataType="INTEGER" address="27" description="NO1_ME_LO_PURIFIER_HEATER_OUT_TEMP27"/>
+<register name="NO2_ME_LO_PURIFIER_HEATER_OUT_TEMP28" dataType="INTEGER" address="28" description="NO2_ME_LO_PURIFIER_HEATER_OUT_TEMP28"/>
+<register name="GE_LO_PURIFIER_HEATER_OUT_TEMP29" dataType="INTEGER" address="29" description="GE_LO_PURIFIER_HEATER_OUT_TEMP29"/>
+<register name="ME_LO_AUTO_FILTER_DIFF_PRESS30" dataType="INTEGER" address="30" description="ME_LO_AUTO_FILTER_DIFF_PRESS30"/>
+<register name="NO1_HFO_PURIFIER_HEATER_OUT_TEMP31" dataType="INTEGER" address="31" description="NO1_HFO_PURIFIER_HEATER_OUT_TEMP31"/>
+<register name="NO2_HFO_PURIFIER_HEATER_OUT_TEMP32" dataType="INTEGER" address="32" description="NO2_HFO_PURIFIER_HEATER_OUT_TEMP32"/>
+<register name="ME_FO_VISCOSITY33" dataType="INTEGER" address="33" description="ME_FO_VISCOSITY33"/>
+<register name="GE_FO_VISCOSITY34" dataType="INTEGER" address="34" description="GE_FO_VISCOSITY34"/>
+<register name="ME_FO_FLOWMETER35" dataType="INTEGER" address="35" description="ME_FO_FLOWMETER35"/>
+<register name="GE_FO_FLOWMETER36" dataType="INTEGER" address="36" description="GE_FO_FLOWMETER36"/>
+<register name="NO1_MAIN_AIR_RESERVOIR_PRESS37" dataType="INTEGER" address="37" description="NO1_MAIN_AIR_RESERVOIR_PRESS37"/>
+<register name="NO2_MAIN_AIR_RESERVOIR_PRESS38" dataType="INTEGER" address="38" description="NO2_MAIN_AIR_RESERVOIR_PRESS38"/>
+<register name="SERV_AIR_RESERVOIR_PRESS39" dataType="INTEGER" address="39" description="SERV_AIR_RESERVOIR_PRESS39"/>
+<register name="AUX_AIR_RESERVOIR_PRESS40" dataType="INTEGER" address="40" description="AUX_AIR_RESERVOIR_PRESS40"/>
+<register name="CONTROL_AIR_RESERVOIR_PRESS41" dataType="INTEGER" address="41" description="CONTROL_AIR_RESERVOIR_PRESS41"/>
+<register name="CONTROL_AIR_MAIN_LINE_PRESS42" dataType="INTEGER" address="42" description="CONTROL_AIR_MAIN_LINE_PRESS42"/>
+<register name="LTFW_PUMP_DISCH_PRESS43" dataType="INTEGER" address="43" description="LTFW_PUMP_DISCH_PRESS43"/>
+<register name="MAIN_CSW_PUMP_OUTLET_PRESS44" dataType="INTEGER" address="44" description="MAIN_CSW_PUMP_OUTLET_PRESS44"/>
+<register name="ME_LO_AND_PCO_INLET_TEMP45" dataType="INTEGER" address="45" description="ME_LO_AND_PCO_INLET_TEMP45"/>
+<register name="ME_TC_LO_OUT_TEMP46" dataType="INTEGER" address="46" description="ME_TC_LO_OUT_TEMP46"/>
+<register name="ME_CYL_LO_INLET_TEMP47" dataType="INTEGER" address="47" description="ME_CYL_LO_INLET_TEMP47"/>
+<register name="ME_CYL1_LINER_CW_OUTLET_TEMP48" dataType="INTEGER" address="48" description="ME_CYL1_LINER_CW_OUTLET_TEMP48"/>
+<register name="ME_CYL2_LINER_CW_OUTLET_TEMP49" dataType="INTEGER" address="49" description="ME_CYL2_LINER_CW_OUTLET_TEMP49"/>
+<register name="ME_CYL3_LINER_CW_OUTLET_TEMP50" dataType="INTEGER" address="50" description="ME_CYL3_LINER_CW_OUTLET_TEMP50"/>
+<register name="ME_CYL4_LINER_CW_OUTLET_TEMP51" dataType="INTEGER" address="51" description="ME_CYL4_LINER_CW_OUTLET_TEMP51"/>
+<register name="ME_CYL5_LINER_CW_OUTLET_TEMP52" dataType="INTEGER" address="52" description="ME_CYL5_LINER_CW_OUTLET_TEMP52"/>
+<register name="ME_CYL6_LINER_CW_OUTLET_TEMP53" dataType="INTEGER" address="53" description="ME_CYL6_LINER_CW_OUTLET_TEMP53"/>
+<register name="ME_JCFW_INLET_TEMP54" dataType="INTEGER" address="54" description="ME_JCFW_INLET_TEMP54"/>
+<register name="ME_AIR_COOLER_CW_INLET_TEMP55" dataType="INTEGER" address="55" description="ME_AIR_COOLER_CW_INLET_TEMP55"/>
+<register name="ME_NO1_CYL_COVER_CW_OUT_TEMP56" dataType="INTEGER" address="56" description="ME_NO1_CYL_COVER_CW_OUT_TEMP56"/>
+<register name="ME_NO2_CYL_COVER_CW_OUT_TEMP57" dataType="INTEGER" address="57" description="ME_NO2_CYL_COVER_CW_OUT_TEMP57"/>
+<register name="ME_NO3_CYL_COVER_CW_OUT_TEMP58" dataType="INTEGER" address="58" description="ME_NO3_CYL_COVER_CW_OUT_TEMP58"/>
+<register name="ME_NO4_CYL_COVER_CW_OUT_TEMP59" dataType="INTEGER" address="59" description="ME_NO4_CYL_COVER_CW_OUT_TEMP59"/>
+<register name="ME_NO5_CYL_COVER_CW_OUT_TEMP60" dataType="INTEGER" address="60" description="ME_NO5_CYL_COVER_CW_OUT_TEMP60"/>
+<register name="ME_NO6_CYL_COVER_CW_OUT_TEMP61" dataType="INTEGER" address="61" description="ME_NO6_CYL_COVER_CW_OUT_TEMP61"/>
+<register name="ME_CYL1_SCAV_AIR_BOX_FIRE_DET_T62" dataType="INTEGER" address="62" description="ME_CYL1_SCAV_AIR_BOX_FIRE_DET_T62"/>
+<register name="ME_CYL2_SCAV_AIR_BOX_FIRE_DET_T63" dataType="INTEGER" address="63" description="ME_CYL2_SCAV_AIR_BOX_FIRE_DET_T63"/>
+<register name="ME_CYL3_SCAV_AIR_BOX_FIRE_DET_T64" dataType="INTEGER" address="64" description="ME_CYL3_SCAV_AIR_BOX_FIRE_DET_T64"/>
+<register name="ME_CYL4_SCAV_AIR_BOX_FIRE_DET_T65" dataType="INTEGER" address="65" description="ME_CYL4_SCAV_AIR_BOX_FIRE_DET_T65"/>
+<register name="ME_CYL5_SCAV_AIR_BOX_FIRE_DET_T66" dataType="INTEGER" address="66" description="ME_CYL5_SCAV_AIR_BOX_FIRE_DET_T66"/>
+<register name="ME_CYL6_SCAV_AIR_BOX_FIRE_DET_T67" dataType="INTEGER" address="67" description="ME_CYL6_SCAV_AIR_BOX_FIRE_DET_T67"/>
+<register name="ME_SCAV_AIR_RECEIVER_INLET_TEMP68" dataType="INTEGER" address="68" description="ME_SCAV_AIR_RECEIVER_INLET_TEMP68"/>
+<register name="ME_CYL1_EXH_GAS_OUT_TEMP69" dataType="INTEGER" address="69" description="ME_CYL1_EXH_GAS_OUT_TEMP69"/>
+<register name="ME_CYL2_EXH_GAS_OUT_TEMP70" dataType="INTEGER" address="70" description="ME_CYL2_EXH_GAS_OUT_TEMP70"/>
+<register name="ME_CYL3_EXH_GAS_OUT_TEMP71" dataType="INTEGER" address="71" description="ME_CYL3_EXH_GAS_OUT_TEMP71"/>
+<register name="ME_CYL4_EXH_GAS_OUT_TEMP72" dataType="INTEGER" address="72" description="ME_CYL4_EXH_GAS_OUT_TEMP72"/>
+<register name="ME_CYL5_EXH_GAS_OUT_TEMP73" dataType="INTEGER" address="73" description="ME_CYL5_EXH_GAS_OUT_TEMP73"/>
+<register name="ME_CYL6_EXH_GAS_OUT_TEMP74" dataType="INTEGER" address="74" description="ME_CYL6_EXH_GAS_OUT_TEMP74"/>
+<register name="ME_TC_EXH_GAS_IN_TEMP75" dataType="INTEGER" address="75" description="ME_TC_EXH_GAS_IN_TEMP75"/>
+<register name="ME_TC_EXH_GAS_OUT_TEMP76" dataType="INTEGER" address="76" description="ME_TC_EXH_GAS_OUT_TEMP76"/>
+<register name="ME_THRUST_BEARING_TEMP77" dataType="INTEGER" address="77" description="ME_THRUST_BEARING_TEMP77"/>
+<register name="ME_NO1_CYL_PCO_OUT_TEMP78" dataType="INTEGER" address="78" description="ME_NO1_CYL_PCO_OUT_TEMP78"/>
+<register name="ME_NO2_CYL_PCO_OUT_TEMP79" dataType="INTEGER" address="79" description="ME_NO2_CYL_PCO_OUT_TEMP79"/>
+<register name="ME_NO3_CYL_PCO_OUT_TEMP80" dataType="INTEGER" address="80" description="ME_NO3_CYL_PCO_OUT_TEMP80"/>
+<register name="ME_NO4_CYL_PCO_OUT_TEMP81" dataType="INTEGER" address="81" description="ME_NO4_CYL_PCO_OUT_TEMP81"/>
+<register name="ME_NO5_CYL_PCO_OUT_TEMP82" dataType="INTEGER" address="82" description="ME_NO5_CYL_PCO_OUT_TEMP82"/>
+<register name="ME_NO6_CYL_PCO_OUT_TEMP83" dataType="INTEGER" address="83" description="ME_NO6_CYL_PCO_OUT_TEMP83"/>
+<register name="GE1_HTFW_OUT_TEMP84" dataType="INTEGER" address="84" description="GE1_HTFW_OUT_TEMP84"/>
+<register name="GE1_LO_IN_TEMP85" dataType="INTEGER" address="85" description="GE1_LO_IN_TEMP85"/>
+<register name="GE1_CYL_1_3_TC_EXH_GAS_IN_T86" dataType="INTEGER" address="86" description="GE1_CYL_1_3_TC_EXH_GAS_IN_T86"/>
+<register name="GE1_CYL_4_6_TC_EXH_GAS_IN_T87" dataType="INTEGER" address="87" description="GE1_CYL_4_6_TC_EXH_GAS_IN_T87"/>
+<register name="GE1_EXH_GAS_TC_OUT_TEMP88" dataType="INTEGER" address="88" description="GE1_EXH_GAS_TC_OUT_TEMP88"/>
+<register name="GE1_NO1_CYL_EXH_GAS_OUT_TEMP89" dataType="INTEGER" address="89" description="GE1_NO1_CYL_EXH_GAS_OUT_TEMP89"/>
+<register name="GE1_NO2_CYL_EXH_GAS_OUT_TEMP90" dataType="INTEGER" address="90" description="GE1_NO2_CYL_EXH_GAS_OUT_TEMP90"/>
+<register name="GE1_NO3_CYL_EXH_GAS_OUT_TEMP91" dataType="INTEGER" address="91" description="GE1_NO3_CYL_EXH_GAS_OUT_TEMP91"/>
+<register name="GE1_NO4_CYL_EXH_GAS_OUT_TEMP92" dataType="INTEGER" address="92" description="GE1_NO4_CYL_EXH_GAS_OUT_TEMP92"/>
+<register name="GE1_NO5_CYL_EXH_GAS_OUT_TEMP93" dataType="INTEGER" address="93" description="GE1_NO5_CYL_EXH_GAS_OUT_TEMP93"/>
+<register name="GE1_NO6_CYL_EXH_GAS_OUT_TEMP94" dataType="INTEGER" address="94" description="GE1_NO6_CYL_EXH_GAS_OUT_TEMP94"/>
+<register name="GEN1_ALT_WINDING_TEMP_R_PHASE95" dataType="INTEGER" address="95" description="GEN1_ALT_WINDING_TEMP_R_PHASE95"/>
+<register name="GEN1_ALT_WINDING_TEMP_S_PHASE96" dataType="INTEGER" address="96" description="GEN1_ALT_WINDING_TEMP_S_PHASE96"/>
+<register name="GEN1_ALT_WINDING_TEMP_T_PHASE97" dataType="INTEGER" address="97" description="GEN1_ALT_WINDING_TEMP_T_PHASE97"/>
+<register name="GEN1_BEARING_TEMP_NDE98" dataType="INTEGER" address="98" description="GEN1_BEARING_TEMP_NDE98"/>
+<register name="GE2_HTFW_OUT_TEMP99" dataType="INTEGER" address="99" description="GE2_HTFW_OUT_TEMP99"/>
+<register name="GE2_LO_IN_TEMP100" dataType="INTEGER" address="100" description="GE2_LO_IN_TEMP100"/>
+<register name="GE2_CYL_1_3_TC_EXH_GAS_IN_T101" dataType="INTEGER" address="101" description="GE2_CYL_1_3_TC_EXH_GAS_IN_T101"/>
+<register name="GE2_CYL_4_6_TC_EXH_GAS_IN_T102" dataType="INTEGER" address="102" description="GE2_CYL_4_6_TC_EXH_GAS_IN_T102"/>
+<register name="GE2_EXH_GAS_TC_OUT_TEMP103" dataType="INTEGER" address="103" description="GE2_EXH_GAS_TC_OUT_TEMP103"/>
+<register name="GE2_NO1_CYL_EXH_GAS_OUT_TEMP104" dataType="INTEGER" address="104" description="GE2_NO1_CYL_EXH_GAS_OUT_TEMP104"/>
+<register name="GE2_NO2_CYL_EXH_GAS_OUT_TEMP105" dataType="INTEGER" address="105" description="GE2_NO2_CYL_EXH_GAS_OUT_TEMP105"/>
+<register name="GE2_NO3_CYL_EXH_GAS_OUT_TEMP106" dataType="INTEGER" address="106" description="GE2_NO3_CYL_EXH_GAS_OUT_TEMP106"/>
+<register name="GE2_NO4_CYL_EXH_GAS_OUT_TEMP107" dataType="INTEGER" address="107" description="GE2_NO4_CYL_EXH_GAS_OUT_TEMP107"/>
+<register name="GE2_NO5_CYL_EXH_GAS_OUT_TEMP108" dataType="INTEGER" address="108" description="GE2_NO5_CYL_EXH_GAS_OUT_TEMP108"/>
+<register name="GE2_NO6_CYL_EXH_GAS_OUT_TEMP109" dataType="INTEGER" address="109" description="GE2_NO6_CYL_EXH_GAS_OUT_TEMP109"/>
+<register name="GEN2_ALT_WINDING_TEMP_R_PHASE110" dataType="INTEGER" address="110" description="GEN2_ALT_WINDING_TEMP_R_PHASE110"/>
+<register name="GEN2_ALT_WINDING_TEMP_S_PHASE111" dataType="INTEGER" address="111" description="GEN2_ALT_WINDING_TEMP_S_PHASE111"/>
+<register name="GEN2_ALT_WINDING_TEMP_T_PHASE112" dataType="INTEGER" address="112" description="GEN2_ALT_WINDING_TEMP_T_PHASE112"/>
+<register name="GEN2_BEARING_TEMP_NDE113" dataType="INTEGER" address="113" description="GEN2_BEARING_TEMP_NDE113"/>
+<register name="GE3_HTFW_OUT_TEMP114" dataType="INTEGER" address="114" description="GE3_HTFW_OUT_TEMP114"/>
+<register name="GE3_LO_IN_TEMP115" dataType="INTEGER" address="115" description="GE3_LO_IN_TEMP115"/>
+<register name="GE3_CYL_1_3_TC_EXH_GAS_IN_T116" dataType="INTEGER" address="116" description="GE3_CYL_1_3_TC_EXH_GAS_IN_T116"/>
+<register name="GE3_CYL_4_6_TC_EXH_GAS_IN_T117" dataType="INTEGER" address="117" description="GE3_CYL_4_6_TC_EXH_GAS_IN_T117"/>
+<register name="GE3_EXH_GAS_TC_OUT_TEMP118" dataType="INTEGER" address="118" description="GE3_EXH_GAS_TC_OUT_TEMP118"/>
+<register name="GE3_NO1_CYL_EXH_GAS_OUT_TEMP119" dataType="INTEGER" address="119" description="GE3_NO1_CYL_EXH_GAS_OUT_TEMP119"/>
+<register name="GE3_NO2_CYL_EXH_GAS_OUT_TEMP120" dataType="INTEGER" address="120" description="GE3_NO2_CYL_EXH_GAS_OUT_TEMP120"/>
+<register name="GE3_NO3_CYL_EXH_GAS_OUT_TEMP121" dataType="INTEGER" address="121" description="GE3_NO3_CYL_EXH_GAS_OUT_TEMP121"/>
+<register name="GE3_NO4_CYL_EXH_GAS_OUT_TEMP122" dataType="INTEGER" address="122" description="GE3_NO4_CYL_EXH_GAS_OUT_TEMP122"/>
+<register name="GE3_NO5_CYL_EXH_GAS_OUT_TEMP123" dataType="INTEGER" address="123" description="GE3_NO5_CYL_EXH_GAS_OUT_TEMP123"/>
+<register name="GE3_NO6_CYL_EXH_GAS_OUT_TEMP124" dataType="INTEGER" address="124" description="GE3_NO6_CYL_EXH_GAS_OUT_TEMP124"/>
+<register name="GEN3_ALT_WINDING_TEMP_R_PHASE125" dataType="INTEGER" address="125" description="GEN3_ALT_WINDING_TEMP_R_PHASE125"/>
+<register name="GEN3_ALT_WINDING_TEMP_S_PHASE126" dataType="INTEGER" address="126" description="GEN3_ALT_WINDING_TEMP_S_PHASE126"/>
+<register name="GEN3_ALT_WINDING_TEMP_T_PHASE127" dataType="INTEGER" address="127" description="GEN3_ALT_WINDING_TEMP_T_PHASE127"/>
+<register name="GEN3_BEARING_TEMP_NDE128" dataType="INTEGER" address="128" description="GEN3_BEARING_TEMP_NDE128"/>
+	</innerRegisters>
+      </channel>
+   </dataNodeConfigs>
+   <dataSubscriptionConfigs>
+      <dataSubscriptionConfig name="ModBusSubscription">
+         <nodeName>AMS_DATA</nodeName>
+      </dataSubscriptionConfig>
+   </dataSubscriptionConfigs>
+</modbusMachineAdapterConfig>

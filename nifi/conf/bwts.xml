@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modbusMachineAdapterConfig>
+	<name>Onsite monitor modbus nodes</name>
+	<description>Onsite monitor modbus nodes</description>
+	<vesselId>1000007</vesselId>
+	<defaultUpdateInterval>1</defaultUpdateInterval>
+	<dataNodeConfigs>
+		<channel protocol="TCP_IP" tcpIpAddress="192.168.2.36" tcpIpPort="502" regBaseAddress="0">
+			<unit id="3">
+				<register name="BWTS_DATA" dataType="SHORT" method="CONTINUOUS" address="5000" registerType="HOLDING" description="BWTS1" count="49" innerRegisters="1" />
+			</unit>
+
+			<!--Inner Registers are used for continuous reading of addresses. The number of innerRegisters should match with the count given in parent
+			register. The id of innerRegisters should match with the id of parent register. The data type of parent register should be of type ORIGINAL-->
+
+			<innerRegisters id="1">
+				<register name="MAJOR_VERSION_CODE" dataType="SHORT" address="5000" registerType="HOLDING" description="MAJOR_VERSION_CODE"/>
+				<!-- <register name="MINOR_VERSION_CODE" dataType="BYTE" address="5000" registerType="HOLDING" description="MINOR_VERSION_CODE"/> -->
+
+				<register name="DUMMY_5001" dataType="SHORT" address="5001" registerType="HOLDING" description="DUMMY_5001"/>
+				<register name="DUMMY_5002" dataType="SHORT" address="5002" registerType="HOLDING" description="DUMMY_5002"/>
+				<register name="DUMMY_5003" dataType="SHORT" address="5003" registerType="HOLDING" description="DUMMY_5003"/>
+				<register name="DUMMY_5004" dataType="SHORT" address="5004" registerType="HOLDING" description="DUMMY_5004"/>
+				<register name="DUMMY_5005" dataType="SHORT" address="5005" registerType="HOLDING" description="DUMMY_5005"/>
+
+				<register name="SYSTEM_ERROR_CODE1_REF_3121" dataType="SHORT" address="5006" registerType="HOLDING" description="SYSTEM_ERROR_CODE1_REF_3121"/>
+				<register name="SYSTEM_ERROR_CODE2_REF_3121" dataType="SHORT" address="5007" registerType="HOLDING" description="SYSTEM_ERROR_CODE2_REF_3121"/>
+				<register name="SYSTEM_ERROR_CODE3_REF_3121" dataType="SHORT" address="5008" registerType="HOLDING" description="SYSTEM_ERROR_CODE3_REF_3121"/>
+				<register name="SYSTEM_ERROR_CODE4_REF_3121" dataType="SHORT" address="5009" registerType="HOLDING" description="SYSTEM_ERROR_CODE4_REF_3121"/>
+				<register name="LINE_1_OPERATION_TIME_SECOND" dataType="SHORT" address="5010" registerType="HOLDING" description="LINE_1_OPERATION_TIME_SECOND"/>
+				<register name="LINE_2_OPERATION_TIME_SECOND" dataType="SHORT" address="5011" registerType="HOLDING" description="LINE_2_OPERATION_TIME_SECOND"/>
+
+				<register name="DUMMY_5012" dataType="SHORT" address="5012" registerType="HOLDING" description="DUMMY_5012"/>
+				<register name="DUMMY_5013" dataType="SHORT" address="5013" registerType="HOLDING" description="DUMMY_5013"/>
+
+				<register name="FRESHWATER_TEMPERATURE_1" dataType="SHORT" address="5014" registerType="HOLDING" description="FRESHWATER_TEMPERATURE_1"/>
+				
+				<register name="DUMMY_5015" dataType="SHORT" address="5015" registerType="HOLDING" description="DUMMY_5015"/>
+				<register name="DUMMY_5016" dataType="SHORT" address="5016" registerType="HOLDING" description="DUMMY_5016"/>
+				<register name="DUMMY_5017" dataType="SHORT" address="5017" registerType="HOLDING" description="DUMMY_5017"/>
+
+				<register name="FLOW_METER1_VALUEM3_H" dataType="SHORT" address="5018" registerType="HOLDING" description="FLOW_METER1_VALUEM3_H"/>
+				<register name="FLOW_METER2_VALUEM3_H" dataType="SHORT" address="5019" registerType="HOLDING" description="FLOW_METER2_VALUEM3_H"/>
+				
+				<register name="DUMMY_5020" dataType="SHORT" address="5020" registerType="HOLDING" description="DUMMY_5020"/>
+				<register name="DUMMY_5021" dataType="SHORT" address="5021" registerType="HOLDING" description="DUMMY_5021"/>
+				<register name="DUMMY_5022" dataType="SHORT" address="5022" registerType="HOLDING" description="DUMMY_5022"/>
+				<register name="DUMMY_5023" dataType="SHORT" address="5023" registerType="HOLDING" description="DUMMY_5023"/>
+				<register name="DUMMY_5024" dataType="SHORT" address="5024" registerType="HOLDING" description="DUMMY_5024"/>
+				<register name="DUMMY_5025" dataType="SHORT" address="5025" registerType="HOLDING" description="DUMMY_5025"/>
+
+				<register name="CSU1_VALUEMS_CM2_X_100" dataType="SHORT" address="5026" registerType="HOLDING" description="CSU1_VALUEMS_CM2_X_100"/>
+				
+				<register name="DUMMY_5027" dataType="SHORT" address="5027" registerType="HOLDING" description="DUMMY_5027"/>
+				<register name="DUMMY_5028" dataType="SHORT" address="5028" registerType="HOLDING" description="DUMMY_5028"/>
+				<register name="DUMMY_5029" dataType="SHORT" address="5029" registerType="HOLDING" description="DUMMY_5029"/>
+
+				<register name="GAS1_LEL" dataType="SHORT" address="5030" registerType="HOLDING" description="GAS1_LEL"/>
+				
+				<register name="DUMMY_5031" dataType="SHORT" address="5031" registerType="HOLDING" description="DUMMY_5031"/>
+				<register name="DUMMY_5032" dataType="SHORT" address="5032" registerType="HOLDING" description="DUMMY_5032"/>
+				<register name="DUMMY_5033" dataType="SHORT" address="5033" registerType="HOLDING" description="DUMMY_5033"/>
+				<register name="DUMMY_5034" dataType="SHORT" address="5034" registerType="HOLDING" description="DUMMY_5034"/>
+				<register name="DUMMY_5035" dataType="SHORT" address="5035" registerType="HOLDING" description="DUMMY_5035"/>
+				<register name="DUMMY_5036" dataType="SHORT" address="5036" registerType="HOLDING" description="DUMMY_5036"/>
+				<register name="DUMMY_5037" dataType="SHORT" address="5037" registerType="HOLDING" description="DUMMY_5037"/>
+
+				<register name="BALLAST_LINE_1_TRO_VALUE_PPM_X_100" dataType="SHORT" address="5038" registerType="HOLDING" description="BALLAST_LINE_1_TRO_VALUE_PPM_X_100"/>
+				<register name="BALLAST_LINE_2_TRO_VALUE_PPM_X_100" dataType="SHORT" address="5039" registerType="HOLDING" description="BALLAST_LINE_2_TRO_VALUE_PPM_X_100"/>
+				
+				<register name="DUMMY_5040" dataType="SHORT" address="5040" registerType="HOLDING" description="DUMMY_5040"/>
+				<register name="DUMMY_5041" dataType="SHORT" address="5041" registerType="HOLDING" description="DUMMY_5041"/>
+				<register name="DUMMY_5042" dataType="SHORT" address="5042" registerType="HOLDING" description="DUMMY_5042"/>
+
+				<register name="DEBALLAST_LINE_1_TRO_VALUE_PPM_X_100" dataType="SHORT" address="5042" registerType="HOLDING" description="DEBALLAST_LINE_1_TRO_VALUE_PPM_X_100"/>
+				
+				<register name="DUMMY_5043" dataType="SHORT" address="5043" registerType="HOLDING" description="DUMMY_5043"/>
+				<register name="DUMMY_5044" dataType="SHORT" address="5044" registerType="HOLDING" description="DUMMY_5044"/>
+				<register name="DUMMY_5045" dataType="SHORT" address="5045" registerType="HOLDING" description="DUMMY_5045"/>
+
+				<register name="STRIPPING_LINE_1_TRO_VALUE_PPM_X_100" dataType="SHORT" address="5046" registerType="HOLDING" description="STRIPPING_LINE_1_TRO_VALUE_PPM_X_100"/>
+			</innerRegisters>
+		</channel>
+	</dataNodeConfigs>
+<dataSubscriptionConfigs>
+	<dataSubscriptionConfig name="ModBusSubscription">
+		<nodeName>BWTS_DATA</nodeName>
+	</dataSubscriptionConfig>
+</dataSubscriptionConfigs>
+</modbusMachineAdapterConfig>

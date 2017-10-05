@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cassandraAggregationConfig>
+	<name>AggregationConfigFile</name>
+    <description>This configuration file is for running aggregation queries against sensor tags in cassandra</description>
+	<vesselId>1000007</vesselId>
+	<tableName>tsrawnumeric</tableName>
+	<aggregationConfig>
+		<key sourceTagName="GPS_GLL_LATTITUDE" desinationTagName="GPS_GLL_LATTITUDE_Normal_10" runningFrequency="10" aggregationOperation="NORMAL" aggregationFrequency="10"/>
+		<key sourceTagName="GPS_GLL_LONGITUDE" desinationTagName="GPS_GLL_LONGITUDE_Normal_10" runningFrequency="10" aggregationOperation="NORMAL" aggregationFrequency="10"/>
+		<key sourceTagName="GPS_VDR_SPEED_KNOTS" desinationTagName="GPS_VDR_SPEED_KNOTS_Normal_10" runningFrequency="10" aggregationOperation="NORMAL" aggregationFrequency="10"/>
+		<key sourceTagName="Simulated_Values_in_PLC_Case2_FO_CONSUMPTION_PerDay" desinationTagName="Simulated_Values_in_PLC_Case2_FO_CONSUMPTION_PerDay_Normal_10" runningFrequency="10" aggregationOperation="NORMAL" aggregationFrequency="10"/>
+		<key sourceTagName="ME_RPM" desinationTagName="ME_RPM_Normal_10" runningFrequency="10" aggregationOperation="NORMAL" aggregationFrequency="10"/>
+		<key sourceTagName="ME_RPM" desinationTagName="ME_RPM" runningFrequency="3" aggregationOperation="NORMAL" aggregationFrequency="3"/>
+		<key sourceTagName="ME_LOAD" desinationTagName="ME_LOAD" runningFrequency="3" aggregationOperation="NORMAL" aggregationFrequency="3"/>	
+		<key sourceTagName="ME_TC_RPM" desinationTagName="ME_TC_RPM" runningFrequency="3" aggregationOperation="NORMAL" aggregationFrequency="3"/>	
+		<key sourceTagName="IGG_STATUS" desinationTagName="IGG_STATUS" runningFrequency="3" aggregationOperation="NORMAL" aggregationFrequency="3"/>
+		<key sourceTagName="PROPELLER_SLIP" desinationTagName="PROPELLER_SLIP_Normal_10" runningFrequency="10" aggregationOperation="NORMAL" aggregationFrequency="10"/>
+		<key sourceTagName="GPS_RMC_SPEED" desinationTagName="GPS_RMC_SPEED_Normal_10" runningFrequency="10" aggregationOperation="NORMAL" aggregationFrequency="10"/>
+		<key sourceTagName="GPS_RMC_SPEED" desinationTagName="GPS_RMC_SPEED" runningFrequency="3" aggregationOperation="NORMAL" aggregationFrequency="3"/>
+		<key sourceTagName="GPS_SHIP_SPEED" desinationTagName="GPS_SHIP_SPEED" runningFrequency="3" aggregationOperation="NORMAL" aggregationFrequency="3"/>
+		<key sourceTagName="DO_USE" desinationTagName="DO_USE" runningFrequency="3" aggregationOperation="NORMAL" aggregationFrequency="3"/>
+		<key sourceTagName="HFO_USE" desinationTagName="HFO_USE" runningFrequency="3" aggregationOperation="NORMAL" aggregationFrequency="3"/>
+		<key sourceTagName="FO_SWITCHOVER_HRS_TO_ECA" desinationTagName="FO_SWITCHOVER_HRS_TO_ECA" runningFrequency="3" aggregationOperation="NORMAL" aggregationFrequency="3"/>
+		<key sourceTagName="BMS_RPM_SPEED" desinationTagName="BMS_RPM_SPEED_Normal_10" runningFrequency="10" aggregationOperation="NORMAL" aggregationFrequency="10"/>
+		<key sourceTagName="BMS_RPM_SPEED" desinationTagName="BMS_RPM_SPEED" runningFrequency="3" aggregationOperation="NORMAL" aggregationFrequency="3"/>
+		<key sourceTagName="BMS_RPM_PROPELLER_PITCH" desinationTagName="BMS_RPM_PROPELLER_PITCH_Normal_10" runningFrequency="10" aggregationOperation="NORMAL" aggregationFrequency="10"/>
+		<key sourceTagName="SD_DBS_DEPTH_FEET" desinationTagName="SD_DBS_DEPTH_FEET" runningFrequency="3" aggregationOperation="NORMAL" aggregationFrequency="3"/>
+		<key sourceTagName="WI_MWV_WIND_SPEED_KNOTS" desinationTagName="WI_MWV_WIND_SPEED_KNOTS" runningFrequency="3" aggregationOperation="NORMAL" aggregationFrequency="3"/>
+		<key sourceTagName="WI_MWV_WIND_DIRECTION_DEGREE" desinationTagName="WI_MWV_WIND_DIRECTION_DEGREE" runningFrequency="3" aggregationOperation="NORMAL" aggregationFrequency="3"/>
+		<key sourceTagName="HE_ROT_RATE_OF_TURN" desinationTagName="HE_ROT_RATE_OF_TURN" runningFrequency="3" aggregationOperation="NORMAL" aggregationFrequency="3"/>		
+		<key sourceTagName="GPS_HTD_RUDDER_ANGLE" desinationTagName="GPS_HTD_RUDDER_ANGLE" runningFrequency="3" aggregationOperation="NORMAL" aggregationFrequency="3"/>
+		<key sourceTagName="HE_HRC_HEADING" desinationTagName="HE_HRC_HEADING" runningFrequency="3" aggregationOperation="NORMAL" aggregationFrequency="3"/>
+		<key sourceTagName="ME_CYL1_EXH_GAS_OUT_TEMP" desinationTagName="ME_CYL1_EXH_GAS_OUT_TEMP" runningFrequency="3" aggregationOperation="NORMAL" aggregationFrequency="3"/>
+		<key sourceTagName="ME_CYL2_EXH_GAS_OUT_TEMP" desinationTagName="ME_CYL2_EXH_GAS_OUT_TEMP" runningFrequency="3" aggregationOperation="NORMAL" aggregationFrequency="3"/>
+		<key sourceTagName="ME_CYL3_EXH_GAS_OUT_TEMP" desinationTagName="ME_CYL3_EXH_GAS_OUT_TEMP" runningFrequency="3" aggregationOperation="NORMAL" aggregationFrequency="3"/>
+		<key sourceTagName="ME_CYL4_EXH_GAS_OUT_TEMP" desinationTagName="ME_CYL4_EXH_GAS_OUT_TEMP" runningFrequency="3" aggregationOperation="NORMAL" aggregationFrequency="3"/>
+		<key sourceTagName="ME_CYL5_EXH_GAS_OUT_TEMP" desinationTagName="ME_CYL5_EXH_GAS_OUT_TEMP" runningFrequency="3" aggregationOperation="NORMAL" aggregationFrequency="3"/>
+		<key sourceTagName="ME_CYL6_EXH_GAS_OUT_TEMP" desinationTagName="ME_CYL6_EXH_GAS_OUT_TEMP" runningFrequency="3" aggregationOperation="NORMAL" aggregationFrequency="3"/>
+		<key sourceTagName="AIR_TEMPERATURE" desinationTagName="AIR_TEMPERATURE" runningFrequency="3" aggregationOperation="NORMAL" aggregationFrequency="3"/>
+		<key sourceTagName="WATER_TEMPERATURE" desinationTagName="WATER_TEMPERATURE" runningFrequency="3" aggregationOperation="NORMAL" aggregationFrequency="3"/>
+		<key sourceTagName="GPS_GLL_LATTITUDE" desinationTagName="GPS_GLL_LATTITUDE" runningFrequency="3" aggregationOperation="NORMAL" aggregationFrequency="10"/>
+		<key sourceTagName="GPS_GLL_LONGITUDE" desinationTagName="GPS_GLL_LONGITUDE" runningFrequency="3" aggregationOperation="NORMAL" aggregationFrequency="10"/>
+		
+	</aggregationConfig>
+</cassandraAggregationConfig>

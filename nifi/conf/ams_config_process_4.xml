@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modbusMachineAdapterConfig>
+   <name>Onsite monitor modbus nodes</name>
+   <description>Onsite monitor modbus nodes</description>
+   <vesselId>1000007</vesselId>
+   <defaultUpdateInterval>1</defaultUpdateInterval>
+   <dataNodeConfigs>
+      <channel protocol="TCP_IP" tcpIpAddress="192.168.2.36" tcpIpPort="502" regBaseAddress="0">
+         <unit id="21">
+            <register name="AMS_DATA" dataType="SHORT" method="CONTINUOUS" address="196" registerType="HOLDING" description="AMS1" count="56" innerRegisters="1" />
+         </unit>
+		 
+		 <!--Inner Registers are used for continuous reading of addresses. The number of innerRegisters should match with the count given in parent
+		 register. The id of innerRegisters should match with the id of parent register. The data type of parent register should be of type ORIGINAL-->
+		 <innerRegisters id="1">
+	<register name="NO1_GE_GEN_CURRENT" address="196"/>
+	<register name="NO1_GE_GEN_FREQUENCY_X10" address="197"/>
+	<register name="NO1_GE_GEN_POWER_X10" address="198"/>
+	<register name="NO1_GE_GEN_CURRENT_R_PHASE" address="199"/>
+	<register name="NO1_GE_GEN_CURRENT_S_PHASE" address="200"/>
+	<register name="NO1_GE_GEN_CURRENT_T_PHASE" address="201"/>
+	<register name="NO1_GE_GEN_VOLTAGE_X10" address="202"/>
+	<register name="NO1_GE_BUS_BAR_FREQUENCY_X10" address="203"/>
+	<register name="NO1_GE_BUS_BAR_VOLTAGE" address="204"/>
+	<register name="NO1_MAIN_AIR_CMPR_RUN" address="205"/>
+	<register name="NO2_MAIN_AIR_CMPR_RUN" address="206"/>
+	<register name="NO1_MAIN_AIR_CMPR_ABNORMAL" address="207"/>
+	<register name="NO2_MAIN_AIR_CMPR_ABNORMAL" address="208"/>
+	<register name="TLGS_FORE_DRAFT_LEVEL_SENSOR" address="209"/>
+	<register name="TLGS_AFT_DRAFT_LEVEL_SENSOR" address="210"/>
+	<register name="NO2_GE_GEN_POWER_X10" address="211"/>
+	<register name="NO3_GE_GEN_POWER_X10" address="212"/>
+	<register name="ME_FO_FLOWMETER" address="213"/>
+	<register name="GE_FO_FLOWMETER" address="214"/>
+	<register name="AIR_VENTILATION_NO1_MAIN_AIR_COMP" address="215"/>
+	<register name="AIR_VENTILATION_NO2_MAIN_AIR_COMP" address="216"/>
+	<register name="AIR_VENTILATION_SERVICE_AIR_COMP" address="217"/>
+	<register name="CONTROL_AIR_RESERVOIR_PRESS" address="218"/>
+	<register name="AIR_VENTILATION_SERVICE_AIR_COMP_RUN" address="219"/>
+	<register name="AIR_VENTILATION_SERVICE_AIR_COMP2_RUN" address="220"/>
+	<register name="AIR_VENTILATION_SERVICE_AIR_COMP1_CODN" address="221"/>
+	<register name="AIR_VENTILATION_SERVICE_AIR_COMP2_CODN" address="222"/>
+	<register name="FORE_HFO_TANK_S_LEVEL" address="223"/>
+	<register name="FORE_HFO_TANK_S_VOLUME" address="224"/>
+	<register name="FORE_HFO_TANK_P_LEVEL" address="225"/>
+	<register name="FORE_HFO_TANK_P_VOLUME" address="226"/>
+	<register name="AFT_HFO_TANK_S_LEVEL" address="227"/>
+	<register name="AFT_HFO_TANK_S_VOLUME" address="228"/>
+	<register name="AFT_HFO_TANK_P_LEVEL" address="229"/>
+	<register name="AFT_HFO_TANK_P_VOLUME" address="230"/>
+	<register name="HFO_SERV_TANK_LEVEL" address="231"/>
+	<register name="HFO_SERV_TANK_VOLUME" address="232"/>
+	<register name="HFO_SETT_TANK_LEVEL" address="233"/>
+	<register name="HFO_SETT_TANK_VOLUME" address="234"/>
+	<register name="MGO_STOR_TANK_S_LEVEL" address="235"/>
+	<register name="MGO_STOR_TANK_S_VOLUME" address="236"/>
+	<register name="MGO_STOR_TANK_P_LEVEL" address="237"/>
+	<register name="MGO_STOR_TANK_P_VOLUME" address="238"/>
+	<register name="NO1_MGO_SERV_TANK_LEVEL" addres="239"/>
+	<register name="NO1_MGO_SERV_TANK_VOLUME" address="240"/>
+	<register name="NO2_MGO_SERV_TANK_LEVEL" address="241"/>
+	<register name="NO2_MGO_SERV_TANK_VOLUME" address="242"/>
+	<register name="FW_TANK_S_LEVEL" address="243"/>
+	<register name="FW_TANK_S_VOLUME" address="244"/>
+	<register name="FW_TANK_P_LEVEL" address="245"/>
+	<register name="FW_TANK_P_VOLUME" address="246"/>
+	<register name="GE1_FO_IN_PRESS" address="247"/>
+	<register name="GE2_FO_IN_PRESS" address="248"/>
+	<register name="GE3_FO_IN_PRESS" address="249"/>
+	<register name="WIO_ME_LO_FORE_IN_TEMP" address="250"/>
+	<register name="BOILER_FO_FLOWMETER" address="251"/>
+		 </innerRegisters>
+      </channel>
+   </dataNodeConfigs>
+   <dataSubscriptionConfigs>
+      <dataSubscriptionConfig name="ModBusSubscription">
+         <nodeName>AMS_DATA</nodeName>
+      </dataSubscriptionConfig>
+   </dataSubscriptionConfigs>
+</modbusMachineAdapterConfig>

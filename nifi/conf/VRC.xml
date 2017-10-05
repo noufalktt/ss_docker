@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modbusMachineAdapterConfig>
+	<name>Onsite monitor modbus nodes</name>
+	<description>Onsite monitor modbus nodes</description>
+	<vesselId>1000007</vesselId>
+	<dataNodeConfigs>
+		<channel protocol="TCP_IP" tcpIpAddress="192.168.1.23" tcpIpPort="502" regBaseAddress="1">
+			<unit id="4">				
+				<register name="VRC_SHORT_HOLDING_DATA_1" dataType="SHORT" method="CONTINUOUS" address="1270" registerType="HOLDING" description="VRC_SHORT_HOLDING_DATA_1" count="20" innerRegisters="1"/>
+				<register name="VRC_SHORT_HOLDING_DATA_2" dataType="SHORT" method="CONTINUOUS" address="1370" registerType="HOLDING" description="VRC_SHORT_HOLDING_DATA_2" count="20" innerRegisters="2"/>
+				<register name="VRC_SHORT_HOLDING_DATA_3" dataType="SHORT" method="CONTINUOUS" address="1450" registerType="HOLDING" description="VRC_SHORT_HOLDING_DATA_3" count="12" innerRegisters="3"/>
+				<register name="VRC_SHORT_HOLDING_DATA_4" dataType="SHORT" method="CONTINUOUS" address="1490" registerType="HOLDING" description="VRC_SHORT_HOLDING_DATA_4" count="2" innerRegisters="4"/>
+			</unit>
+			<innerRegisters id="1">
+				<register name="VRC_BA001_POS_Valve_Position" address="1270" description="VRC_BA001_POS_Valve_Position"/>
+				<register name="VRC_BA002_POS_Valve_Position" address="1271" description="VRC_BA002_POS_Valve_Position"/>
+				<register name="VRC_BA003_POS_Valve_Position" address="1272" description="VRC_BA003_POS_Valve_Position"/>
+				<register name="VRC_BA004_POS_Valve_Position" address="1273" description="VRC_BA004_POS_Valve_Position"/>
+				<register name="VRC_BA005_POS_Valve_Position" address="1274" description="VRC_BA005_POS_Valve_Position"/>
+				<register name="VRC_BA006_POS_Valve_Position" address="1275" description="VRC_BA006_POS_Valve_Position"/>
+				<register name="VRC_BA007_POS_Valve_Position" address="1276" description="VRC_BA007_POS_Valve_Position"/>
+				<register name="VRC_BA008_POS_Valve_Position" address="1277" description="VRC_BA008_POS_Valve_Position"/>
+				<register name="VRC_BA009_POS_Valve_Position" address="1278" description="VRC_BA009_POS_Valve_Position"/>
+				<register name="VRC_BA010_POS_Valve_Position" address="1279" description="VRC_BA010_POS_Valve_Position"/>
+				<register name="VRC_BA011_POS_Valve_Position" address="1280" description="VRC_BA011_POS_Valve_Position"/>
+				<register name="VRC_BA012_POS_Valve_Position" address="1281" description="VRC_BA012_POS_Valve_Position"/>
+				<register name="VRC_BA013_POS_Valve_Position" address="1282" description="VRC_BA013_POS_Valve_Position"/>
+				<register name="VRC_BA014_POS_Valve_Position" address="1283" description="VRC_BA014_POS_Valve_Position"/>
+				<register name="VRC_BA019_POS_Valve_Position" address="1284" description="VRC_BA019_POS_Valve_Position"/>
+				<register name="VRC_BA020_POS_Valve_Position" address="1285" description="VRC_BA020_POS_Valve_Position"/>
+				<register name="VRC_BA015_POS_Valve_Position" address="1286" description="VRC_BA015_POS_Valve_Position"/>
+				<register name="VRC_BA016_POS_Valve_Position" address="1287" description="VRC_BA016_POS_Valve_Position"/>
+				<register name="VRC_BA017_POS_Valve_Position" address="1288" description="VRC_BA017_POS_Valve_Position"/>
+				<register name="VRC_BA018_POS_Valve_Position" address="1289" description="VRC_BA018_POS_Valve_Position"/>	
+			</innerRegisters>
+			<innerRegisters id="2">
+				<register name="VRC_BA001_STA_Valve_Status" address="1370" description="VRC_BA001_STA_Valve_Status"/>
+				<register name="VRC_BA002_STA_Valve_Status" address="1371" description="VRC_BA002_STA_Valve_Status"/>
+				<register name="VRC_BA003_STA_Valve_Status" address="1372" description="VRC_BA003_STA_Valve_Status"/>
+				<register name="VRC_BA004_STA_Valve_Status" address="1373" description="VRC_BA004_STA_Valve_Status"/>
+				<register name="VRC_BA005_STA_Valve_Status" address="1374" description="VRC_BA005_STA_Valve_Status"/>
+				<register name="VRC_BA006_STA_Valve_Status" address="1375" description="VRC_BA006_STA_Valve_Status"/>
+				<register name="VRC_BA007_STA_Valve_Status" address="1376" description="VRC_BA007_STA_Valve_Status"/>
+				<register name="VRC_BA008_STA_Valve_Status" address="1377" description="VRC_BA008_STA_Valve_Status"/>
+				<register name="VRC_BA009_STA_Valve_Status" address="1378" description="VRC_BA009_STA_Valve_Status"/>
+				<register name="VRC_BA010_STA_Valve_Status" address="1379" description="VRC_BA010_STA_Valve_Status"/>
+				<register name="VRC_BA011_STA_Valve_Status" address="1380" description="VRC_BA011_STA_Valve_Status"/>
+				<register name="VRC_BA012_STA_Valve_Status" address="1381" description="VRC_BA012_STA_Valve_Status"/>
+				<register name="VRC_BA013_STA_Valve_Status" address="1382" description="VRC_BA013_STA_Valve_Status"/>
+				<register name="VRC_BA014_STA_Valve_Status" address="1383" description="VRC_BA014_STA_Valve_Status"/>
+				<register name="VRC_BA019_STA_Valve_Status" address="1384" description="VRC_BA019_STA_Valve_Status"/>
+				<register name="VRC_BA020_STA_Valve_Status" address="1385" description="VRC_BA020_STA_Valve_Status"/>
+				<register name="VRC_BA015_STA_Valve_Status" address="1386" description="VRC_BA015_STA_Valve_Status"/>
+				<register name="VRC_BA016_STA_Valve_Status" address="1387" description="VRC_BA016_STA_Valve_Status"/>
+				<register name="VRC_BA017_STA_Valve_Status" address="1388" description="VRC_BA017_STA_Valve_Status"/>
+			</innerRegisters>				
+			<innerRegisters id="3">	
+				<register name="HPU_M1_POWER_ON" address="1450" description="HPU_M1_POWER_ON"/>
+				<register name="HPU_M2_POWER_ON" address="1451" description="HPU_M2_POWER_ON"/>
+				<register name="HPU_M1_RUNNING" address="1452" description="HPU_M1_RUNNING"/>
+				<register name="HPU_M2_RUNNING" address="1453" description="HPU_M2_RUNNING"/>
+				<register name="HPU_LOCAL_REMOTE" address="1454" description="HPU_LOCAL_REMOTE"/>
+				<register name="HPU_LL0_LEVEL" address="1455" description="HPU_LL0_LEVEL"/>
+				<register name="HPU_LO_LEVEL" address="1456" description="HPU_LO_LEVEL"/>
+				<register name="HPU_LO_PRESS" address="1457" description="HPU_LO_PRESS"/>
+				<register name="HPU_HO_PRESS" address="1458" description="HPU_HO_PRESS"/>
+				<register name="HPU_HO_TEMP" address="1459" description="HPU_HO_TEMP"/>
+				<register name="HPU_POWER_FAIL" address="1460" description="HPU_POWER_FAIL"/>
+				<register name="HPU_PRESS_INDICATION" address="1461" description="HPU_PRESS_INDICATION"/>	
+			</innerRegisters>				
+			<innerRegisters id="4">	
+				<register name="LOW_NO_BATTERY" address="1490" description="LOW_NO_BATTERY"/>
+			</innerRegisters>
+		</channel>
+	</dataNodeConfigs>
+	<dataSubscriptionConfigs>
+		<dataSubscriptionConfig name="VRCSubscription">
+			<nodeName>VRC_SHORT_HOLDING_DATA_1</nodeName>
+			<nodeName>VRC_SHORT_HOLDING_DATA_2</nodeName>
+			<nodeName>VRC_SHORT_HOLDING_DATA_3</nodeName>
+			<nodeName>VRC_SHORT_HOLDING_DATA_4</nodeName>
+		</dataSubscriptionConfig>
+	</dataSubscriptionConfigs>
+</modbusMachineAdapterConfig>

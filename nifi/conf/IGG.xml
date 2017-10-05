@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modbusMachineAdapterConfig>
+	<name>Onsite monitor modbus nodes</name>
+	<description>Onsite monitor modbus nodes</description>
+	<vesselId>1000007</vesselId>
+	<dataNodeConfigs>
+		<channel protocol="TCP_IP" tcpIpAddress="192.168.1.22" tcpIpPort="502" regBaseAddress="1">
+			<unit id="4">				
+				<register name="IGG_SHORT_INPUT_DATA_1" dataType="SHORT" method="CONTINUOUS" address="3121" registerType="INPUT" description="IGG_SHORT_INPUT_DATA_1" count="120" innerRegisters="1"/>
+				<register name="IGG_SHORT_TAG_GROUPS_1" dataType="SHORT" method="CONTINUOUS" address="3001" registerType="INPUT" description="IGG_SHORT_TAG_GROUPS_1" count="28" innerRegisters="2"/>
+				<register name="IGG_SHORT_TAG_GROUPS_2" dataType="SHORT" method="CONTINUOUS" address="3501" registerType="INPUT" description="IGG_SHORT_TAG_GROUPS_2" count="2" innerRegisters="3"/>
+				<register name="IGG_SHORT_INPUT_DATA_2" dataType="SHORT" method="CONTINUOUS" address="3600" registerType="INPUT" description="IGG_SHORT_INPUT_DATA_2" count="120" innerRegisters="4"/>
+				<register name="IGG_SHORT_INPUT_DATA_3" dataType="SHORT" method="CONTINUOUS" address="3821" registerType="INPUT" description="IGG_SHORT_INPUT_DATA_3" count="19" innerRegisters="5"/>				
+			</unit>
+			<innerRegisters id="1">
+				<register name="IGG_OXYGEN_CONTENT" address="3121" description="IGG_Oxygen_Content"/>
+				<register name="IGG_STATUS_OF_FLAME_BURNER" address="3122" description="IGG_Status_Of_Flame_Burner"/>
+				<register name="IGG_FUEL_OIL_PUMP_1_STATUS" address="3123" description="IGG_Fuel_Oil_Pump_1_Status"/>
+				<register name="IGG_FUEL_OIL_PUMP_2_STATUS" address="3124" description="IGG_Fuel_Oil_Pump_2_Status"/>
+				<register name="IGG_DECK_PRESSURE_NUMERIC" address="3127" description="IGG_Deck_Pressure_Numeric"/>
+				<register name="IGG_SEA_WATER_PUMP_1_STATUS" address="3132" description="IGG_Sea_Water_Pump_1_Status"/>
+				<register name="IGG_SEA_WATER_PUMP_2_STATUS" address="3133" description="IGG_Sea_Water_Pump_2_Status"/>
+				<register name="IGG_SEA_WATER_TEMP_IN_COOLING_JACKET" address="3140" description="IGG_Sea_Water_Temp_In_Cooling_Jacket"/>
+				<register name="IGG_INERT_GAS_TEMP" address="3141" description="IGG_Inert_Gas_Temp"/>
+				<register name="IGG_SCRUBBER_INLET_PRESSURE" address="3142" description="IGG_Scrubber_Inlet_Pressure"/>
+				<register name="IGG_INERT_GASTEMP_OUTLET_DRYER" address="3143" description="IGG_Inert_GasTemp_Outlet_Dryer"/>
+				<register name="IGG_INERT_GASTEMP_OUTLET_COOLER" address="3144" description="IGG_Inert_GasTemp_Outlet_Cooler"/>
+				<register name="IGG_AIR_TEMP_INLET_ADS_1" address="3145" description="IGG_Air_Temp_Inlet_ADS_1"/>
+				<register name="IGG_AIR_TEMP_INLET_ADS_2" address="3146" description="IGG_Air_Temp_Inlet_ADS_2"/>
+				<register name="IGG_REGEN_TEMP_OUTLET" address="3147" description="IGG_Regen_Temp_Outlet"/>
+				<register name="IGG_POSITION_OF_VALVE_22" address="3159" description="IGG_Position_Of_Valve_22"/>
+				<register name="IGG_SEAWATER_EFFLUENT_PRESSURE" address="3160" description="IGG_Seawater_Effluent_Pressure"/>
+				<register name="IGG_INERT_GAS_OUTLET_DRYER_PRESSURE" address="3161" description="IGG_Inert_Gas_Outlet_Dryer_Pressure"/>
+				<register name="IGG_INSTRUMENT_AIR_PRESSURE" address="3162" description="IGG_Instrument_Air_Pressure"/>
+				<register name="IGG_SEA_WATER_INLET_SCRUBBER_PRESSURE" address="3163" description="IGG_Sea_Water_Inlet_Scrubber_Pressure"/>
+				<register name="IGG_FUEL_OIL_PRESSURE" address="3164" description="IGG_Fuel_Oil_Pressure"/>
+				<register name="IGG_DEW_POINT" address="3166" description="IGG_Dew_Point"/>
+				<register name="IGG_REFRIG_COMPRESSOR_SUCTION_PRESSURE" address="3181" description="IGG_Refrig_Compressor_Suction_Pressure"/>
+				<register name="IGG_REFRIG_COMPRESSOR_DISCHARGEPRESSURE" address="3182" description="IGG_Refrig_Compressor_DischargePressure"/>
+				<register name="IGG_REFRIG_COMPRESSOR_DISCHARGE_TEMP" address="3183" description="IGG_Refrig_Compressor_Discharge_Temp"/>
+				<register name="IGG_REFRIG_COMPRESSOR_LOAD_AMPERE" address="3184" description="IGG_Refrig_Compressor_Load_Ampere"/>
+				<register name="IGG_REFRIG_COMPRESSOR_CAPACITY_PERCENT" address="3185" description="IGG_Refrig_Compressor_Capacity_percent"/>
+				<register name="IGG_WATER_COOLER_OUTLET_TEMP" address="3187" description="IGG_Water_Cooler_Outlet_Temp"/>
+				<register name="IGG_WATER_COOLER_INLET_TEMP" address="3188" description="IGG_Water_Cooler_Inlet_Temp"/>
+				<register name="IGG_WATER_COOLER_PUMP_MOTOR_LOADAMPERE" address="3189" description="IGG_Water_Cooler_Pump_Motor_LoadAmpere"/>
+				<register name="IGG_POSITION_OF_VALVE_10" address="3198" description="IGG_Position_Of_Valve_10"/>
+				<register name="IGG_WATER_COOLER_PUMP_MOTOR_STATUS" address="3219" description="IGG_Water_Cooler_Pump_Motor_Status"/>
+				<register name="IGG_REGENERATION_FAN_MOTOR_STATUS" address="3220" description="IGG_Regeneration_Fan_Motor_Status"/>
+				<register name="IGG_BLOWER_109_LOAD_AMPERE" address="3221" description="IGG_Blower_109_Load_Ampere"/>
+				<register name="IGG_BLOWER_109_STATUS" address="3222" description="IGG_Blower_109_Status"/>
+				<register name="IGG_REGENERATION_AMPERE_FAN_MOTOR_LOAD" address="3236" description="IGG_Regeneration_Ampere_Fan_Motor_Load"/>
+			</innerRegisters>
+
+			<innerRegisters id="2">
+				<register name="TAG_GROUP_3001" dataType="SHORT" address="3001" description="TAG_GROUP_3001"/>
+				<register name="TAG_GROUP_3003" dataType="SHORT" address="3003" description="TAG_GROUP_3003"/>
+				<register name="TAG_GROUP_3004" dataType="SHORT" address="3004" description="TAG_GROUP_3004"/>
+				<register name="TAG_GROUP_3005" dataType="SHORT" address="3005" description="TAG_GROUP_3005"/>
+				<register name="TAG_GROUP_3006" dataType="SHORT" address="3006" description="TAG_GROUP_3006"/>
+				<register name="TAG_GROUP_3007" dataType="SHORT" address="3007" description="TAG_GROUP_3007"/>
+				<register name="TAG_GROUP_3008" dataType="SHORT" address="3008" description="TAG_GROUP_3008"/>
+				<register name="TAG_GROUP_3009" dataType="SHORT" address="3009" description="TAG_GROUP_3009"/>
+				<register name="TAG_GROUP_3010" dataType="SHORT" address="3010" description="TAG_GROUP_3010"/>
+				<register name="TAG_GROUP_3011" dataType="SHORT" address="3011" description="TAG_GROUP_3011"/>
+				<register name="TAG_GROUP_3012" dataType="SHORT" address="3012" description="TAG_GROUP_3012"/>
+				<register name="TAG_GROUP_3016" dataType="SHORT" address="3016" description="TAG_GROUP_3016"/>
+				<register name="TAG_GROUP_3017" dataType="SHORT" address="3017" description="TAG_GROUP_3017"/>
+				<register name="TAG_GROUP_3018" dataType="SHORT" address="3018" description="TAG_GROUP_3018"/>
+				<register name="TAG_GROUP_3020" dataType="SHORT" address="3020" description="TAG_GROUP_3020"/>
+				<register name="TAG_GROUP_3021" dataType="SHORT" address="3021" description="TAG_GROUP_3021"/>
+				<register name="TAG_GROUP_3026" dataType="SHORT" address="3026" description="TAG_GROUP_3026"/>
+				<register name="TAG_GROUP_3027" dataType="SHORT" address="3027" description="TAG_GROUP_3027"/>				
+			</innerRegisters>
+
+			<innerRegisters id="3">
+				<register name="TAG_GROUP_3501" dataType="SHORT" address="3501" description="TAG_GROUP_3501"/>	
+			</innerRegisters>
+
+			<innerRegisters id="4">
+				<register name="IGG_SELECT_FUEL_OIL_PUMP" address="3600" description="IGG_Select_fuel_oil_pump"/>
+				<register name="IGG_SELECT_SEA_WATER_PUMP" address="3602" description="IGG_Select_sea_water_pump"/>
+				<register name="IGG_DRAIN_SELECT" address="3603" description="IGG_Drain_select"/>
+				<register name="IGG_INERT_GAS_OXYGEN_CONTENTSET_POINT" address="3604" description="IGG_Inert_gas_oxygen_contentset_point"/>
+				<register name="IGG_HIGH_O2_CONTENT_ALARM_SETPOINT" address="3605" description="IGG_High_O2_content_alarm_setpoint"/>
+				<register name="IGG_CHANGE_COMMANDBETWEEN_USER_INTERFACE" address="3608" description="IGG_Change_commandbetween_user_interface"/>
+			</innerRegisters>
+			<innerRegisters id="5">
+				<register name="IGG_VALVE_1_STATUS" address="3821" description="IGG_Valve_1_Status"/>
+				<register name="IGG_VALVE_2_STATUS" address="3822" description="IGG_Valve_2_Status"/>
+				<register name="IGG_VALVE_5_STATUS" address="3823" description="IGG_Valve_5_Status"/>
+				<register name="IGG_VALVE_3_STATUS" address="3824" description="IGG_Valve_3_Status"/>
+				<register name="IGG_VALVE_8_STATUS" address="3825" description="IGG_Valve_8_Status"/>
+				<register name="IGG_VALVE_10_STATUS" address="3826" description="IGG_Valve_10_Status"/>
+				<register name="IGG_VALVE_12_1_STATUS" address="3827" description="IGG_Valve_12_1_Status"/>
+				<register name="IGG_VALVE_12_2_STATUS" address="3828" description="IGG_Valve_12_2_Status"/>
+				<register name="IGG_VALVE_12_3_STATUS" address="3829" description="IGG_Valve_12_3_Status"/>
+				<register name="IGG_VALVE_14_STATUS" address="3830" description="IGG_Valve_14_Status"/>
+				<register name="IGG_VALVE_16_STATUS" address="3831" description="IGG_Valve_16_Status"/>
+				<register name="IGG_VALVE_17_STATUS" address="3832" description="IGG_Valve_17_Status"/>
+				<register name="IGG_VALVE_22_STATUS" address="3833" description="IGG_Valve_22_Status"/>
+				<register name="IGG_VALVE_505_STATUS" address="3838" description="IGG_Valve_505_Status"/>
+				<register name="IGG_VALVE_506_STATUS" address="3839" description="IGG_Valve_506_Status"/>
+			</innerRegisters>
+		</channel>
+	</dataNodeConfigs>
+	<dataSubscriptionConfigs>
+		<dataSubscriptionConfig name="IGGSubscription">
+			<nodeName>IGG_SHORT_INPUT_DATA_1</nodeName>
+			<nodeName>IGG_SHORT_TAG_GROUPS_1</nodeName>
+			<nodeName>IGG_SHORT_TAG_GROUPS_2</nodeName>
+			<nodeName>IGG_SHORT_INPUT_DATA_2</nodeName>
+			<nodeName>IGG_SHORT_INPUT_DATA_3</nodeName>
+		</dataSubscriptionConfig>
+	</dataSubscriptionConfigs>
+</modbusMachineAdapterConfig>
+

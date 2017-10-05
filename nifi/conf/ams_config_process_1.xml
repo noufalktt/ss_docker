@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modbusMachineAdapterConfig>
+   <name>Onsite monitor modbus nodes</name>
+   <description>Onsite monitor modbus nodes</description>
+   <vesselId>1000007</vesselId>
+   <defaultUpdateInterval>1</defaultUpdateInterval>
+   <dataNodeConfigs>
+      <channel protocol="TCP_IP" tcpIpAddress="192.168.2.36" tcpIpPort="502" regBaseAddress="0">
+         <unit id="19">
+            <register name="AMS_DATA" dataType="SHORT" method="CONTINUOUS" address="1" registerType="HOLDING" description="AMS1" count="83" innerRegisters="1" />
+         </unit>
+		 
+		 <!--Inner Registers are used for continuous reading of addresses. The number of innerRegisters should match with the count given in parent
+		 register. The id of innerRegisters should match with the id of parent register. The data type of parent register should be of type ORIGINAL-->
+		 <innerRegisters id="1">
+	<register name="ME_LO_AND_PCO_INLET_PRESS" address="1"/>
+	<register name="ME_TC_LO_IN_PRESS" address="2"/>
+ 	<register name="ME_DUMMY" address="3"/>
+	<register name="ME_FO_INLET_PRESS" address="4"/>
+	<register name="ME_JCFW_INLET_PRESS" address="5"/>
+	<register name="ME_AIR_COOLER_CW_IN_PRESS" address="6"/>
+	<register name="ME_JCFW_ACROSS_CYL_LINER_DIFF_P" address="7"/>
+	<register name="ME_JCFW_ACRO_CYL_CVREXH_VV_D_P" address="8"/>
+	<register name="ME_SCAV_AIR_RECEIVER_IN_PRESS" address="9"/>
+	<register name="WIO_ME_LO_FORE_WATER_ACTIVITY" address="10"/>
+	<register name="ME_CONTROL_AIR_INLET_PRESS" address="11"/>
+	<register name="ME_STARTING_AIR_INLET_PRESS" address="12"/>
+	<register name="ME_EXH_VV_SPRING_AIR_IN_PRESS" address="13"/>
+	<register name="ME_TC_RPM" address="14"/>
+	<register name="ME_FUEL_INDEX" address="15"/>
+	<register name="GE1_START_AIR_IN_PRESS" address="16"/>
+	<register name="GE1_HT_FW_PRESS" address="17"/>
+	<register name="GE1_LO_IN_PRESS" address="18"/>
+	<register name="GE2_START_AIR_IN_PRESS" address="19"/>
+	<register name="GE2_HT_FW_PRESS" address="20"/>
+	<register name="GE2_LO_IN_PRESS" address="21"/>
+	<register name="GE3_START_AIR_IN_PRESS" address="22"/>
+	<register name="GE3_HT_FW_PRESS" address="23"/>
+	<register name="GE3_LO_IN_PRESS" address="24"/>
+	<register name="AUX_BOILER_STEAM_PRESS" address="25"/>
+	<register name="AUX_BOILER_WATER_LEVEL" address="26"/>
+	<register name="NO1_ME_LO_PURIFIER_HEATER_OUT_TEMP" address="27"/>
+	<register name="NO2_ME_LO_PURIFIER_HEATER_OUT_TEMP" address="28"/>
+	<register name="GE_LO_PURIFIER_HEATER_OUT_TEMP" address="29"/>
+	<register name="ME_LO_AUTO_FILTER_DIFF_PRESS" address="30"/>
+	<register name="NO1_HFO_PURIFIER_HEATER_OUT_TEMP" address="31"/>
+	<register name="NO2_HFO_PURIFIER_HEATER_OUT_TEMP" address="32"/>
+	<register name="ME_FO_VISCOSITY" address="33"/>
+	<register name="GE_FO_VISCOSITY" address="34"/>
+	<register name="ME_FO_FLOWMETER" address="35"/>
+	<register name="GE_FO_FLOWMETER" address="36"/>
+	<register name="NO1_MAIN_AIR_RESERVOIR_PRESS" address="37"/>
+	<register name="NO2_MAIN_AIR_RESERVOIR_PRESS" address="38"/>
+	<register name="SERV_AIR_RESERVOIR_PRESS" address="39"/>
+	<register name="AUX_AIR_RESERVOIR_PRESS" address="40"/>
+	<register name="CONTROL_AIR_RESERVOIR_PRESS" address="41"/>
+	<register name="CONTROL_AIR_MAIN_LINE_PRESS" address="42"/>
+	<register name="LTFW_PUMP_DISCH_PRESS" address="43"/>
+	<register name="MAIN_CSW_PUMP_OUTLET_PRESS" address="44"/>
+	<register name="ME_LO_AND_PCO_INLET_TEMP" address="45"/>
+	<register name="ME_TC_LO_OUT_TEMP" address="46"/>
+	<register name="ME_CYL_LO_INLET_TEMP" address="47"/>
+	<register name="ME_CYL1_LINER_CW_OUTLET_TEMP" address="48"/>
+	<register name="ME_CYL2_LINER_CW_OUTLET_TEMP" address="49"/>
+	<register name="ME_CYL3_LINER_CW_OUTLET_TEMP" address="50"/>
+	<register name="ME_CYL4_LINER_CW_OUTLET_TEMP" address="51"/>
+	<register name="ME_CYL5_LINER_CW_OUTLET_TEMP" address="52"/>
+	<register name="ME_CYL6_LINER_CW_OUTLET_TEMP" address="53"/>
+	<register name="ME_JCFW_INLET_TEMP" address="54"/>
+	<register name="ME_AIR_COOLER_CW_INLET_TEMP" address="55"/>
+	<register name="ME_NO1_CYL_COVER_CW_OUT_TEMP" address="56"/>
+	<register name="ME_NO2_CYL_COVER_CW_OUT_TEMP" address="57"/>
+	<register name="ME_NO3_CYL_COVER_CW_OUT_TEMP" address="58"/>
+	<register name="ME_NO4_CYL_COVER_CW_OUT_TEMP" address="59"/>
+	<register name="ME_NO5_CYL_COVER_CW_OUT_TEMP" address="60"/>
+	<register name="ME_NO6_CYL_COVER_CW_OUT_TEMP" address="61"/>
+	<register name="ME_CYL1_SCAV_AIR_BOX_FIRE_DET_T" address="62"/>
+	<register name="ME_CYL2_SCAV_AIR_BOX_FIRE_DET_T" address="63"/>
+	<register name="ME_CYL3_SCAV_AIR_BOX_FIRE_DET_T" address="64"/>
+	<register name="ME_CYL4_SCAV_AIR_BOX_FIRE_DET_T" address="65"/>
+	<register name="ME_CYL5_SCAV_AIR_BOX_FIRE_DET_T" address="66"/>
+	<register name="ME_CYL6_SCAV_AIR_BOX_FIRE_DET_T" address="67"/>
+	<register name="ME_SCAV_AIR_RECEIVER_INLET_TEMP" address="68"/>
+	<register name="ME_CYL1_EXH_GAS_OUT_TEMP" address="69"/>
+	<register name="ME_CYL2_EXH_GAS_OUT_TEMP" address="70"/>
+	<register name="ME_CYL3_EXH_GAS_OUT_TEMP" address="71"/>
+	<register name="ME_CYL4_EXH_GAS_OUT_TEMP" address="72"/>
+	<register name="ME_CYL5_EXH_GAS_OUT_TEMP" address="73"/>
+	<register name="ME_CYL6_EXH_GAS_OUT_TEMP" address="74"/>
+	<register name="ME_TC_EXH_GAS_IN_TEMP" address="75"/>
+	<register name="ME_TC_EXH_GAS_OUT_TEMP" address="76"/>
+	<register name="ME_THRUST_BEARING_TEMP" address="77"/>
+	<register name="ME_NO1_CYL_PCO_OUT_TEMP" address="78"/>
+	<register name="ME_NO2_CYL_PCO_OUT_TEMP" address="79"/>
+	<register name="ME_NO3_CYL_PCO_OUT_TEMP" address="80"/>
+	<register name="ME_NO4_CYL_PCO_OUT_TEMP" address="81"/>
+	<register name="ME_NO5_CYL_PCO_OUT_TEMP" address="82"/>
+	<register name="ME_NO6_CYL_PCO_OUT_TEMP" address="83"/>
+         
+		 </innerRegisters>
+      </channel>
+   </dataNodeConfigs>
+   <dataSubscriptionConfigs>
+      <dataSubscriptionConfig name="ModBusSubscription">
+         <nodeName>AMS_DATA</nodeName>
+      </dataSubscriptionConfig>
+   </dataSubscriptionConfigs>
+</modbusMachineAdapterConfig>

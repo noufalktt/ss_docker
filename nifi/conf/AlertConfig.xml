@@ -1,0 +1,21 @@
+<CONFIG>
+	<vesselId id="vesselId">1000007</vesselId>
+	<Latitude>GPS_GLL_LATITUDE</Latitude>
+	<Longitude>GPS_GLL_LONGITUDE</Longitude>
+	<alertid id="1">
+		<KML>/opt/nifi-1.3.0/conf/eca.kml</KML>	
+		<FORMULA>ME_FO_VISCOSITY &lt; 25 &amp; TEMPERATURE &gt; 25 </FORMULA>
+		<TAGS>
+			<TAG>ME_FO_VISCOSITY</TAG>
+			<TAG>TEMPERATURE</TAG>
+		</TAGS>
+	</alertid>	
+	<alertid id="2">
+		<KML>/opt/nifi-1.3.0/conf/mca.kml</KML>	
+		<FORMULA>ME_FO_VISCOSITY &lt; 25 &amp; TEMPERATURE &gt; 25 </FORMULA>
+		<TAGS>
+			<TAG>ME_FO_VISCOSITY</TAG>
+			<TAG>TEMPERATURE</TAG>
+		</TAGS>
+	</alertid>	
+</CONFIG>

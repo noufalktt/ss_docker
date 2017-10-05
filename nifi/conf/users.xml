@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tenants>
+    <groups/>
+    <users>
+        <user identifier="fc21d25c-dd81-30ef-a4fa-c96daff42ee7" identity="CN=NIFI Admin, OU=NIFI"/>
+    </users>
+</tenants>

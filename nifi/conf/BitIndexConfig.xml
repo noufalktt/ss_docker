@@ -1,0 +1,1261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bitIndexConfig>
+	<name>Bit Index Config</name>
+	<description>This config file is used to represent bit index and its tag name</description>
+	<vesselId>1000007</vesselId>
+	<tagConfig>
+		
+<!-- AMS -->
+		<tags name="TAG_GROUP_148">
+			<tag name="ME_AUTO_LO_FLT_DIFF_P_H_MAIN" index="0"/>
+			<tag name="ME_AUTO_LO_FLT_DIFF_P_H_BACK" index="1"/>
+			<tag name="ME_CYL_LO_TANK_THERMAL_OVERLOAD" index="2"/>
+			<tag name="ME_CYL_LO_TANK_LEVEL_LOW" index="3"/>
+			<tag name="ME_CYL_LO_HEATING_SYS_OVERLOAD" index="4"/>
+			<tag name="ME_BASE_PLATE_DRAIN_LEVEL_HIGH" index="5"/>
+			<tag name="ME_FO_LEAKAGE_LEVEL_HIGH" index="6"/>
+			<tag name="ME_JCFW_FOR_AUTO_VENTING_LEVEL_LOW" index="7"/>
+			<tag name="ME_CYL1_PCO_OUTLET_NON_FLOW" index="8"/>
+			<tag name="ME_CYL2_PCO_OUTLET_NON_FLOW" index="9"/>
+			<tag name="ME_CYL3_PCO_OUTLET_NON_FLOW" index="10"/>
+			<tag name="ME_CYL4_PCO_OUTLET_NON_FLOW" index="11"/>
+			<tag name="ME_CYL5_PCO_OUTLET_NON_FLOW" index="12"/>
+			<tag name="ME_CYL6_PCO_OUTLET_NON_FLOW" index="13"/>
+			<tag name="ME_BEARING_WEAR_HIGH_ALARM" index="14"/>
+			<tag name="ME_BEARING_WEAR_SYSTEM_FAIL" index="15"/>
+		</tags>
+		<tags name="TAG_GROUP_149">
+			<tag name="ME_OIL_MIST_HIGH_PRE_ALARM" index="0"/>
+			<tag name="ME_OIL_MIST_DETECTOR_FAULT" index="1"/>
+			<tag name="ME_W_MIST_CATCHER_WTR_LVL_HIGH" index="2"/>
+			<tag name="ME_AXIAL_VIBRATION_HIGH" index="3"/>
+			<tag name="ME_AXIAL_VIBRATION_POWER_FAIL" index="4"/>
+			<tag name="ME_NO1_AUX_BLOWER_STARTER_ABN" index="5"/>
+			<tag name="ME_NO1_AUX_BLOWER_STARTER_RUN" index="6"/>
+			<tag name="ME_NO2_AUX_BLOWER_STARTER_ABN" index="7"/>
+			<tag name="ME_NO2_AUX_BLOWER_STARTER_RUN" index="8"/>
+			<tag name="ME_CW_CIRC_PUMP_ABNORMAL" index="9"/>
+			<tag name="ME_EICU_POWER_FAIL" index="10"/>
+			<tag name="ME_EICU_SYSTEM_FAIL" index="11"/>
+			<tag name="ME_UPS_PWR_SUPPLY_SYSTEM_A_ABN" index="12"/>
+			<tag name="ME_UPS_PWR_SUPPLY_SYSTEM_B_ABN" index="13"/>
+			<tag name="ME_NO1_START_UP_PUMP_ABNORMAL" index="14"/>
+			<tag name="ME_NO1_START_UP_PUMP_RUN" index="15"/>
+		</tags>
+
+		<tags name="TAG_GROUP_150">
+			<tag name="ME_NO2_START_UP_PUMP_ABNORMAL" index="0"/>
+			<tag name="ME_NO2_START_UP_PUMP_RUN" index="1"/>
+			<tag name="ME_CONTROL_SYSTEM_ABNORMAL" index="2"/>
+			<tag name="ME_SAFETY_SYSTEM_ABNORMAL" index="3"/>
+			<tag name="ME_CR_RC_MAIN_SOURCE_FAIL" index="4"/>
+			<tag name="ME_CR_RC_EMCY_SOURCE_FAIL" index="5"/>
+			<tag name="ME_CONTROL_SOURCE_FAIL" index="6"/>
+			<tag name="ME_SAFETY_SOURCE_FAIL" index="7"/>
+			<tag name="GE1_RUN" index="8"/>
+			<tag name="GE1_START_FAIL" index="9"/>
+			<tag name="GE1_OVER_SPEED" index="10"/>
+			<tag name="GE1_LO_PRESS_LOW" index="11"/>
+			<tag name="GE1_HT_FW_TEMP_HIGH" index="12"/>
+			<tag name="GE1_MANUAL_EMCY_STOP" index="13"/>
+			<tag name="GE1_POWER_FAIL" index="14"/>
+			<tag name="GE1_CONTROLSAFETY_SYSTEM_FAIL" index="15"/>
+		</tags>
+		<tags name="TAG_GROUP_151">
+			<tag name="GE1_SPEED_DETECTOR_ABNORMAL" index="0"/>
+			<tag name="GE1_STOPSENSOR_FAULT" index="1"/>
+			<tag name="GE1_SAFETY_SHD_OF_HARD_WIRE_SYS" index="2"/>
+			<tag name="GE1_LO_STRAIN_DIFF_P_ALM_REPOSE" index="3"/>
+			<tag name="GE1_LO_PRIMING_PUMP_FAIL" index="4"/>
+			<tag name="GE1_LO_PRIMING_PUMP_RUN" index="5"/>
+			<tag name="GE1_CONTROL_AIR_INLET_PRESS_LOW" index="6"/>
+			<tag name="GE1_LO_STRAINER_DIFFPRESS_HIGH" index="7"/>
+			<tag name="GE1_FO_STRAINER_DIFFPRESS_HIGH" index="8"/>
+			<tag name="GE1_FO_HIGH_PRESS_PIPE_LEAK" index="9"/>
+			<tag name="GE1_LO_SUMP_TK_LEVEL_HIGH" index="10"/>
+			<tag name="GE1_LO_SUMP_TK_LEVEL_LOW" index="11"/>
+			<tag name="GE_PREHEATER_ABNORMAL" index="12"/>
+			<tag name="GE2_RUN" index="13"/>
+			<tag name="GE2_START_FAIL" index="14"/>
+			<tag name="GE2_OVER_SPEED" index="15"/>
+		</tags>
+		<tags name="TAG_GROUP_152">
+			<tag name="GE2_LO_PRESS_LOW" index="0"/>
+			<tag name="GE2_HT_FW_TEMP_HIGH" index="1"/>
+			<tag name="GE2_MANUAL_EMCY_STOP" index="2"/>
+			<tag name="GE2_POWER_FAIL" index="3"/>
+			<tag name="GE2_CONTROLSAFETY_SYS_FAIL" index="4"/>
+			<tag name="GE2_SPEED_DETECTOR_ABNORMAL" index="5"/>
+			<tag name="GE2_STOPSENSOR_FAULT" index="6"/>
+			<tag name="GE2_SAFETY_SHD_OF_HARD_WIRE_SYS" index="7"/>
+			<tag name="GE2_LO_STRAIN_DIFF_P_ALM_REPOSE" index="8"/>
+			<tag name="GE2_LO_PRIMING_PUMP_FAIL" index="9"/>
+			<tag name="GE2_LO_PRIMING_PUMP_RUN" index="10"/>
+			<tag name="GE2_CONTROL_AIR_INLET_PRESS_LOW" index="11"/>
+			<tag name="GE2_LO_STRAINER_DIFFPRESS_HIGH" index="12"/>
+			<tag name="GE2_FO_STRAINER_DIFFPRESS_HIGH" index="13"/>
+			<tag name="GE2_FO_HIGH_PRESS_PIPE_LEAK" index="14"/>
+			<tag name="GE2_LO_SUMP_TK_LEVEL_HIGH" index="15"/>
+		</tags>
+		<tags name="TAG_GROUP_153">
+			<tag name="GE2_LO_SUMP_TK_LEVEL_LOW" index="0"/>
+			<tag name="GE3_RUN" index="1"/>
+			<tag name="GE3_START_FAIL" index="2"/>
+			<tag name="GE3_OVER_SPEED" index="3"/>
+			<tag name="GE3_LO_PRESS_LOW" index="4"/>
+			<tag name="GE3_HT_FW_TEMP_HIGH" index="5"/>
+			<tag name="GE3_MANUAL_EMCY_STOP" index="6"/>
+			<tag name="GE3_POWER_FAIL" index="7"/>
+			<tag name="GE3_CONTROLSAFETY_SYS_FAIL" index="8"/>
+			<tag name="GE3_SPEED_DETECTOR_ABNORMAL" index="9"/>
+			<tag name="GE3_STOPSENSOR_FAULT" index="10"/>
+			<tag name="GE3_SAFETY_SHD_OF_HARD_WIRE_SYS" index="11"/>
+			<tag name="GE3_LO_STRAIN_DIFF_P_ALM_REPOSE" index="12"/>
+			<tag name="GE3_LO_PRIMING_PUMP_FAIL" index="13"/>
+			<tag name="GE3_LO_PRIMING_PUMP_RUN" index="14"/>
+			<tag name="GE3_CONTROL_AIR_INLET_PRESS_LOW" index="15"/>
+		</tags>
+		<tags name="TAG_GROUP_154">
+			<tag name="GE3_LO_STRAINER_DIFFPRESS_HIGH" index="0"/>
+			<tag name="GE3_FO_STRAINER_DIFFPRESS_HIGH" index="1"/>
+			<tag name="GE3_FO_HIGH_PRESS_PIPE_LEAK" index="2"/>
+			<tag name="GE3_LO_SUMP_TK_LEVEL_HIGH" index="3"/>
+			<tag name="GE3_LO_SUMP_TK_LEVEL_LOW" index="4"/>
+			<tag name="CASCADE_TANK_LEVEL_HIGH" index="5"/>
+			<tag name="CASCADE_TANK_LEVEL_LOW" index="6"/>
+			<tag name="AUX_BOILER_COMMON_SHUT_DOWN" index="7"/>
+			<tag name="AUX_BOILER_COMMON_ABNORMAL" index="8"/>
+			<tag name="AUX_BOILER_OIL_CONTENT_HIGH" index="9"/>
+			<tag name="AUX_BOILER_SALINITY_HIGH" index="10"/>
+			<tag name="NO1_AUX_BOILER_FO_PUMP_OVERLOAD" index="11"/>
+			<tag name="NO2_AUX_BOILER_FO_PUMP_OVERLOAD" index="12"/>
+			<tag name="AUX_BLR_FO_PP_STBY_START_ALARM" index="13"/>
+			<tag name="NO1_AUX_BLR_MGO_PP_OVERLOAD" index="14"/>
+			<tag name="NO2_AUX_BOILER_MGO_PP_OVERLOAD" index="15"/>
+		</tags>
+		<tags name="TAG_GROUP_155">
+			<tag name="AUX_BLR_MGO_PP_STBY_START_ALM" index="0"/>
+			<tag name="SOOT_BLOWER_ABNORMAL" index="1"/>
+			<tag name="EGE_CIRC_WATER_FLOW_LOW" index="2"/>
+			<tag name="ST_LO_SUMP_TANK_LEVEL_LOW" index="3"/>
+			<tag name="ST_LO_TANK_LEVEL_HIGH" index="4"/>
+			<tag name="ST_LO_TANK_LEVEL_LOW" index="5"/>
+			<tag name="ST_FWD_SEAL_TANK_LEVEL_HIGH" index="6"/>
+			<tag name="ST_FWD_SEAL_TANK_LEVEL_LOW" index="7"/>
+			<tag name="ST_AIR_CONTROL_UNIT_PRESS_LOW" index="8"/>
+			<tag name="DRAIN_COLLECTION_TANK_LEVEL_HIGH" index="9"/>
+			<tag name="SG_ALARM_PANEL_ABNORMAL" index="10"/>
+			<tag name="ER_FWD_STBD_BILGE_WELL_LVL_HIGH" index="11"/>
+			<tag name="ER_FWD_PORT_BILGE_WELL_LVL_HIGH" index="12"/>
+			<tag name="BILGE_HAT_FOR_ME_RECESS_LVL_H" index="13"/>
+			<tag name="ME_AIR_CLR_DRAIN_TK_LEVEL_HIGH" index="14"/>
+			<tag name="WASTE_OIL_TANK_LEVEL_HIGH" index="15"/>
+		</tags>
+		<tags name="TAG_GROUP_156">
+			<tag name="SEWAGE_HOLDING_TANK_LEVEL_HIGH" index="0"/>
+			<tag name="SEWAGE_TREATMENT_PLANT_ABNORMAL" index="1"/>
+			<tag name="OILY_WATER_SEPARATOR_ABNORMAL" index="2"/>
+			<tag name="OILY_WTR_SEPARATOR_OIL_CONTENT_H" index="3"/>
+			<tag name="OILY_WTR_SEPARATOR_LONG_RUN_ALM" index="4"/>
+			<tag name="BILGE_TANK_LEVEL_HIGH" index="5"/>
+			<tag name="BILGE_TRANS_PUMP_ABNORMAL" index="6"/>
+			<tag name="BILGE_TRANS_PUMP_RUN" index="7"/>
+			<tag name="BILGE_TRANS_PUMP_LONG_RUN" index="8"/>
+			<tag name="BILGE_TRANS_PUMP_FREQENT_RUN" index="9"/>
+			<tag name="SLUDGE_PUMP_RUN" index="10"/>
+			<tag name="SLUDGE_PUMP_ABNORMAL" index="11"/>
+			<tag name="ER_AFT_BILGE_WELL_LEVEL_HIGH" index="12"/>
+			<tag name="INCINERATOR_COMMON_ABN" index="13"/>
+			<tag name="INCINERATOR_RUN" index="14"/>
+			<tag name="INCINERATOR_BOOSTER_PUMP_ABN" index="15"/>
+		</tags>
+		<tags name="TAG_GROUP_157">
+			<tag name="ME_AIR_CLR_DRN_TK_OIL_CONTENT_H" index="0"/>
+			<tag name="PUMP_RM_BILGE_WELL_LEVEL_HIGH" index="1"/>
+			<tag name="ELEC_MOTOR_RM_BILGE_HAT_S_L_H" index="2"/>
+			<tag name="ELEC_MOTOR_RM_BILGE_HAT_P_L_H" index="3"/>
+			<tag name="CARGO_CMPR_RM_BILGE_HAT_S_L_H" index="4"/>
+			<tag name="CARGO_CMPR_RM_BILGE_HAT_P_L_H" index="5"/>
+			<tag name="LO_SLUDGE_TK_LEVEL_HIGH" index="6"/>
+			<tag name="NO1_ME_LO_PURIFIER_ABNORMAL" index="7"/>
+			<tag name="NO1_ME_LO_PURIFIER_RUN" index="8"/>
+			<tag name="NO2_ME_LO_PURIFIER_ABNORMAL" index="9"/>
+			<tag name="NO2_ME_LO_PURIFIER_RUN" index="10"/>
+			<tag name="GE_LO_PURIFIER_ABNORMAL" index="11"/>
+			<tag name="GE_LO_PURIFIER_RUN" index="12"/>
+			<tag name="ME_LO_AUTO_FILTER_ABN_DPH" index="13"/>
+			<tag name="ME_LO_MANUAL_FILTER_DIFF_P_H" index="14"/>
+			<tag name="CYL_OIL_SERV_TK_FOR_LS_LEVEL_H" index="15"/>
+		</tags>
+		<tags name="TAG_GROUP_158">
+			<tag name="CYL_OIL_SERV_TK_FOR_LS_LEVEL_L" index="0"/>
+			<tag name="CYL_OIL_SERV_TK_LEVEL_HIGH" index="1"/>
+			<tag name="CYL_OIL_SERV_TK_LEVEL_LOW" index="2"/>
+			<tag name="CYL_OIL_STOR_TK_LEVEL_HIGH" index="3"/>
+			<tag name="CYL_OIL_STOR_TK_FOR_LS_LEVEL_H" index="4"/>
+			<tag name="ME_LO_STOR_TK_LEVEL_HIGH" index="5"/>
+			<tag name="GE_LO_STOR_TK_LEVEL_HIGH" index="6"/>
+			<tag name="ME_LO_SETT_TK_LEVEL_HIGH" index="7"/>
+			<tag name="ME_SCAV_AIR_BOX_DRAIN_TANK_L_H" index="8"/>
+			<tag name="ME_LO_SUMP_TANK_LEVEL_LOW" index="9"/>
+			<tag name="FO_SLUDGE_TK_LEVEL_HIGH" index="10"/>
+			<tag name="NO1_HFO_PURIFIER_ABNORMAL" index="11"/>
+			<tag name="NO1_HFO_PURIFIER_RUN" index="12"/>
+			<tag name="NO2_HFO_PURIFIER_ABNORMAL" index="13"/>
+			<tag name="NO2_HFO_PURIFIER_RUN" index="14"/>
+			<tag name="ME_FO_AUTO_FLT_ABN_AT_SPL_LINE" index="15"/>
+		</tags>
+		<tags name="TAG_GROUP_159">
+			<tag name="ME_FO_AUTO_FLT_ABN_AT_IN_LINE" index="0"/>
+			<tag name="ME_FO_HEATER_ABNORMAL" index="1"/>
+			<tag name="ME_HFO_USE" index="2"/>
+			<tag name="GE_FO_AUTO_FILTER_ABNORMAL" index="3"/>
+			<tag name="GE_HFO_USE" index="4"/>
+			<tag name="HFO_OVERFLOW_TK_LEVEL_HIGH" index="5"/>
+			<tag name="ME_FO_VISC_CONTROLLER_PWR_FAIL" index="6"/>
+			<tag name="GE_FO_VISC_CONTROLLER_PWR_FAIL" index="7"/>
+			<tag name="PURIFIER_RM_EXH_FAN_ABNORMAL" index="8"/>
+			<tag name="PAINT_AND_LAMP_STORE_EXH_FAN_ABN" index="9"/>
+			<tag name="AIR_HANDLING_UNIT_FAN_ABNORMAL" index="10"/>
+			<tag name="FWD_PUMP_RM_EXH_FAN_ABNORMAL" index="11"/>
+			<tag name="CMPR_RM_EXH_FAN_ABNORMAL" index="12"/>
+			<tag name="MOTOR_RM_SUP_FAN_ABNORMAL" index="13"/>
+			<tag name="AIR_LOCK_SPACE_SUP_FAN_ABNORMAL" index="14"/>
+			<tag name="BOSUN_STORE_EXH_FAN_ABNORMAL" index="15"/>
+		</tags>
+		<tags name="TAG_GROUP_160">
+			<tag name="EMCY_QUICK_CLOSE_AIR_BOTTLE_P_L" index="0"/>
+			<tag name="NO1_AIR_COND_CMPR_ABNORMAL" index="1"/>
+			<tag name="NO1_AIR_COND_CMPR_RUN" index="2"/>
+			<tag name="NO2_AIR_COND_CMPR_ABNORMAL" index="3"/>
+			<tag name="NO2_AIR_COND_CMPR_RUN" index="4"/>
+			<tag name="AIR_COOLER_UNIT_FOR_ECR_ABNORMAL" index="5"/>
+			<tag name="AIR_COOLER_UNIT_FOR_WH_ABNORMAL" index="6"/>
+			<tag name="GALLEY_FAN_COIL_UNIT_ABNORMAL" index="7"/>
+			<tag name="CONTROL_AIR_DRYER_ABNORMAL" index="8"/>
+			<tag name="HIGH_HUMIDITY_ALARM" index="9"/>
+			<tag name="NO1_ER_FAN_ABNORMAL" index="10"/>
+			<tag name="NO1_ER_FAN_RUN" index="11"/>
+			<tag name="NO2_ER_FAN_ABNORMAL" index="12"/>
+			<tag name="NO2_ER_FAN_SUP_RUN" index="13"/>
+			<tag name="NO2_ER_FAN_EXH_RUN" index="14"/>
+			<tag name="AMS_DC24V_LOW_INSULATION" index="15"/>
+		</tags>
+		<tags name="TAG_GROUP_161">
+			<tag name="AMS_DC_BATTERY_POWER_FAIL" index="0"/>
+			<tag name="AMS_PSU_ABNORNAL" index="1"/>
+			<tag name="AMS_PSU_AC_SOURCE_FAIL" index="2"/>
+			<tag name="AMS_EAP_POWER_FAIL" index="3"/>
+			<tag name="AMS_SHIPS_DC_POWER_FAIL" index="4"/>
+			<tag name="AMS_NO1_UPS_EARTH_FAULT" index="5"/>
+			<tag name="AMS_NO1_UPS_POWER_FAIL" index="6"/>
+			<tag name="AMS_NO1_UPS_ABNORNAL" index="7"/>
+			<tag name="AMS_NO2_UPS_EARTH_FAULT" index="8"/>
+			<tag name="AMS_NO2_UPS_POWER_FAIL" index="9"/>
+			<tag name="AMS_NO2_UPS_ABNORNAL" index="10"/>
+			<tag name="ECC_MAIN_AC_POWER_FAIL" index="11"/>
+			<tag name="ECC_EMCY_AC_POWER_FAIL" index="12"/>
+			<tag name="ECC_DC_POWER_FAIL" index="13"/>
+			<tag name="SLC_POWER_FAIL" index="14"/>
+			<tag name="ER_DEAD_MAN_ALARM" index="15"/>
+		</tags>
+		<tags name="TAG_GROUP_162">
+			<tag name="EXTERNAL_BUZZER_STOP" index="0"/>
+			<tag name="LTFW_EXP_TANK_LEVEL_LOW" index="1"/>
+			<tag name="HTFW_EXP_TANK_LEVEL_LOW" index="2"/>
+			<tag name="ICCP_ABNORMAL" index="3"/>
+			<tag name="SHAFT_EARTHING_METER_ABNORMAL" index="4"/>
+			<tag name="NO1_REF_PROV_PLANT_ABNORMAL" index="5"/>
+			<tag name="NO1_REF_PROV_CMPR_RUN" index="6"/>
+			<tag name="NO1_REF_PROV_PLANT_INTERLOCK" index="7"/>
+			<tag name="NO2_REF_PROV_PLANT_ABNORMAL" index="8"/>
+			<tag name="NO2_REF_PROV_CMPR_RUN" index="9"/>
+			<tag name="NO2_REF_PROV_PLANT_INTERLOCK" index="10"/>
+			<tag name="FWD_DECK_MACHINERY_ABNORMAL" index="11"/>
+			<tag name="AFT_DECK_MACHINERY_ABNORMAL" index="12"/>
+			<tag name="LTFW_PUMP_FOR_ACCOM_ABNORMAL" index="13"/>
+			<tag name="DC24V_BATT_CH_DISCH_BOARD_ABN" index="14"/>
+			<tag name="DC24V_BATT_CH_DISCH_BOARD_LOW_INSULATION" index="15"/>
+		</tags>
+		<tags name="TAG_GROUP_163">
+			<tag name="DC24V_BATT_CH_DISCH_BOARD_MAIN_PWR_FAIL" index="0"/>
+			<tag name="DC24V_BATT_CHDISCH_BOARD_EMCY_PWR_FAIL" index="1"/>
+			<tag name="NO1_AUTO_PILOT_POWER_FAIL" index="2"/>
+			<tag name="NO2_AUTO_PILOT_POWER_FAIL" index="3"/>
+			<tag name="BCC_MAIN_AC_POWER_FAIL" index="6"/>
+			<tag name="BCC_EMCY_AC_POWER_FAIL" index="7"/>
+			<tag name="BCC_DC_POWER_FAIL" index="8"/>
+			<tag name="BRIDGE_WATCH_ALARM_SYSTEM_PWR_F" index="9"/>
+			<tag name="COLD_CHAMBER_EMCY_CALL" index="10"/>
+			<tag name="HOSPITAL_CALL" index="11"/>
+			<tag name="AMS_NO3_UPS_POWER_FAIL" index="12"/>
+			<tag name="REF_PROV_PLANT_FAN_SWBD_COM_ABN" index="13"/>
+			<tag name="CALORIFIER_ABNORMAL" index="14"/>
+			<tag name="STERILIZER_ABNORMAL" index="15"/>
+		</tags>
+
+		<tags name="TAG_GROUP_164">
+			<tag name="FW_GENERATOR_SALINOMETER_ABN" index="0"/>
+			<tag name="FW_GENERATOR_EJECT_PUMP_RUN" index="1"/>
+			<tag name="FW_GENERATOR_EJECT_PUMP_ABNORMAL" index="2"/>
+			<tag name="NO1_FW_HYD_PUMP_RUN" index="3"/>
+			<tag name="NO1_FW_HYD_PUMP_ABNORMAL" index="4"/>
+			<tag name="NO2_FW_HYD_PUMP_RUN" index="5"/>
+			<tag name="NO2_FW_HYD_PUMP_ABNORMAL" index="6"/>
+			<tag name="FW_DISTILLATED_PUMP_ABNORMAL" index="7"/>
+			<tag name="MGPS_ABNORMAL" index="8"/>
+			<tag name="ALARM_DEVICE_FOR_DEAERAT_TK_L_L" index="9"/>
+			<tag name="MSBD_ABNORMAL" index="10"/>
+			<tag name="MSBD_CTRL_SOURCE_FAIL" index="11"/>
+			<tag name="PREFERENTIAL_TRIP" index="12"/>
+			<tag name="EMCY_GE_RUN" index="13"/>
+			<tag name="EMCY_GE_ABNORMAL" index="14"/>
+			<tag name="EG_ACB_OPENED" index="15"/>
+		</tags>
+
+		<tags name="TAG_GROUP_165">
+			<tag name="EG_ACB_CLOSED" index="0"/>
+			<tag name="ESBD_ABNORMAL" index="1"/>
+			<tag name="EMCY_DO_TANK_LEVEL_LOW" index="2"/>
+			<tag name="EG_BATT_CHARGER_FAIL" index="3"/>
+			<tag name="SG_RM_SUP_FAN_ABNORMAL" index="4"/>
+			<tag name="CO2_RM_EXH_FAN_ABNORMAL" index="5"/>
+			<tag name="BATT_RM_EXH_FAN_ABNORMAL" index="6"/>
+			<tag name="BLACK_OUT" index="7"/>
+			<tag name="ESBD_BUS_TIE_BREAKER_OPEN" index="8"/>
+			<tag name="ESBD_BREAKER_CLOSE" index="9"/>
+			<tag name="MSBD_BUS_TIE_BREAKER_OPEN" index="10"/>
+			<tag name="FIRE_ALARM" index="11"/>
+			<tag name="FIRE_ALARM_SYSTEM_ABNORMAL" index="12"/>
+			<tag name="LOCAL_FIRE_PRE_WARNING_ALARM" index="13"/>
+			<tag name="LFFS_COMMON_ABNORMAL" index="14"/>
+			<tag name="LFFS_RELEASE_ME" index="15"/>
+		</tags>
+		<tags name="TAG_GROUP_166">
+			<tag name="LFFS_RELEASE_GE_1" index="0"/>
+			<tag name="LFFS_RELEASE_GE_2" index="1"/>
+			<tag name="LFFS_RELEASE_GE_3" index="2"/>
+			<tag name="LFFS_RELEASE_AUX_BOILER" index="3"/>
+			<tag name="LFFS_RELEASE_HFO_PURIFIER" index="4"/>
+			<tag name="LFFS_RELEASE_IGG" index="5"/>
+			<tag name="CO2_RELEASE_ALARM_ER" index="6"/>
+			<tag name="CO2_RELEASE_ALARM_CMPR_RM" index="7"/>
+			<tag name="CO2_RELEASE_ALARM_MOTOR_RM" index="8"/>
+			<tag name="CO2_SYSTEM_POWER_FAIL" index="9"/>
+			<tag name="CO2_LEAKAGE_ALARM" index="10"/>
+			<tag name="NO1_MAIN_AIR_CMPR_RUN" index="11"/>
+			<tag name="NO1_MAIN_AIR_CMPR_ABNORMAL" index="12"/>
+			<tag name="NO1_MAIN_AIR_CMPR_REMOTE" index="13"/>
+			<tag name="MAIN_AIR_CMPR_LEAD_CONTROL" index="14"/>
+			<tag name="MAIN_AIR_CMPR_FOLLOW_CONTROL" index="15"/>
+		</tags>
+		<tags name="TAG_GROUP_167">
+			<tag name="CONTROL_AIR_CMPR_RUN" index="0"/>
+			<tag name="CONTROL_AIR_CMPR_ABNORMAL" index="1"/>
+			<tag name="CONTROL_AIR_CMPR_REMOTE" index="2"/>
+			<tag name="CONTROL_AIR_CMPR_AUTO_STARTSTOP" index="3"/>
+			<tag name="NO2_MAIN_AIR_CMPR_RUN" index="4"/>
+			<tag name="NO2_MAIN_AIR_CMPR_ABNORMAL" index="5"/>
+			<tag name="NO2_MAIN_AIR_CMPR_REMOTE" index="6"/>
+			<tag name="SERVICE_AIR_CMPR_RUN" index="7"/>
+			<tag name="SERVICE_AIR_CMPR_ABNORMAL" index="8"/>
+			<tag name="SERVICE_AIR_CMPR_REMOTE" index="9"/>
+			<tag name="SERVICE_AIR_CMPR_AUTO_STARTSTOP" index="10"/>
+			<tag name="NO1_MAIN_CSW_PUMP_RUN" index="11"/>
+			<tag name="NO1_MAIN_CSW_PUMP_ABNORMAL" index="12"/>
+			<tag name="NO1_MAIN_CSW_PUMP_REMOTE" index="13"/>
+			<tag name="NO1_MAIN_CSW_PUMP_OUT_PRESS_LOW" index="14"/>
+			<tag name="NO1_CENTRAL_CFW_PUMP_RUN" index="15"/>
+		</tags>
+		<tags name="TAG_GROUP_168">
+			<tag name="NO1_CENTRAL_CFW_PUMP_ABNORMAL" index="0"/>
+			<tag name="NO1_CENTRAL_CFW_PUMP_REMOTE" index="1"/>
+			<tag name="NO1_CENTRAL_CFW_PUMP_OUT_PRESS_LOW" index="2"/>
+			<tag name="NO3_CENTRAL_CFW_PUMP_RUN" index="3"/>
+			<tag name="NO3_CENTRAL_CFW_PUMP_ABNORMAL" index="4"/>
+			<tag name="NO3_CENTRAL_CFW_PUMP_REMOTE" index="5"/>
+			<tag name="NO3_CENTRAL_CFW_PUMP_OUT_PRESS_LOW" index="6"/>
+			<tag name="NO1_MAIN_LO_PUMP_RUN" index="7"/>
+			<tag name="NO1_MAIN_LO_PUMP_ABNORMAL" index="8"/>
+			<tag name="NO1_MAIN_LO_PUMP_REMOTE" index="9"/>
+			<tag name="MAIN_LO_PUMP_OUT_PRESS_LOW" index="10"/>
+			<tag name="NO1_ME_FO_SUPPLY_PUMP_RUN" index="11"/>
+			<tag name="NO1_ME_FO_SUPPLY_PUMP_ABNORMAL" index="12"/>
+			<tag name="NO1_ME_FO_SUPPLY_PUMP_REMOTE" index="13"/>
+			<tag name="ME_FO_SUPPLY_PUMP_OUT_PRESS_LOW" index="14"/>
+			<tag name="NO1_ME_FO_CIRC_PUMP_RUN" index="15"/>
+		</tags>
+		<tags name="TAG_GROUP_169">
+			<tag name="NO1_ME_FO_CIRC_PUMP_ABNORMAL" index="0"/>
+			<tag name="NO1_ME_FO_CIRC_PUMP_REMOTE" index="1"/>
+			<tag name="ME_FO_CIRC_PUMP_OUT_PRESS_LOW" index="2"/>
+			<tag name="NO1_GE_FO_SUPPLY_PUMP_RUN" index="3"/>
+			<tag name="NO1_GE_FO_SUPPLY_PUMP_ABNORMAL" index="4"/>
+			<tag name="NO1_GE_FO_SUPPLY_PUMP_REMOTE" index="5"/>
+			<tag name="GE_FO_SUPPLY_PUMP_OUT_PRESS_LOW" index="6"/>
+			<tag name="NO1_GE_FO_CIRC_PUMP_RUN" index="7"/>
+			<tag name="NO1_GE_FO_CIRC_PUMP_ABNORMAL" index="8"/>
+			<tag name="NO1_GE_FO_CIRC_PUMP_REMOTE" index="9"/>
+			<tag name="GE_FO_CIRC_PUMP_OUT_PRESS_LOW" index="10"/>
+			<tag name="NO1_ME_JW_PUMP_RUN" index="11"/>
+			<tag name="NO1_ME_JW_PUMP_ABNORMAL" index="12"/>
+			<tag name="NO1_ME_JW_PUMP_REMOTE" index="13"/>
+			<tag name="ME_JW_PUMP_OUT_PRESS_LOW" index="14"/>
+			<tag name="NO1_AUX_BLR_FEED_WATER_PUMP_RUN" index="15"/>
+		</tags>
+		<tags name="TAG_GROUP_170">
+			<tag name="NO1_AUX_BLR_FEED_WATER_PUMP_ABN" index="0"/>
+			<tag name="NO1_AUX_BLR_FD_W_PP_REMOTE" index="1"/>
+			<tag name="AUX_BOILER_FW_PUMP_OUT_PRESS_L" index="2"/>
+			<tag name="NO1_BOILER_WATER_CIRC_PUMP_RUN" index="3"/>
+			<tag name="NO1_BOILER_WATER_CIRC_PUMP_ABNORMAL" index="4"/>
+			<tag name="NO1_BOILER_WATER_CIRC_PUMP_REMOTE" index="5"/>
+			<tag name="BOILER_WATER_CIRC_PUMP_OUT_PRESS_LOW" index="6"/>
+			<tag name="NO1_ST_LO_CIRC_PUMP_RUN" index="7"/>
+			<tag name="NO1_ST_LO_CIRC_PUMP_ABNORMAL" index="8"/>
+			<tag name="NO1_ST_LO_CIRC_PUMP_REMOTE" index="9"/>
+			<tag name="ST_LO_CIRC_PUMP_OUT_PRESS_LOW" index="10"/>
+			<tag name="NO1_FWD_HFO_TRANSFER_PUMP_RUN" index="11"/>
+			<tag name="NO1_FWD_HFO_TRANSFER_PUMP_ABN" index="12"/>
+			<tag name="NO1_FWD_HFO_TRANSFER_PUMP_LONG_RUN" index="13"/>
+			<tag name="LO_TRANSFER_PUMP_RUN" index="14"/>
+			<tag name="LO_TRANSFER_PUMP_ABNORMAL" index="15"/>
+		</tags>
+		<tags name="TAG_GROUP_171">
+			<tag name="FWD_FIRE_PUMP_STOP_ORDER" index="0"/>
+			<tag name="FWD_FIRE_PUMP_START_ORDER" index="1"/>
+			<tag name="FWD_FIRE_PUMP_RUN" index="2"/>
+			<tag name="FWD_FIRE_PUMP_ABNORMAL" index="3"/>
+			<tag name="HFO_TRANS_PUMP_RUN" index="7"/>
+			<tag name="HFO_TRANS_PUMP_ABNORMAL" index="8"/>
+			<tag name="HFO_TRANS_PUMP_REMOTE" index="9"/>
+			<tag name="HFO_TRANS_PUMP_LONG_RUN" index="10"/>
+			<tag name="HFO_TRANS_PP_AUTO_STOP" index="11"/>
+			<tag name="HFO_TRANS_PUMP_AUTO_START" index="12"/>
+			<tag name="NO2_MAIN_CSW_PUMP_RUN" index="13"/>
+			<tag name="NO2_MAIN_CSW_PUMP_ABNORMAL" index="14"/>
+			<tag name="NO2_MAIN_CSW_PUMP_REMOTE" index="15"/>
+		</tags>
+		<tags name="TAG_GROUP_172">
+			<tag name="NO2_MAIN_CSW_PUMP_OUT_PRESS_LOW" index="0"/>
+			<tag name="NO3_MAIN_CSW_PUMP_RUN" index="1"/>
+			<tag name="NO3_MAIN_CSW_PUMP_ABNORMAL" index="2"/>
+			<tag name="NO3_MAIN_CSW_PUMP_REMOTE" index="3"/>
+			<tag name="NO3_MAIN_CSW_PUMP_OUT_PRESS_LOW" index="4"/>
+			<tag name="NO2_CENTRAL_CFW_PUMP_RUN" index="5"/>
+			<tag name="NO2_CENTRAL_CFW_PUMP_ABNORMAL" index="6"/>
+			<tag name="NO2_CENTRAL_CFW_PUMP_REMOTE" index="7"/>
+			<tag name="NO2_CENTRAL_CFW_PUMP_OUT_PRESS_LOW" index="8"/>
+			<tag name="NO2_MAIN_LO_PUMP_RUN" index="9"/>
+			<tag name="NO2_MAIN_LO_PUMP_ABNORMAL" index="10"/>
+			<tag name="NO2_MAIN_LO_PUMP_REMOTE" index="11"/>
+			<tag name="NO2_ME_FO_SUPPLY_PUMP_RUN" index="12"/>
+			<tag name="NO2_ME_FO_SUPPLY_PUMP_ABNORMAL" index="13"/>
+			<tag name="NO2_ME_FO_SUPPLY_PUMP_REMOTE" index="14"/>
+			<tag name="NO2_ME_FO_CIRC_PUMP_RUN" index="15"/>
+		</tags>
+		<tags name="TAG_GROUP_173">
+			<tag name="NO2_ME_FO_CIRC_PUMP_ABNORMAL" index="0"/>
+			<tag name="NO2_ME_FO_CIRC_PUMP_REMOTE" index="1"/>
+			<tag name="NO2_GE_FO_SUPPLY_PUMP_RUN" index="2"/>
+			<tag name="NO2_GE_FO_SUPPLY_PUMP_ABNORMAL" index="3"/>
+			<tag name="NO2_GE_FO_SUPPLY_PUMP_REMOTE" index="4"/>
+			<tag name="NO2_GE_FO_CIRC_PUMP_RUN" index="5"/>
+			<tag name="NO2_GE_FO_CIRC_PUMP_ABNORMAL" index="6"/>
+			<tag name="NO2_GE_FO_CIRC_PUMP_REMOTE" index="7"/>
+			<tag name="NO2_ME_JW_PUMP_RUN" index="8"/>
+			<tag name="NO2_ME_JW_PUMP_ABNORMAL" index="9"/>
+			<tag name="NO2_ME_JW_PUMP_REMOTE" index="10"/>
+			<tag name="NO2_AUX_BLR_FEED_WATER_PUMP_RUN" index="11"/>
+			<tag name="NO2_AUX_BLR_FEED_WATER_PUMP_ABN" index="12"/>
+			<tag name="NO2_AUX_BLR_FD_W_PUMP_REMOTE" index="13"/>
+			<tag name="NO2_BOILER_WATER_CIRC_PUMP_RUN" index="14"/>
+			<tag name="NO2_BOILER_WATER_CIRC_PUMP_ABNORMAL" index="15"/>
+		</tags>
+		<tags name="TAG_GROUP_174">
+			<tag name="NO2_BOILER_WATER_CIRC_PUMP_REMOTE" index="0"/>
+			<tag name="NO2_ST_LO_CIRC_PUMP_RUN" index="1"/>
+			<tag name="NO2_ST_LO_CIRC_PUMP_ABNORMAL" index="2"/>
+			<tag name="NO2_ST_LO_CIRC_PUMP_REMOTE" index="3"/>
+			<tag name="NO2_FWD_HFO_TRANSFER_PUMP_RUN" index="4"/>
+			<tag name="NO2_FWD_HFO_TRANSFER_PUMP_ABN" index="5"/>
+			<tag name="NO2_FWD_HFO_TRANSFER_PUMP_LONG_RUN" index="6"/>
+			<tag name="CYL_OIL_TRANSFER_PUMP_RUN" index="7"/>
+			<tag name="CYL_OIL_TRANSFER_PUMP_ABNORMAL" index="8"/>
+			<tag name="MGO_TRANS_PUMP_RUN" index="9"/>
+			<tag name="MGO_TRANS_PUMP_ABNORMAL" index="10"/>
+			<tag name="MGO_TRANS_PUMP_REMOTE" index="11"/>
+			<tag name="NO1_MGO_TRANS_PUMP_AUTO_STOP" index="12"/>
+			<tag name="NO1_MGO_TRANS_PUMP_AUTO_START" index="13"/>
+			<tag name="NO2_MGO_TRANS_PUMP_AUTO_STOP" index="14"/>
+			<tag name="NO2_MGO_TRANS_PUMP_AUTO_START" index="15"/>
+		</tags>
+		<tags name="TAG_GROUP_175">
+			<tag name="GE1_ALARM_REPOSE" index="0"/>
+			<tag name="GE2_ALARM_REPOSE" index="1"/>
+			<tag name="GE3_ALARM_REPOSE" index="2"/>
+			<tag name="ME_MGO_USE" index="3"/>
+			<tag name="GE_MGO_USE" index="4"/>
+			<tag name="FISH_ROOM_DEFROSTING" index="5"/>
+			<tag name="MEAT_ROOM_DEFROSTING" index="6"/>
+			<tag name="ME_COMMON_SLOWDOWN" index="7"/>
+			<tag name="GE1_MANUAL_EMCY_STOP_FROM_AMS" index="8"/>
+			<tag name="GE2_MANUAL_EMCY_STOP_FROM_AMS" index="9"/>
+			<tag name="GE3_MANUAL_EMCY_STOP_FROM_AMS" index="10"/>
+			<tag name="ME_RUN_SIGNAL_OUT_SOOT_BLOWER" index="11"/>
+			<tag name="ME_LOAD_MORE_THAN_75_PERCENT_OPEN_SEA" index="12"/>
+			<tag name="BILGE_TRANS_PUMP_RUN_2" index="13"/>
+			<tag name="INCINERATOR_RUN_2" index="14"/>
+			<tag name="NO1_ME_LO_PURIF_RUN" index="15"/>
+		</tags>
+		<tags name="TAG_GROUP_176">
+			<tag name="NO2_ME_LO_PURIF_RUN" index="0"/>
+			<tag name="GE_LO_PURIF_RUN" index="1"/>
+			<tag name="ME_FO_CIRC_PUMP_RUN" index="2"/>
+			<tag name="NO1_HFO_PURIF_RUN" index="3"/>
+			<tag name="NO2_HFO_PURIF_RUN" index="4"/>
+			<tag name="NO1_AIR_COND_CMPR_RUN_2" index="5"/>
+			<tag name="NO2_AIR_COND_CMPR_RUN_2" index="6"/>
+			<tag name="ER_MACHINERY_ALARM" index="7"/>
+			<tag name="NO1_REF_PROV_CMPR_RUN_2" index="8"/>
+			<tag name="NO2_REF_PROV_CMPR_RUN_2" index="9"/>
+			<tag name="NO1_MAIN_AIR_CMPR_STOP_ORDER" index="10"/>
+			<tag name="NO1_MAIN_AIR_CMPR_START_ORDER" index="11"/>
+			<tag name="CONTROL_AIR_CMPR_STOP_ORDER" index="12"/>
+			<tag name="CONTROL_AIR_CMPR_START_ORDER" index="13"/>
+			<tag name="NO2_MAIN_AIR_CMPR_STOP_ORDER" index="14"/>
+			<tag name="NO2_MAIN_AIR_CMPR_START_ORDER" index="15"/>
+		</tags>
+		<tags name="TAG_GROUP_177">
+			<tag name="SERVICE_AIR_CMPR_STOP_ORDER" index="0"/>
+			<tag name="SERVICE_AIR_CMPR_START_ORDER" index="1"/>
+			<tag name="NO1_MAIN_CSW_PUMP_STOP_ORDER" index="2"/>
+			<tag name="NO1_MAIN_CSW_PUMP_START_ORDER" index="3"/>
+			<tag name="NO1_CENTRAL_CFW_PUMP_STOP_ORDER" index="4"/>
+			<tag name="NO1_CENTRAL_CFW_PUMP_START_ORDER" index="5"/>
+			<tag name="NO3_CENTRAL_CFW_PUMP_STOP_ORDER" index="6"/>
+			<tag name="NO3_CENTRAL_CFW_PUMP_START_ORDER" index="7"/>
+			<tag name="NO1_MAIN_LO_PUMP_STOP_ORDER" index="8"/>
+			<tag name="NO1_MAIN_LO_PUMP_START_ORDER" index="9"/>
+			<tag name="NO1_ME_FO_SPL_PUMP_STOP_ORDER" index="10"/>
+			<tag name="NO1_ME_FO_SPL_PUMP_START_ORDER" index="11"/>
+			<tag name="NO1_ME_FO_CIRC_PUMP_STOP_ORDER" index="12"/>
+			<tag name="NO1_ME_FO_CIRC_PUMP_START_ORDER" index="13"/>
+			<tag name="NO1_GE_FO_SPL_PUMP_STOP_ORDER" index="14"/>
+			<tag name="NO1_GE_FO_SPL_PUMP_START_ORDER" index="15"/>
+		</tags>
+		<tags name="TAG_GROUP_178">
+			<tag name="NO1_GE_FO_CIRC_PUMP_STOP_ORDER" index="0"/>
+			<tag name="NO1_GE_FO_CIRC_PUMP_START_ORDER" index="1"/>
+			<tag name="NO1_ME_JW_PUMP_STOP_ORDER" index="2"/>
+			<tag name="NO1_ME_JW_PUMP_START_ORDER" index="3"/>
+			<tag name="NO1_AUX_BLR_FD_W_PUMP_STOP_ORDER" index="4"/>
+			<tag name="NO1_AUX_BLR_FD_W_PUMP_START_ORDER" index="5"/>
+			<tag name="NO1_BOILER_WATER_CIRC_PUMP_STOP_ORDER" index="6"/>
+			<tag name="NO1_BOILER_WATER_CIRC_PUMP_START_ORDER" index="7"/>
+			<tag name="NO1_ST_LO_CIRC_PUMP_STOP_ORDER" index="8"/>
+			<tag name="NO1_ST_LO_CIRC_PUMP_START_ORDER" index="9"/>
+			<tag name="HFO_TRANS_PUMP_STOP_ORDER" index="12"/>
+			<tag name="HFO_TRANS_PUMP_START_ORDER" index="13"/>
+			<tag name="NO2_MAIN_CSW_PUMP_STOP_ORDER" index="14"/>
+			<tag name="NO2_MAIN_CSW_PUMP_START_ORDER" index="15"/>
+		</tags>
+		<tags name="TAG_GROUP_179">
+			<tag name="NO3_MAIN_CSW_PUMP_STOP_ORDER" index="0"/>
+			<tag name="NO3_MAIN_CSW_PUMP_START_ORDER" index="1"/>
+			<tag name="NO2_CENTRAL_CFW_PUMP_STOP_ORDER" index="2"/>
+			<tag name="NO2_CENTRAL_CFW_PUMP_START_ORDER" index="3"/>
+			<tag name="NO2_MAIN_LO_PUMP_STOP_ORDER" index="4"/>
+			<tag name="NO2_MAIN_LO_PUMP_START_ORDER" index="5"/>
+			<tag name="NO2_ME_FO_SPL_PUMP_STOP_ORDER" index="6"/>
+			<tag name="NO2_ME_FO_SPL_PUMP_START_ORDER" index="7"/>
+			<tag name="NO2_ME_FO_CIRC_PUMP_STOP_ORDER" index="8"/>
+			<tag name="NO2_ME_FO_CIRC_PUMP_START_ORDER" index="9"/>
+			<tag name="NO2_GE_FO_SPL_PUMP_STOP_ORDER" index="10"/>
+			<tag name="NO2_GE_FO_SPL_PUMP_START_ORDER" index="11"/>
+			<tag name="NO2_GE_FO_CIRC_PUMP_STOP_ORDER" index="12"/>
+			<tag name="NO2_GE_FO_CIRC_PUMP_START_ORDER" index="13"/>
+			<tag name="NO2_ME_JW_PUMP_STOP_ORDER" index="14"/>
+			<tag name="NO2_ME_JW_PUMP_START_ORDER" index="15"/>
+		</tags>
+		<tags name="TAG_GROUP_180">
+			<tag name="NO2_AUX_BLR_FD_W_PP_STOP_ORDER" index="0"/>
+			<tag name="NO2_AUX_BLR_FD_W_PP_START_ORDER" index="1"/>
+			<tag name="NO2_BOILER_WATER_CIRC_PUMP_STOP_ORDER" index="2"/>
+			<tag name="NO2_BOILER_WATER_CIRC_PUMP_START_ORDER" index="3"/>
+			<tag name="NO2_ST_LO_CIRC_PUMP_STOP_ORDER" index="4"/>
+			<tag name="NO2_ST_LO_CIRC_PUMP_START_ORDER" index="5"/>
+			<tag name="MGO_TRANS_PUMP_STOP_ORDER" index="6"/>
+			<tag name="MGO_TRANS_PUMP_START_ORDER" index="7"/>
+		</tags>
+		<tags name="TAG_GROUP_183">
+			<tag name="ME_START_FAILURE" index="0"/>
+			<tag name="ME_START_BLOCK" index="1"/>
+			<tag name="ME_NOT_READY_CONDITION" index="2"/>
+			<tag name="ME_IMPERFECT_BRIDGE_CTRL" index="3"/>
+			<tag name="ME_CRITICAL_SPEED" index="4"/>
+			<tag name="ME_WRONG_WAY" index="5"/>
+			<tag name="ME_EMCY_SHUT_DOWN_PREWARNING" index="6"/>
+			<tag name="ME_EMCY_SLOW_DOWN_PREWARNING" index="7"/>
+			<tag name="ME_SLOW_DOWN_REQUEST" index="8"/>
+			<tag name="ME_AUTO_EMCY_SLOW_DOWN" index="9"/>
+			<tag name="ME_EMCY_SHUT_DOWN" index="10"/>
+			<tag name="ME_OVER_SPEED" index="11"/>
+			<tag name="ME_MANUAL_SHUT_DOWN" index="12"/>
+			<tag name="ME_TELEGRAPH_SOURCE_FAILURE" index="13"/>
+			<tag name="ME_TELEGRAPH_SYSTEM_ABN" index="14"/>
+			<tag name="ME_BRIDGE_SOURCE_FAILURE" index="15"/>
+		</tags>
+		<tags name="TAG_GROUP_184">
+			<tag name="ME_TELEG_LOGGER_SYSTEM_ABN" index="0"/>
+			<tag name="ME_EMCY_SHUT_DOWN_CANCEL" index="1"/>
+			<tag name="ME_EMCY_SLOW_DOWN_CANCEL" index="2"/>
+			<tag name="ME_ECS_ABNORMAL" index="3"/>
+		</tags>
+		<tags name="TAG_GROUP_194">
+			<tag name="NO1_GE_ACB_ABNORMAL_TRIP" index="0"/>
+			<tag name="NO1_GE_ACB_CLOSED" index="1"/>
+			<tag name="NO1_GE_SYNC_FAIL" index="2"/>
+			<tag name="NO1_GE_ACB_NON_CLOSED" index="3"/>
+			<tag name="NO1_GE_AMS_CONTROL_ENABLE" index="4"/>
+			<tag name="NO1_GE_AUTOMATIC_CONTROL" index="5"/>
+			<tag name="NO1_GE_STANDBY_AUTO_START" index="6"/>
+			<tag name="NO1_GE_LOCAL_CONTROL_BLOCK" index="7"/>
+			<tag name="NO1_GE_BUS_BAR_FREQ_HIGH" index="8"/>
+			<tag name="NO1_GE_BUS_BAR_VOLTAGE_HI" index="9"/>
+			<tag name="NO1_GE_BUS_BAR_FREQ_LOW" index="10"/>
+			<tag name="NO1_GE_BUS_BAR_VOLTAGE_LOW" index="11"/>
+			<tag name="NO1_GE_BUS_TIE_CLOSED" index="12"/>
+			<tag name="NO1_GE_ALARM_OCUURRED" index="13"/>
+			<tag name="NO1_PMS_ARCNET_COMM_FAIL" index="14"/>
+			<tag name="NO1_GE_SHUT_DOWN" index="15"/>
+		</tags>
+		<tags name="TAG_GROUP_195">
+			<tag name="NO1_GE_STANDBY_SELECTED_1" index="0"/>
+			<tag name="NO1_GE_STANDBY_SELECTED_2" index="1"/>
+			<tag name="NO1_GE_HEAVY_LOAD_CONDITION" index="2"/>
+			<tag name="NO1_GE_LIGHT_LOAD_CONDITION" index="3"/>
+			<tag name="NO1_GE_LIGHT_LOAD_CANCEL" index="4"/>
+			<tag name="NO1_GE_PT_GROUP_1" index="5"/>
+			<tag name="NO1_GE_PT_GROUP_2" index="6"/>
+			<tag name="NO1_GE_READY_TO_START" index="7"/>
+			<tag name="NO1_GE_REVERSE_POWER" index="8"/>
+			<tag name="NO1_GE_RUNNIG" index="9"/>
+			<tag name="NO1_GE_STOP_FAIL" index="10"/>
+			<tag name="NO1_GE_STOPPING" index="11"/>
+			<tag name="NO1_GE_START_FAIL" index="12"/>
+			<tag name="NO1_GE_STARTING" index="13"/>
+			<tag name="NO1_GE_OVER_CURSHORT_CIRC" index="14"/>
+			<tag name="NO1_GE_SYNCHRONIZING" index="15"/>
+		</tags>
+		<tags name="TAG_GROUP_205">
+			<tag name="NO2_GE_ACB_ABNORMAL_TRIP" index="0"/>
+			<tag name="NO2_GE_ACB_CLOSED" index="1"/>
+			<tag name="NO2_GE_SYNC_FAIL" index="2"/>
+			<tag name="NO2_GE_ACB_NON_CLOSED" index="3"/>
+			<tag name="NO2_GE_AMS_CONTROL_ENABLE" index="4"/>
+			<tag name="NO2_GE_AUTOMATIC_CONTROL" index="5"/>
+			<tag name="NO2_GE_STANDBY_AUTO_START" index="6"/>
+			<tag name="NO2_GE_LOCAL_CONTROL_BLOCK" index="7"/>
+			<tag name="NO2_GE_BUS_BAR_FREQ_HIGH" index="8"/>
+			<tag name="NO2_GE_BUS_BAR_VOLTAGE_HI" index="9"/>
+			<tag name="NO2_GE_BUS_BAR_FREQ_LOW" index="10"/>
+			<tag name="NO2_GE_BUS_BAR_VOLTAGE_LOW" index="11"/>
+			<tag name="NO2_GE_BUS_TIE_CLOSED" index="12"/>
+			<tag name="NO2_GE_ALARM_OCUURRED" index="13"/>
+			<tag name="NO2_PMS_ARCNET_COMM_FAIL" index="14"/>
+			<tag name="NO2_GE_SHUT_DOWN" index="15"/>
+		</tags>
+		<tags name="TAG_GROUP_206">
+			<tag name="NO2_GE_STANDBY_SELECTED_1" index="0"/>
+			<tag name="NO2_GE_STANDBY_SELECTED_2" index="1"/>
+			<tag name="NO2_GE_HEAVY_LOAD_CONDITION" index="2"/>
+			<tag name="NO2_GE_LIGHT_LOAD_CONDITION" index="3"/>
+			<tag name="NO2_GE_LIGHT_LOAD_CANCEL" index="4"/>
+			<tag name="NO2_GE_PT_GROUP_1" index="5"/>
+			<tag name="NO2_GE_PT_GROUP_2" index="6"/>
+			<tag name="NO2_GE_READY_TO_START" index="7"/>
+			<tag name="NO2_GE_REVERSE_POWER" index="8"/>
+			<tag name="NO2_GE_RUNNIG" index="9"/>
+			<tag name="NO2_GE_STOP_FAIL" index="10"/>
+			<tag name="NO2_GE_STOPPING" index="11"/>
+			<tag name="NO2_GE_START_FAIL" index="12"/>
+			<tag name="NO2_GE_STARTING" index="13"/>
+			<tag name="NO2_GE_OVER_CURSHORT_CIRC" index="14"/>
+			<tag name="NO2_GE_SYNCHRONIZING" index="15"/>
+		</tags>
+		<tags name="TAG_GROUP_216">
+			<tag name="NO3_GE_ACB_ABNORMAL_TRIP" index="0"/>
+			<tag name="NO3_GE_ACB_CLOSED" index="1"/>
+			<tag name="NO3_GE_SYNC_FAIL" index="2"/>
+			<tag name="NO3_GE_ACB_NON_CLOSED" index="3"/>
+			<tag name="NO3_GE_AMS_CONTROL_ENABLE" index="4"/>
+			<tag name="NO3_GE_AUTOMATIC_CONTROL" index="5"/>
+			<tag name="NO3_GE_STANDBY_AUTO_START" index="6"/>
+			<tag name="NO3_GE_LOCAL_CONTROL_BLOCK" index="7"/>
+			<tag name="NO3_GE_BUS_BAR_FREQ_HIGH" index="8"/>
+			<tag name="NO3_GE_BUS_BAR_VOLTAGE_HI" index="9"/>
+			<tag name="NO3_GE_BUS_BAR_FREQ_LOW" index="10"/>
+			<tag name="NO3_GE_BUS_BAR_VOLTAGE_LOW" index="11"/>
+			<tag name="NO3_GE_BUS_TIE_CLOSED" index="12"/>
+			<tag name="NO3_GE_ALARM_OCUURRED" index="13"/>
+			<tag name="NO3_PMS_ARCNET_COMM_FAIL" index="14"/>
+			<tag name="NO3_GE_SHUT_DOWN" index="15"/>
+		</tags>
+		<tags name="TAG_GROUP_217">
+			<tag name="NO3_GE_STANDBY_SELECTED_1" index="0"/>
+			<tag name="NO3_GE_STANDBY_SELECTED_2" index="1"/>
+			<tag name="NO3_GE_HEAVY_LOAD_CONDITION" index="2"/>
+			<tag name="NO3_GE_LIGHT_LOAD_CONDITION" index="3"/>
+			<tag name="NO3_GE_LIGHT_LOAD_CANCEL" index="4"/>
+			<tag name="NO3_GE_PT_GROUP_1" index="5"/>
+			<tag name="NO3_GE_PT_GROUP_2" index="6"/>
+			<tag name="NO3_GE_READY_TO_START" index="7"/>
+			<tag name="NO3_GE_REVERSE_POWER" index="8"/>
+			<tag name="NO3_GE_RUNNIG" index="9"/>
+			<tag name="NO3_GE_STOP_FAIL" index="10"/>
+			<tag name="NO3_GE_STOPPING" index="11"/>
+			<tag name="NO3_GE_START_FAIL" index="12"/>
+			<tag name="NO3_GE_STARTING" index="13"/>
+			<tag name="NO3_GE_OVER_CURSHORT_CIRC" index="14"/>
+			<tag name="NO3_GE_SYNCHRONIZING" index="15"/>
+		</tags>
+		<tags name="TAG_GROUP_218">
+			<tag name="NO1_GE_SET_AMS_CONTROL_ENABLE" index="0"/>
+			<tag name="NO1_GE_ACKNOWLEDGE" index="1"/>
+			<tag name="NO1_GE_AUTO_START_CMD" index="2"/>
+			<tag name="NO1_GE_PRIORITY_SET_CMD" index="3"/>
+			<tag name="NO1_GE_AUTO_STOP_CMD" index="4"/>
+			<tag name="NO1_GE_LIGHT_LOAD_CANCEL_2" index="8"/>
+			<tag name="NO2_GE_SET_AMS_CONTROL_ENABLE" index="11"/>
+			<tag name="NO2_GE_ACKNOWLEDGE" index="12"/>
+			<tag name="NO2_GE_AUTO_START_CMD" index="13"/>
+			<tag name="NO2_GE_PRIORITY_SET_CMD" index="14"/>
+			<tag name="NO2_GE_AUTO_STOP_CMD" index="15"/>
+		</tags>
+		<tags name="TAG_GROUP_219">
+			<tag name="NO2_GE_LIGHT_LOAD_CANCEL_2" index="3"/>
+			<tag name="NO3_GE_SET_AMS_CONTROL_ENABLE" index="6"/>
+			<tag name="NO3_GE_ACKNOWLEDGE" index="7"/>
+			<tag name="NO3_GE_AUTO_START_CMD" index="8"/>
+			<tag name="NO3_GE_PRIORITY_SET_CMD" index="9"/>
+			<tag name="NO3_GE_AUTO_STOP_CMD" index="10"/>
+			<tag name="NO3_GE_LIGHT_LOAD_CANCEL_2" index="14"/>
+		</tags>
+		<tags name="TAG_GROUP_220">
+			<tag name="ME_LO_AND_PCO_INLET_PRESS_LL" index="1"/>
+			<tag name="ME_CYL_EXH_GAS_OUT_TEMP_HH" index="2"/>
+			<tag name="ME_CYL_PCO_OUTLET_NON_FLOW" index="3"/>
+			<tag name="ME_CYL_PCO_OUT_TEMP_HH" index="4"/>
+			<tag name="ME_JCFW_INLET_PRESS_LL" index="5"/>
+			<tag name="ME_CYL_LINER_CW_OUTLET_TEMP_HH" index="6"/>
+			<tag name="ME_CYL_COVER_CW_OUTLET_TEMP_HH" index="7"/>
+			<tag name="ME_THRUST_BEARING_TEMP_HH" index="8"/>
+			<tag name="ME_SCAV_AIR_BOX_FIRE_TEMP_HH" index="9"/>
+			<tag name="ME_LO_AND_PCO_INLET_TEMP_HH" index="10"/>
+			<tag name="ME_JCFW_ACRO_CYL_LINERS_DIFF_P_LL" index="11"/>
+			<tag name="ME_JCFW_ACRO_CYL_CVREXH_VV_DP_LL" index="12"/>
+			<tag name="ME_TC_LO_IN_PRESS_LL" index="13"/>
+			<tag name="ME_EXH_GAS_OUT_TEMP_DEVI_T_HH" index="14"/>
+			<tag name="ME_FINISH_WITH_ENGINE_FOR_ALARM_REPOSE" index="15"/>
+		</tags>
+		<tags name="TAG_GROUP_221">
+			<tag name="ME_STOP" index="0"/>
+			<tag name="ME_BEARING_WEAR_HIGH_SLD_FROM_BWMS" index="1"/>
+			<tag name="ME_EICU_SLOWDOWN_REQUEST" index="2"/>
+			<tag name="ME_EICU_LDCL_ALARM_CUT_OUT" index="3"/>
+			<tag name="INCINERATOR_RUN_3" index="4"/>
+			<tag name="BOSUN_STORE_S_BILGE_HAT_LEVEL_HIGH" index="5"/>
+			<tag name="BOSUN_STORE_P_BILGE_HAT_LEVEL_HIGH" index="6"/>
+			<tag name="BILGE_ALARM_UNIT_POWER_FAIL" index="7"/>
+			<tag name="WO_TANK_TEMP_HIGH" index="8"/>
+			<tag name="WO_TANK_TEMP_LOW" index="9"/>
+			<tag name="WO_SETTLING_TANK_TEMP_HIGH" index="10"/>
+			<tag name="WO_SETTLING_TANK_TEMP_LOW" index="11"/>
+			<tag name="WO_TANK_LEVEL_LOW" index="12"/>
+			<tag name="WO_TANK_LEVEL_HIGH" index="13"/>
+			<tag name="WO_SETTLING_TANK_LEVEL_LOW" index="14"/>
+			<tag name="WO_SETTLING_TANK_LEVEL_HIGH" index="15"/>
+		</tags>
+		<tags name="TAG_GROUP_222">
+			<tag name="WELDING_AREA_AND_FUEL_VV_TEST_RM_EXH_FAN_ABN" index="0"/>
+			<tag name="FW_DISTILLATED_PUMP_RUN" index="1"/>
+			<tag name="ME_BEARING_WEAR_HIGH" index="3"/>
+		</tags>
+		<tags name="TAG_GROUP_253">
+			<tag name="SMART_SHIP_MODBUS_LINK_TO_AHU_PANEL" index="0"/>
+			<tag name="SMART_SHIP_AHU_PANEL_MODE_OF_OPERATION_AUTO_SAFE" index="1"/>
+			<tag name="SMART_SHIP_AHU_PANEL_MODE_OF_OPERATION_AUTO_NORMAL" index="2"/>
+			<tag name="SMART_SHIP_AHU_PANEL_MODE_OF_OPERATION_AUTO_ALERT" index="3"/>
+			<tag name="SMART_SHIP_AHU_PANEL_MANUL_OVERRIDE_MODE" index="4"/>
+		</tags>
+		<tags name="TAG_GROUP_254">
+			<tag name="SMART_SHIP_AHU_PANEL_COMMON_ABN" index="0"/>
+		</tags>
+		
+
+
+
+<!-- BWTS -->
+		<tags name="TAG_GROUP_5001">
+			<tag name="ECS_RUN_STATUS" index="0"/>
+			<tag name="ECS_STOP_STATUS" index="1"/>
+			<tag name="SYSTEM_ALARM_STATUS" index="2"/>
+			<tag name="SYSTEM_FAULT_STATUS" index="3"/>
+			<tag name="HMI_POSITION_HMI_1_PDE" index="4"/>
+			<tag name="HMI_POSITION_HMI_2_CCR" index="5"/>
+			<tag name="HMI_POSITION_HMI_3_ETC1" index="6"/>
+			<tag name="HMI_POSITION_HMI_4_ETC2" index="7"/>
+		</tags>
+		<tags name="TAG_GROUP_5002">
+			<tag name="LINE_1_OPERATION_STATUS_STOP" index="0"/>
+			<tag name="LINE_1_OPERATION_STATUS_BALLAST" index="1"/>
+			<tag name="LINE_1_OPERATION_STATUS_DEBALLAST" index="2"/>
+			<tag name="LINE_1_OPERATION_STATUS_STRIPPING" index="3"/>
+		</tags>
+		<tags name="TAG_GROUP_5003">
+			<tag name="LINE_2_OPERATION_STATUS_STOP" index="0"/>
+			<tag name="LINE_2_OPERATION_STATUS_MIXING_BALLAST" index="1"/>
+		</tags>
+		<tags name="TAG_GROUP_5006">
+			<tag name="ECS_RUN_CONTROL" index="0"/>
+			<tag name="ECS_STOP_CONTROL" index="1"/>
+			<tag name="ALARM_ACK" index="2"/>
+			<tag name="RESET" index="3"/>
+			<tag name="HMI_POSITION_HMI_1_PDE_2" index="4"/>
+			<tag name="HMI_POSITION_HMI_2_CCR_2" index="5"/>
+			<tag name="HMI_POSITION_HMI_3_ETC1_2" index="6"/>
+			<tag name="HMI_POSITION_HMI_4_ETC2_2" index="7"/>
+		</tags>
+		<tags name="TAG_GROUP_5007">
+			<tag name="ERR_ETC" index="0"/>
+			<tag name="ERR_VLS_OFF" index="1"/>
+			<tag name="ERR_ANU_PUMP" index="2"/>
+			<tag name="ERR_ANU_FULL" index="3"/>
+			<tag name="ERR_ANU_OVER" index="4"/>
+			<tag name="ERR_FW_PUMP" index="5"/>
+			<tag name="ERR_FLOW_HIGH" index="6"/>
+			<tag name="ERR_FLOW_LOW" index="7"/>
+			<tag name="ERR_MAIN_I_HIGH" index="8"/>
+			<tag name="ERR_MAIN_V_LOW" index="9"/>
+			<tag name="ERR_ECU_CURRENT_HIGH" index="10"/>
+			<tag name="ERR_ECU_VOLTAGE_HIGH" index="11"/>
+			<tag name="ERR_ECU_UNKNOWN" index="12"/>
+			<tag name="ERR_TRO_LOW" index="13"/>
+			<tag name="ERR_TRO_HIGH" index="14"/>
+		</tags>
+		<tags name="TAG_GROUP_5101">
+			<tag name="ERR_COMMUNICATION_FAIL" index="0"/>
+			<tag name="ERR_EM_FAIL" index="1"/>
+			<tag name="ERR_BYPASS_OPEN" index="2"/>
+			<tag name="ERR_GAS_HIGH" index="3"/>
+			<tag name="ERR_FW_TANK_LOW" index="4"/>
+			<tag name="ERR_PCU_EM_STOP" index="5"/>
+			<tag name="ERR_PDE_EM_STOP" index="6"/>
+			<tag name="ERR_ECU_EM_STOP" index="7"/>
+			<tag name="ERR_CPC_EM_STOP" index="8"/>
+		</tags>
+
+
+		<!--IGG-->
+		<tags name="TAG_GROUP_3001">
+			<tag name="IGG_IAH_190_BLOWER_OVERLOAD_F1" index="2"/>
+			<tag name="IGG_M_109_BLOWER_RUNNING_STARTER_FAILURE" index="3"/>
+			<tag name="IGG_M_109_BLOWER_THERMISTOR_FAILURE" index="4"/>
+			<tag name="IGG_IA_109_BLOWER_LOAD_SIGNAL_FAILURE" index="5"/>
+			<tag name="IGG_BLOWER_1_POWER_FAILURE" index="15"/>
+		</tags>
+		
+		<tags name="TAG_GROUP_3003">
+			<tag name="IGG_M_129_SCRUBBER_SW_PUMP_RUNNING_FAILURE" index="0"/>
+			<tag name="IGG_M_130_SCRUBBER_SW_PUMP_RUNNING_FAILURE" index="1"/>
+			<tag name="IGG_S_315_EMERGENCY_STOP" index="2"/>
+			<tag name="IGG_BA_200_FLAME_ON_FAILURE" index="3"/>
+			<tag name="IGG_BA_200_FLAME_OFF_FAILURE" index="4"/>
+			<tag name="IGG_M_83_1_FUEL_OIL_PUMP_OVERLOAD" index="5"/>
+			<tag name="IGG_M_83_1_FUEL_OIL_PUMP_RUNNING_FAILURE" index="6"/>
+			<tag name="IGG_M_83_2_FUEL_OIL_PUMP_OVERLOAD" index="7"/>
+			<tag name="IGG_M_83_2_FUEL_OIL_PUMP_RUNNING_FAILURE" index="8"/>
+			<tag name="IGG_TT_178_HIGH_HIGH_SEAWATER_TEMP_OUTLET_COOLING_JACKET" index="9"/>
+			<tag name="IGG_TT_178_HIGH_SEAWATER_TEMP_OUTLET_COOLING_JACKET" index="10"/>
+			<tag name="IGG_PA_181_HIGH_HIGH_SCRUBBER_INLET_TEMP" index="11"/>
+			<tag name="IGG_PA_181_HIGH_SCRUBBER_INLET_TEMP" index="12"/>
+			<tag name="IGG_PT_182_HIGH_INERT_GAS_PRESSURE_IN_MAIN_IG_LINE" index="13"/>
+			<tag name="IGG_PT_183_LOW_LOW_INSTRUMENT_AIR_PRESSURE" index="14"/>
+			<tag name="IGG_PT_183_LOW_INSTRUMENT_AIR_PRESSURE" index="15"/>
+		</tags>
+
+		<tags name="TAG_GROUP_3004">
+			<tag name="IGG_PT_184_LOW_LOW_SEAWATER_INLET_PRESSURE" index="0"/>
+			<tag name="IGG_PT_184_LOW_SEAWATER_INLET_PRESSURE" index="1"/>
+			<tag name="IGG_PT_185_LOW_LOW_FUEL_OIL_SUPPLY_PRESSURE" index="2"/>
+			<tag name="IGG_PT_185_LOW_FUEL_OIL_SUPPLY_PRESSURE" index="3"/>
+			<tag name="IGG_TT_188_HIGH_HIGH_INERT_GAS_TEMPERATURE_OUTLET_SCRUBBER" index="4"/>
+			<tag name="IGG_TT_188_HIGH_INERT_GAS_TEMPERATURE_OUTLET_SCRUBBER" index="5"/>
+			<tag name="IGG_LAL_191_LOW_SEAWATER_LEVEL_IN_COOLING_JACKET" index="6"/>
+			<tag name="IGG_LAH_193_1_HIGH_SEAWATER_LEVEL_IN_SCRUBBER" index="7"/>
+			<tag name="IGG_AAHH_204_HIGH_HIGH_OXYGEN_CONTENT" index="8"/>
+			<tag name="IGG_AAH_204_HIGH_OXYGEN_CONTENT" index="9"/>
+			<tag name="IGG_AAL_204_LOW_OXYGEN_CONTENT" index="10"/>
+			<tag name="IGG_TT_219_HIGH_HIGH_INERT_GAS_TEMPERATURE_OUTLET_SCRUBBER" index="11"/>
+			<tag name="IGG_TT_219_HIGH_INERT_GAS_TEMPERATURE_OUTLET_SCRUBBER" index="12"/>
+			<tag name="IGG_TT_498_HIGH_INERT_GAS_TEMPERATURE_OUTLET_COOLER" index="13"/>
+			<tag name="IGG_TAHH_526_HIGH_HIGH_TEMPERATURE_HEATING_ELEMENT_DRYER" index="15"/>
+		</tags>
+
+		<tags name="TAG_GROUP_3005">
+			<tag name="IGG_TAH_526_HIGH_TEMPERATURE_HEATING_ELEMENT_DRYER" index="0"/>
+			<tag name="IGG_TAH_571_1_HIGH_AIR_TEMPERATURE_INLET_ADS_1" index="1"/>
+			<tag name="IGG_TAH_571_2_HIGH_AIR_TEMPERATURE_INLET_ADS_2" index="2"/>
+			<tag name="IGG_TAH_582_HIGH_REGEN_AIR_TEMPERATURE_OUTLET" index="3"/>
+			<tag name="IGG_MAH_583_HIGH_DEW_POINT_TEMPERATURE" index="4"/>
+			<tag name="IGG_24VDC_POWER_SUPPLY_U1_FAILURE" index="5"/>
+			<tag name="IGG_24VDC_POWER_SUPPLY_U2_FAILURE" index="6"/>
+			<tag name="IGG_24VDC_POWER_SUPPLY_U1_AND_U2_FAILURE" index="7"/>
+			<tag name="IGG_TA_178_SEAWATER_TEMP_SIGNAL_FAILURE" index="8"/>
+			<tag name="IGG_PA_181_SCRUBBER_INLET_TEMP_SIGNAL_FAILURE" index="9"/>
+			<tag name="IGG_PA_182_DECK_PRESSURE_SIGNAL_FAILURE" index="10"/>
+			<tag name="IGG_PA_183_INSTRUMENT_AIR_PRESSURE_SIGNAL_FAILURE" index="11"/>
+			<tag name="IGG_PA_184_SEAWATER_INLET_PRESSURE_SIGNAL_FAILURE" index="12"/>
+			<tag name="IGG_PA_185_FUEL_OIL_SUPPLY_PRESSURE_SIGNAL_FAILURE" index="13"/>
+			<tag name="IGG_TA_188_INERT_GAS_TEMPERATURE_SIGNAL_FAILURE" index="14"/>
+			<tag name="IGG_AA_204_OXYGEN_CONTENT_SIGNAL_FAILURE" index="15"/>
+		</tags>
+
+		<tags name="TAG_GROUP_3006">
+			<tag name="IGG_PA_212_SEAWATER_EFFLUENT_PRESSURE_SIGNAL_FAILURE" index="0"/>
+			<tag name="IGG_PA_213_INERT_GAS_OUTLET_DRYER_PRESSURE_SIGNAL_FAILURE" index="1"/>
+			<tag name="IGG_PA_214_SCRUBBER_OUTLET_PRESSURE_SIGNAL_FAILURE" index="2"/>
+			<tag name="IGG_TA_219_INERT_GAS_TEMPERATURE_OUTLET_DRYER_SIGNAL_FAILURE" index="3"/>
+			<tag name="IGG_TA_498_INERT_GAS_TEMPERATURE_OUTLET_COOLER_SIGNAL_FAILURE" index="5"/>
+			<tag name="IGG_IA_522_REGEN_FAN_LOAD_SIGNAL_FAILURE" index="6"/>
+			<tag name="IGG_TA_571_1_AIR_TEMPERATURE_INLET_ADS_1_SIGNAL_FAILURE" index="7"/>
+			<tag name="IGG_TA_571_2_AIR_TEMPERATURE_INLET_ADS_2_SIGNAL_FAILURE" index="8"/>
+			<tag name="IGG_TA_582_REGEN_AIR_TEMPERATURE_OUTLET_SIGNAL_FAILURE" index="9"/>
+			<tag name="IGG_MA_583_DEW_POINT_SIGNAL_FAILURE" index="10"/>
+			<tag name="IGG_M_131_SCRUBBER_SW_PUMP_RUNNING_FAILURE" index="11"/>
+			<tag name="IGG_PT_181_LOW_LOW_SCRUBBER_INLET_PRESSURE" index="14"/>
+			<tag name="IGG_PT_181_LOW_SCRUBBER_INLET_PRESSURE" index="15"/>
+		</tags>
+
+		<tags name="TAG_GROUP_3007">
+			<tag name="IGG_VALVE_1_POSITION_FAILURE" index="0"/>
+			<tag name="IGG_VALVE_2_POSITION_FAILURE" index="1"/>
+			<tag name="IGG_VALVE_5_POSITION_FAILURE" index="2"/>
+			<tag name="IGG_VALVE_3_POSITION_FAILURE" index="3"/>
+			<tag name="IGG_VALVE_8_POSITION_FAILURE" index="4"/>
+			<tag name="IGG_VALVE_10_POSITION_FAILURE" index="5"/>
+			<tag name="IGG_VALVE_12_1_POSITION_FAILURE" index="6"/>
+			<tag name="IGG_VALVE_12_2_POSITION_FAILURE" index="7"/>
+			<tag name="IGG_VALVE_12_3_POSITION_FAILURE" index="8"/>
+			<tag name="IGG_VALVE_14_POSITION_FAILURE" index="9"/>
+			<tag name="IGG_VALVE_16_POSITION_FAILURE" index="10"/>
+			<tag name="IGG_VALVE_17_POSITION_FAILURE" index="11"/>
+			<tag name="IGG_VALVE_22_POSITION_FAILURE" index="12"/>
+			<tag name="IGG_VALVE_505_POSITION_FAILURE" index="13"/>
+			<tag name="IGG_VALVE_506_POSITION_FAILURE" index="14"/>
+		</tags>
+
+		<tags name="TAG_GROUP_3008">
+			<tag name="IGG_X_100_COMMUNICATION_RING_REDUNDANCY_FAILURE" index="0"/>
+			<tag name="IGG_MCP_COMMUNICATION_FAILURE_TOUCH_SCREEN" index="1"/>
+			<tag name="IGG_DHP_COMMUNICATION_FAILURE_TOUCH_SCREEN" index="2"/>
+			<tag name="IGG_MCP_COMMUNICATION_FAILURE_STB" index="3"/>
+			<tag name="IGG_SCR_COMMUNICATION_FAILURE_STB" index="4"/>
+			<tag name="IGG_SB1_COMMUNICATION_FAILURE_STB" index="5"/>
+			<tag name="IGG_DHP_COMMUNICATION_FAILURE_STB" index="7"/>
+		</tags>
+
+		<tags name="TAG_GROUP_3009">
+			<tag name="IGG_REFRIG_UNIT_RUNNING_INDICATION" index="5"/>
+			<tag name="IGG_DRYER_UNIT_RUNNING_INDICATION" index="6"/>
+			<tag name="IGG_VALVETESTSELECTED" index="15"/>
+		</tags>
+
+		<tags name="TAG_GROUP_3010">
+			<tag name="IGG_H500_DRYER_POWER_FAILURE" index="1"/>
+			<tag name="IGG_H500_DRYER_REGENERATION_TIME_TOO_LONG" index="2"/>
+		</tags>
+
+		<tags name="TAG_GROUP_3011">
+			<tag name="IGG_H500_COMMONALARM" index="0"/>
+			<tag name="IGG_IAL_522_LOW_REGENERATION_FAN_LOAD" index="1"/>
+			<tag name="IGG_IALL_522_LOW_LOW_REGENERATION_FAN_LOAD" index="2"/>
+			<tag name="IGG_M522_THERMISTOR_FAILURE" index="3"/>
+			<tag name="IGG_M522_OVERLOAD_FAILURE" index="4"/>
+			<tag name="IGG_M522_RUNNING_FAILURE" index="5"/>
+		</tags>
+
+		<tags name="TAG_GROUP_3012">
+			<tag name="IGG_CLASS_ALARM_TEST_SELECTED" index="0"/>
+		</tags>
+
+		<tags name="TAG_GROUP_3016">
+			<tag name="IGG_AUTO_START_INDICATION_LAMP" index="0"/>
+			<tag name="IGG_AIR_START_INDICATION_LAMP" index="1"/>
+			<tag name="IGG_BLOWMANSTART" index="2"/>
+			<tag name="IGG_FUEL_OIL_PUMP_MANUALY_STARTED" index="3"/>
+			<tag name="IGG_DECK_DELIVERY_READY_INDICATION_LAMP" index="7"/>
+			<tag name="IGG_DECK_SELECTED_INDICATION_LAMP" index="8"/>
+			<tag name="IGG_ENABLESEAWATERLEVELCON" index="10"/>
+			<tag name="IGG_ENABLESEAWATERPRESSCON" index="11"/>
+			<tag name="IGG_TOHMI_ENABLESEAWATERLEVELCONOFF" index="12"/>
+		</tags>
+
+		<tags name="TAG_GROUP_3017">
+			<tag name="IGG_BLOWER_UNIT_1_POWER_ON" index="0"/>
+			<tag name="IGG_BLOWER_UNIT_1_MAN_AUTO" index="2"/>
+			<tag name="IGG_BLOWERS_RUNNING" index="5"/>
+			<tag name="IGG_MANMAINBURN" index="9"/>
+			<tag name="IGG_GLOWPLUGON" index="13"/>
+		</tags>
+
+		<tags name="TAG_GROUP_3018">
+			<tag name="IGG_ENABLE_PT183" index="1"/>
+			<tag name="IGG_ENABLE_PT184" index="2"/>
+			<tag name="IGG_ENABLE_PT185" index="3"/>
+			<tag name="IGG_SIGNALFORCED" index="13"/>
+			<tag name="IGG_COMMONALARM" index="14"/>
+		</tags>
+
+		<tags name="TAG_GROUP_3020">
+			<tag name="IGG_MANUAL_GLOWING_ON" index="3"/>
+			<tag name="IGG_IGNITION_BURNER_ON" index="4"/>
+			<tag name="IGG_MAIN_BURNER_ON" index="5"/>
+		</tags>
+
+		<tags name="TAG_GROUP_3021">
+			<tag name="IGG_STATUS_MANUAL_REGEN_ADS1" index="5"/>
+			<tag name="IGG_STATUS_MANUAL_REGEN_ADS2" index="6"/>
+			<tag name="IGG_STATUS_MANUAL_START_DRYER" index="10"/>
+		</tags>
+
+		<tags name="TAG_GROUP_3026">
+			<tag name="IGG_H526_HEATER_ELEMENT_PROTECTION_FAILURE_QH1" index="0"/>
+			<tag name="IGG_H526_HEATER_ELEMENT_PROTECTION_FAILURE_QH2" index="1"/>
+			<tag name="IGG_H526_HEATER_ELEMENT_PROTECTION_FAILURE_QH3" index="2"/>
+		</tags>
+
+		<tags name="TAG_GROUP_3027">
+			<tag name="IGG_H400_REFRIG_UNIT_COMMON_FAILURE" index="0"/>
+			<tag name="IGG_H400_COMPRESSOR_STARTER_FAILURE" index="1"/>
+			<tag name="IGG_H400_COMPRESSOR_PROTECTION_RELAY_FAILURE" index="2"/>
+			<tag name="IGG_H400_COMPRESSOR_INTERLOCK_CONDENSER_FAILURE" index="3"/>
+			<tag name="IGG_H400_COMPRESSOR_DISCHARGE_TEMPERATURE_HIGH" index="4"/>
+			<tag name="IGG_H400_COMPRESSOR_DISCHARGE_TEMPERATURE_LOW" index="5"/>
+			<tag name="IGG_H400_COMPRESSOR_DISCHARGE_PRESSURE_HIGH" index="6"/>
+			<tag name="IGG_H400_COMPRESSOR_SUCTION_PRESSURE_LOW" index="7"/>
+			<tag name="IGG_H400_REFRIG_UNIT_RUNNING_FAILURE" index="8"/>
+			<tag name="IGG_H400_COMPRESSOR_LUB_OIL_FLOW_LOW" index="9"/>
+			<tag name="IGG_H414_CHILLER_PUMP_OUTLET_TEMP_LOW" index="10"/>
+			<tag name="IGG_H414_CHILLER_PUMP_OVERLOAD" index="11"/>
+		</tags>
+		<tags name="TAG_GROUP_3501">
+			<tag name="IGG_STOP_INERT_GAS_GENERATOR" index="0"/>
+			<tag name="IGG_START_INERT_GAS_GENERATOR" index="1"/>
+			<tag name="IGG_START_AIR_VENTILATION" index="2"/>
+			<tag name="IGG_SELECT_DELIVERY_TO_DECK" index="3"/>
+			<tag name="IGG_ALARM_ACCEPT_BUTTON_IAS" index="5"/>
+			<tag name="IGG_ALARM_RESET_BUTTON_IAS" index="6"/>
+		</tags>
+
+		<tags name="TAG_GROUP_302">
+			<tag name="3K5_BURNER_EXHAUST_TEMPERATURE_SWITCH_HIGH_HIGH" index="5"/>
+		</tags>
+
+		<tags name="TAG_GROUP_303">
+			<tag name="F187_BURNER_NOZZLE_HEATING_IS_IN_MANUAL_OPERATION" index="11"/>
+		</tags>
+
+		<tags name="TAG_GROUP_304">
+			<tag name="PID_TT_BURNER_PREHEATER_PID_FUEL_TEMPERATURE_CONTROLLER_IS_USING_INTERNAL_SET_POINT" index="1"/>
+			<tag name="PID_TT_BURNER_PREHEATER_PID_FUEL_TEMPERATURE_CONTROLLER_CALCULATION_ERROR" index="2"/>
+			<tag name="F207_BURNER_PREHEATER_IS_MANUALLY_ACTIVATED" index="3"/>
+			<tag name="F207_BURNER_PREHEATER_IS_USING_INTERNAL_SET_POINT" index="4"/>
+			<tag name="F207_BURNER_PREHEATER_PWM_SET_POINT_IS_OUT_OF_RANGE_0_100" index="5"/>
+			<tag name="F223_BURNER_PREHEATER_FUEL_TEMPERATURE_SWITCH_HIGH_HIGH" index="6"/>
+			<tag name="F222_BURNER_PREHEATER_TEMPERATURE_TRANSMITTER_WIRE_BREAK" index="7"/>
+			<tag name="F222_BURNER_PREHEATER_TEMPERATURE_TRANSMITTER_OUT_OF_RANGE" index="8"/>
+			<tag name="F222_BURNER_PREHEATER_TEMPERATURE_TRANSMITTER_HIGH_HIGH" index="9"/>
+			<tag name="F222_BURNER_PREHEATER_TEMPERATURE_TRANSMITTER_HIGH" index="10"/>
+			<tag name="F222_BURNER_PREHEATER_TEMPERATURE_TRANSMITTER_LOW" index="11"/>
+			<tag name="F222_BURNER_PREHEATER_TEMPERATURE_TRANSMITTER_LOW_LOW" index="12"/>
+			<tag name="KBM_HEAT_BURNER_HEATING_MODULE_IS_IN_MANUAL_OPERATION" index="13"/>
+			<tag name="KBM_HEAT_BURNER_PREHEATER_IS_USING_INTERNAL_SET_POINT" index="14"/>
+			<tag name="F224_BURNER_BURNER_OPEN_SWITCH_BURNER_OPEN" index="15"/>
+		</tags>
+
+		<tags name="TAG_GROUP_305">
+			<tag name="F32_F33_BURNER_FLAME_SURVEILLANCE_FLAME_FAILURE" index="0"/>
+			<tag name="F32_F33_BURNER_FLAME_SURVEILLANCE_FAILURE_ON_FLAME_EYE_1" index="1"/>
+			<tag name="F32_F33_BURNER_FLAME_SURVEILLANCE_FAILURE_ON_FLAME_EYE_2" index="2"/>
+			<tag name="F32_F33_BURNER_FLAME_SURVEILLANCE_FLAME_DURING_DARK_CHECK" index="3"/>
+			<tag name="F32_F33_BURNER_FLAME_SURVEILLANCE_FLAME_DURING_DARK_CHECK_ON_FLAME_EYE_1" index="4"/>
+			<tag name="F32_F33_BURNER_FLAME_SURVEILLANCE_FLAME_DURING_DARK_CHECK_ON_FLAME_EYE_2" index="5"/>
+			<tag name="F214_BURNER_FUEL_RETURN_LINE_PRESSURE_SWITCH_HIGH_HIGH" index="6"/>
+			<tag name="F166_BURNER_IGNITION_TRAFO_IS_IN_MANUAL_OPERATION" index="11"/>
+		</tags>
+
+		<tags name="TAG_GROUP_306">
+			<tag name="F203_F204_BURNER_OIL_VALVES_IS_IN_MANUAL_OPERATION" index="0"/>
+			<tag name="F225_BURNER_PRESSURE_TRANSMITTER_WIRE_BREAK" index="1"/>
+			<tag name="F225_BURNER_PRESSURE_TRANSMITTER_OUT_OF_RANGE" index="2"/>
+			<tag name="F225_BURNER_HFO_PRESSURE_TRANSMITTER_HIGH_HIGH" index="3"/>
+			<tag name="F225_BURNER_HFO_PRESSURE_TRANSMITTER_HIGH" index="4"/>
+			<tag name="F225_BURNER_HFO_PRESSURE_TRANSMITTER_LOW" index="5"/>
+			<tag name="F225_BURNER_HFO_PRESSURE_TRANSMITTER_LOW_LOW" index="6"/>
+			<tag name="F225_BURNER_DO_PRESSURE_TRANSMITTER_HIGH_HIGH" index="7"/>
+			<tag name="F225_BURNER_DO_PRESSURE_TRANSMITTER_HIGH" index="8"/>
+			<tag name="F225_BURNER_DO_PRESSURE_TRANSMITTER_LOW" index="9"/>
+			<tag name="F225_BURNER_DO_PRESSURE_TRANSMITTER_LOW_LOW" index="10"/>
+			<tag name="F225_BURNER_MGO_PRESSURE_TRANSMITTER_HIGH_HIGH" index="11"/>
+			<tag name="F225_BURNER_MGO_PRESSURE_TRANSMITTER_HIGH" index="12"/>
+			<tag name="F225_BURNER_MGO_PRESSURE_TRANSMITTER_LOW" index="13"/>
+			<tag name="F225_BURNER_MGO_PRESSURE_TRANSMITTER_LOW_LOW" index="14"/>
+			<tag name="F220_BURNER_QUICK_CLOSING_VALVES_CLOSED" index="15"/>
+		</tags>
+
+		<tags name="TAG_GROUP_307">
+			<tag name="SAFETY_BURNER_SAFETY_VALVES_IS_IN_MANUAL_OPERATION" index="4"/>
+			<tag name="F36_BURNER_WINDBOX_TEMPERATURE_TRANSMITTER_WIRE_BREAK" index="5"/>
+			<tag name="F36_BURNER_WINDBOX_TEMPERATURE_TRANSMITTER_OUT_OF_RANGE" index="6"/>
+			<tag name="F36_BURNER_WINDBOX_TEMPERATURE_TRANSMITTER_HIGH_HIGH" index="7"/>
+			<tag name="F36_BURNER_WINDBOX_TEMPERATURE_TRANSMITTER_HIGH" index="8"/>
+			<tag name="F212_BURNER_TEMPERATURE_TRANSMITTER_WIRE_BREAK" index="12"/>
+			<tag name="F212_BURNER_TEMPERATURE_TRANSMITTER_OUT_OF_RANGE" index="13"/>
+			<tag name="F212_BURNER_HFO_TEMPERATURE_TRANSMITTER_HIGH_HIGH" index="14"/>
+			<tag name="F212_BURNER_HFO_TEMPERATURE_TRANSMITTER_HIGH" index="15"/>
+		</tags>
+
+		<tags name="TAG_GROUP_308">
+			<tag name="F212_BURNER_HFO_TEMPERATURE_TRANSMITTER_LOW" index="0"/>
+			<tag name="F212_BURNER_HFO_TEMPERATURE_TRANSMITTER_LOW_LOW" index="1"/>
+			<tag name="F212_BURNER_DO_TEMPERATURE_TRANSMITTER_HIGH_HIGH" index="2"/>
+			<tag name="F212_BURNER_DO_TEMPERATURE_TRANSMITTER_HIGH" index="3"/>
+			<tag name="F212_BURNER_DO_TEMPERATURE_TRANSMITTER_LOW" index="4"/>
+			<tag name="F212_BURNER_MGO_TEMPERATURE_TRANSMITTER_HIGH_HIGH" index="5"/>
+			<tag name="F212_BURNER_MGO_TEMPERATURE_TRANSMITTER_HIGH" index="6"/>
+			<tag name="F212_BURNER_MGO_TEMPERATURE_TRANSMITTER_LOW" index="7"/>
+			<tag name="KBM_BURNER_IS_MANUALLY_STARTED" index="10"/>
+			<tag name="KBM_BURNER_BURNER_IS_USING_INTERNAL_SET_POINT" index="11"/>
+			<tag name="KBM_BURNER_REMOTE_CONTROL_OVER_BUS_INTERFACE_IS_DISABLED" index="12"/>
+			<tag name="R15_BURNER_COMBUSTION_AIR_FAN_TRIPPED" index="13"/>
+			<tag name="R15_BURNER_COMBUSTION_AIR_FAN_FEEDBACK_ERROR" index="14"/>
+		</tags>
+
+		<tags name="TAG_GROUP_309">
+			<tag name="R15_BURNER_COMBUSTION_AIR_FAN_IN_MANUAL_OPERATION" index="2"/>
+			<tag name="R15_BURNER_COMBUSTION_AIR_FAN_NEEDS_SERVICE" index="3"/>
+			<tag name="R3_BURNER_AIR_PRESSURE_SWITCH_LOW_LOW" index="4"/>
+			<tag name="R16_BURNER_AIR_SERVO_VALVE_ANALOG_FEEDBACK_WIRE_BREAK" index="5"/>
+			<tag name="R16_BURNER_AIR_SERVO_VALVE_ANALOG_FEEDBACK_OUT_OF_RANGE" index="6"/>
+			<tag name="R16_BURNER_AIR_SERVO_VALVE_POSITION_ERROR" index="7"/>
+			<tag name="R16_BURNER_AIR_DAMPER_IS_IN_MANUAL_OPERATION" index="8"/>
+			<tag name="CURVE_HFO_BURNER_CURVE_BAND_CALCULATION_ON_HFO_IS_OUT_OF_RANGE" index="9"/>
+			<tag name="CURVE_DO_BURNER_CURVE_BAND_CALCULATION_ON_MDO_IS_OUT_OF_RANGE" index="10"/>
+			<tag name="CURVE_MGO_BURNER_CURVE_BAND_CALCULATION_ON_MGO_IS_OUT_OF_RANGE" index="11"/>
+			<tag name="F208_BURNER_OIL_SERVO_VALVE_ANALOG_FEEDBACK_WIRE_BREAK" index="12"/>
+			<tag name="F208_BURNER_OIL_SERVO_VALVE_ANALOG_FEEDBACK_OUT_OF_RANGE" index="13"/>
+			<tag name="F208_BURNER_OIL_SERVO_VALVE_POSITION_ERROR" index="14"/>
+			<tag name="F208_BURNER_OIL_SERVO_VALVE_IS_IN_MANUAL_OPERATION" index="15"/>
+		</tags>
+
+		<tags name="TAG_GROUP_310">	
+			<tag name="W16_STEAM_DRUM_WATER_DIFFERENTIAL_PRESSURE_LEVEL_TRANSMITTER_WIRE_BREAK" index="2"/>
+			<tag name="W16_STEAM_DRUM_WATER_DIFFERENTIAL_PRESSURE_LEVEL_TRANSMITTER_OUT_OF_RANGE" index="3"/>
+			<tag name="W16_STEAM_DRUM_WATER_LEVEL_TRANSMITTER_HIGH_HIGH" index="4"/>
+			<tag name="W16_STEAM_DRUM_WATER_LEVEL_TRANSMITTER_HIGH" index="5"/>
+			<tag name="W16_STEAM_DRUM_WATER_LEVEL_TRANSMITTER_LOW" index="6"/>
+			<tag name="W16_STEAM_DRUM_WATER_LEVEL_TRANSMITTER_LOW_LOW" index="7"/>
+			<tag name="W14_STEAM_DRUM_WATER_LEVEL_SWITCH_LOW_LOW" index="12"/>
+		</tags>
+
+		<tags name="TAG_GROUP_311">
+			<tag name="PID_PT_STEAM_DRUM_PID_PRESSURE_PID_CONTROLLER_IS_USING_INTERNAL_SET_POINT" index="6"/>
+			<tag name="PID_PT_STEAM_DRUM_PID_PRESSURE_PID_CONTROLLER_ERROR" index="7"/>
+			<tag name="C35_STEAM_DRUM_STEAM_PRESSURE_SWITCH_HIGH_HIGH" index="10"/>
+			<tag name="C48_STEAM_DRUM_STEAM_PRESSURE_TRANSMITTER_WIRE_BREAK" index="11"/>
+			<tag name="C48_STEAM_DRUM_STEAM_PRESSURE_TRANSMITTER_OUT_OF_RANGE" index="12"/>
+			<tag name="C48_STEAM_DRUM_STEAM_PRESSURE_TRANSMITTER_HIGH_HIGH" index="13"/>
+			<tag name="C48_STEAM_DRUM_STEAM_PRESSURE_TRANSMITTE_HIGH" index="14"/>
+			<tag name="C48_STEAM_DRUM_STEAM_PRESSURE_TRANSMITTER_LOW" index="15"/>
+		</tags>
+
+		<tags name="TAG_GROUP_312">
+			<tag name="C48_STEAM_DRUM_STEAM_PRESSURE_TRANSMITTER_LOW_LOW" index="0"/>
+		</tags>
+
+		<tags name="TAG_GROUP_323">
+			<tag name="G147_P1_PUMP_1_IS_TRIPPED" index="4"/>
+			<tag name="G147_P1_PUMP_1_FEEDBACK_ERROR" index="5"/>
+			<tag name="G147_P1_EXTERNAL_START_ON_PUMP_1_HAVE_BEEN_ACTIVATED_BUT_CANNOT_BE_SET_TO_MANUAL_OPERATION" index="7"/>
+			<tag name="G147_P1_EXTERNAL_STOP_ON_PUMP_1_HAVE_BEEN_ACTIVATED" index="8"/>
+			<tag name="G147_P1_PUMP_1_IS_IN_MANUAL_OPERATION" index="9"/>
+			<tag name="G147_P1_PUMP_1_NEEDS_SERVICE" index="10"/>
+			<tag name="G147_P2_PUMP_2_IS_TRIPPED" index="11"/>
+			<tag name="G147_P2_PUMP_2_FEEDBACK_ERROR" index="12"/>
+			<tag name="G147_P2_EXTERNAL_START_ON_PUMP_2_HAVE_BEEN_ACTIVATED_BUT_CANNOT_BE_SET_TO_MANUAL_OPERATION" index="14"/>
+			<tag name="G147_P2_EXTERNAL_STOP_ON_PUMP_2_HAVE_BEEN_ACTIVATED" index="15"/>
+		</tags>
+
+		<tags name="TAG_GROUP_324">
+			<tag name="G147_P2_PUMP_2_IS_IN_MANUAL_OPERATION" index="0"/>
+			<tag name="G147_P2_PUMP_2_NEEDS_SERVICE" index="1"/>
+			<tag name="STANDBY_STARTED_OUTPUT_IS_IN_MANUAL_OPERATION" index="6"/>
+			<tag name="RING1_STANDBY_PUMP_HAVE_BEEN_STARTED" index="7"/>
+			<tag name="RING1_PRIMARY_PUMP_HAVE_BEEN_CHANGED" index="8"/>
+		</tags>
+
+		<tags name="TAG_GROUP_327">
+			<tag name="G274_FUEL_SYSTEM_TEMPERATURE_TRANSMITTER_WIRE_BREAK" index="11"/>
+			<tag name="G274_FUEL_SYSTEM_TEMPERATURE_TRANSMITTER_OUT_OF_RANGE" index="12"/>
+			<tag name="G274_FUEL_SYSTEM_HFO_TEMPERATURE_TRANSMITTER_HIGH_HIGH" index="13"/>
+			<tag name="G274_FUEL_SYSTEM_HFO_TEMPERATURE_TRANSMITTER_HIGH" index="14"/>
+			<tag name="G274_FUEL_SYSTEM_HFO_TEMPERATURE_TRANSMITTER_LOW" index="15"/>
+		</tags>
+
+		<tags name="TAG_GROUP_328">
+			<tag name="G274_FUEL_SYSTEM_HFO_TEMPERATURE_TRANSMITTER_LOW_LOW" index="0"/>
+			<tag name="G274_FUEL_SYSTEM_DO_TEMPERATURE_TRANSMITTER_HIGH_HIGH" index="1"/>
+			<tag name="G274_FUEL_SYSTEM_DO_TEMPERATURE_TRANSMITTER_HIGH" index="2"/>
+			<tag name="G274_FUEL_SYSTEM_MGO_TEMPERATURE_TRANSMITTER_HIGH_HIGH" index="3"/>
+			<tag name="G274_FUEL_SYSTEM_MGO_TEMPERATURE_TRANSMITTER_HIGH" index="4"/>
+			<tag name="G436_FUEL_SYSTEM_COOLER_VALVE_FEEDBACK_ERROR_TO_BYPASS" index="5"/>
+			<tag name="G436_FUEL_SYSTEM_COOLER_VALVE_FEEDBACK_ERROR_TO_COOLER" index="6"/>
+			<tag name="G436_FUEL_SYSTEM_COOLER_VALVE_IS_IN_MANUAL_OPERATION" index="9"/>
+			<tag name="G115_FUEL_SYSTEM_FUEL_SELECT_VALVE_A_POSITION_ERROR_HFO" index="12"/>
+			<tag name="G115_FUEL_SYSTEM_FUEL_SELECT_VALVE_A_POSITION_ERROR_DO_MGO" index="13"/>
+		</tags>
+
+		<tags name="TAG_GROUP_329">
+			<tag name="G437_FUEL_SYSTEM_RETURN_VALVE_A_FEEDBACK_ERROR_MIXING_TUBE" index="9"/>
+			<tag name="G437_FUEL_SYSTEM_RETURN_VALVE_A_FEEDBACK_ERROR_TANK" index="10"/>
+			<tag name="G437_FUEL_SYSTEM_VALVE_ON_RETURN_LINE_A_IS_IN_MANUAL_OPERATION" index="13"/>
+		</tags>
+
+		<tags name="TAG_GROUP_330">
+			<tag name="FUEL_FUEL_SYSTEM_ILLEGAL_VALVE_CONSTELLATION" index="3"/>
+			<tag name="FUEL_FUEL_SYSTEM_NOT_RECOMMENDED_VALVE_CONSTELLATION" index="4"/>
+			<tag name="AG1_SYSTEM_ALARM_GROUP_1_OUTPUT_IS_IN_MANUAL_OPERATION" index="9"/>
+			<tag name="AG2_SYSTEM_ALARM_GROUP_2_OUTPUT_IS_IN_MANUAL_OPERATION" index="14"/>
+		</tags>
+
+		<tags name="TAG_GROUP_331">
+			<tag name="AGS_SYSTEM_ALARM_GROUP_2_IS_ACTIVATE" index="3"/>
+			<tag name="AG3_SYSTEM_ALARM_GROUP_3_OUTPUT_IS_IN_MANUAL_OPERATION" index="9"/>
+			<tag name="AGS_SYSTEM_ALARM_GROUP_1_IS_ACTIVATE" index="10"/>
+			<tag name="AGS_SYSTEM_ALARM_GROUP_3_IS_ACTIVATE" index="11"/>
+			<tag name="AGS_SYSTEM_ALARM_GROUP_4_IS_ACTIVATE" index="12"/>
+			<tag name="HMI1_HMI_CONNECTION_LOST" index="13"/>
+			<tag name="HMI1_ERROR_WHILE_COPYING_BACKUP_FILES_TO_HMI_FTP_SERVER" index="14"/>
+			<tag name="HMI1_ERROR_WHILE_COPYING_RESTORE_FILES_FROM_HMI_FTP_SERVER" index="15"/>
+		</tags>
+
+		<tags name="TAG_GROUP_332">
+			<tag name="PLC_PLC_CPU_BATTERY_MISSING_OR_LOW" index="3"/>
+			<tag name="EM_STOP_SYSTEM_EMERGENCY_STOP_ACTIVATED" index="7"/>
+			<tag name="EMR_OPR_SYSTEM_IN_EMERGENCY_OPERATION" index="8"/>
+			<tag name="POWER1_SYSTEM_POWER_SUPPLY_1_FEEDBACK_IS_MISSING" index="10"/>
+		</tags>
+	</tagConfig>
+</bitIndexConfig>

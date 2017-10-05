@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modbusMachineAdapterConfig>
+	<name>Onsite monitor modbus nodes</name>
+	<description>Onsite monitor modbus nodes</description>
+	<vesselId>1000007</vesselId>
+	<dataNodeConfigs>
+		<channel protocol="TCP_IP" tcpIpAddress="192.168.2.36" tcpIpPort="502" regBaseAddress="0">
+			<unit id="14">
+				<register name="CHS_DATA" dataType="FLOAT" method="CONTINUOUS" address="0" registerType="HOLDING" description="CHS1" count="112" innerRegisters="1" />
+			</unit>
+
+			<!--Inner Registers are used for continuous reading of addresses. The number of innerRegisters should match with the count given in parent
+			register. The id of innerRegisters should match with the id of parent register. The data type of parent register should be of type ORIGINAL-->
+			<innerRegisters id="1">
+				<!-- <register name="NO1_S_CARGO_TANK_LEVEL" dataType="FLOAT" address="-1" description="NO.1 (S) Cargo Tank Level"/> -->
+	<register name="NO1_S_CARGO_TANK_LEVEL" address="0"/>
+	<register name="NO1_P_CARGO_TANK_LEVEL" address="2"/>
+	<register name="NO2_S_CARGO_TANK_LEVEL" address="4"/>
+	<register name="NO2_P_CARGO_TANK_LEVEL" address="6"/>
+	<register name="NO3_S_CARGO_TANK_LEVEL" address="8"/>
+	<register name="NO3_P_CARGO_TANK_LEVEL" address="10"/>
+	<register name="NO1_CARGO_TANK_PRESSURE" address="12"/>
+	<register name="NO1_CARGO_TANK_PRESSURE_2" address="14"/>
+	<register name="NO2_CARGO_TANK_PRESSURE" address="16"/>
+	<register name="NO2_CARGO_TANK_PRESSURE_2" address="18"/>
+	<register name="NO3_CARGO_TANK_PRESSURE" address="20"/>
+	<register name="NO3_CARGO_TANK_PRESSURE_2" address="22"/>
+	<register name="CARGO_TANK_1_DW_PUMP_STBD_DISCHARGE_PRESSURE" address="24"/>
+	<register name="CARGO_TANK_1_DW_PUMP_PORT_DISCHARGE_PRESSURE" address="26"/>
+	<register name="CARGO_TANK_2_DW_PUMP_STBD_DISCHARGE_PRESSURE" address="28"/>
+	<register name="CARGO_TANK_2_DW_PUMP_PORT_DISCHARGE_PRESSURE" address="30"/>
+	<register name="CARGO_TANK_3_DW_PUMP_STBD_DISCHARGE_PRESSURE" address="32"/>
+	<register name="CARGO_TANK_3_DW_PUMP_PORT_DISCHARGE_PRESSURE" address="34"/>
+	<register name="CARGO_TANK_1_STBD_SIDE_LIQUID_TEMP_AT_BOTTOM" address="36"/>
+	<register name="CARGO_TANK_1_PORT_SIDE_LIQUID_TEMP_AT_BOTTOM" address="38"/>
+	<register name="CARGO_TANK_1_STBD_SIDE_LIQUID_TEMP_AT_MIDDLE" address="40"/>
+	<register name="CARGO_TANK_1_PORT_SIDE_LIQUID_TEMP_AT_MIDDLE" address="42"/>
+	<register name="CARGO_TANK_1_STBD_SIDE_LIQUID_TEMP_AT_TOP" address="44"/>
+	<register name="CARGO_TANK_1_PORT_SIDE_LIQUID_TEMP_AT_TOP" address="46"/>
+	<register name="CARGO_TANK_1_STBD_SIDE_LIQUID_TEMP_AT_100_PERCENT" address="48"/>
+	<register name="CARGO_TANK_2_STBD_SIDE_LIQUID_TEMP_AT_BOTTOM" address="50"/>
+	<register name="CARGO_TANK_2_PORT_SIDE_LIQUID_TEMP_AT_BOTTOM" address="52"/>
+	<register name="CARGO_TANK_2_STBD_SIDE_LIQUID_TEMP_AT_MIDDLE" address="54"/>
+	<register name="CARGO_TANK_2_PORT_SIDE_LIQUID_TEMP_AT_MIDDLE" address="56"/>
+	<register name="CARGO_TANK_2_STBD_SIDE_LIQUID_TEMP_AT_TOP" address="58"/>
+	<register name="CARGO_TANK_2_PORT_SIDE_LIQUID_TEMP_AT_TOP" address="60"/>
+	<register name="CARGO_TANK_2_STBD_SIDE_LIQUID_TEMP_AT_100_PERCENT" address="62"/>
+	<register name="CARGO_TANK_3_STBD_SIDE_LIQUID_TEMP_AT_BOTTOM" address="64"/>
+	<register name="CARGO_TANK_3_PORT_SIDE_LIQUID_TEMP_AT_BOTTOM" address="66"/>
+	<register name="CARGO_TANK_3_STBD_SIDE_LIQUID_TEMP_AT_MIDDLE" address="68"/>
+	<register name="CARGO_TANK_3_PORT_SIDE_LIQUID_TEMP_AT_MIDDLE" address="70"/>
+	<register name="CARGO_TANK_3_STBD_SIDE_LIQUID_TEMP_AT_TOP" address="72"/>
+	<register name="CARGO_TANK_3_PORT_SIDE_LIQUID_TEMP_AT_TOP" address="74"/>
+	<register name="CARGO_TANK_3_STBD_SIDE_LIQUID_TEMP_AT_100_PERCENT" address="76"/>
+	<register name="DECK_TANK_1_LEVEL_FLOAT" address="78"/>
+	<register name="DECK_TANK_1_BOTTOM_TEMPERATURE" address="80"/>
+	<register name="DECK_TANK_1_VAPOUR_TEMPERATURE" address="82"/>
+	<register name="DECK_TANK_1_PRESSURE" address="84"/>
+	<register name="DECK_TANK_1_PRESSURE_2" address="86"/>
+	<register name="DECK_TANK_2_LEVEL_FLOAT" address="88"/>
+	<register name="DECK_TANK_2_BOTTOM_TEMPERATURE" address="90"/>
+	<register name="DECK_TANK_2_VAPOUR_TEMPERATURE" address="92"/>
+	<register name="DECK_TANK_2_PRESSURE" address="94"/>
+	<register name="DECK_TANK_2_PRESSURE_2" address="96"/>
+	<register name="CARGO_TANK_1_DW_PUMP_MOTOR_CURRENT_STB_2" address="98"/>
+	<register name="CARGO_TANK_1_DW_PUMP_MOTOR_CURRENT_PORT_2" address="100"/>
+	<register name="CARGO_TANK_1S_DISCHARGE_VALVE_POSITION" address="102"/>
+	<register name="CARGO_TANK_1P_DISCHARGE_VALVE_POSITION" address="104"/>
+	<register name="CARGO_TANK_1_HOLD_SPACE_PRESSURE" address="106"/>
+	<register name="CARGO_TANK_1_HOLD_SPACE_TEMPERATURE" address="108"/>
+	<register name="CARGO_COND_RELIQ_UNIT_1_SW_OUTLET_TEMP" address="110"/>
+	
+			</innerRegisters>
+		</channel>
+	</dataNodeConfigs>
+<dataSubscriptionConfigs>
+	<dataSubscriptionConfig name="ModBusSubscription">
+		<nodeName>CHS_DATA</nodeName>
+	</dataSubscriptionConfig>
+</dataSubscriptionConfigs>
+</modbusMachineAdapterConfig>

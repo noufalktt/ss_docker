@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modbusMachineAdapterConfig>
+	<name>Onsite monitor modbus nodes</name>
+	<description>Onsite monitor modbus nodes</description>
+	<vesselId>1000007</vesselId>
+	<defaultUpdateInterval>1</defaultUpdateInterval>
+	<dataNodeConfigs>
+		<channel protocol="TCP_IP" tcpIpAddress="192.168.2.36" tcpIpPort="502" regBaseAddress="0">
+			<unit id="15">
+				<register name="CHS_DATA2" dataType="FLOAT" method="CONTINUOUS" address="112" registerType="HOLDING" description="CHS1" count="120" innerRegisters="2" />
+			</unit>
+
+			<!--Inner Registers are used for continuous reading of addresses. The number of innerRegisters should match with the count given in parent
+			register. The id of innerRegisters should match with the id of parent register. The data type of parent register should be of type ORIGINAL-->
+			<innerRegisters id="2">
+	<register name="RELIQ_UNIT_1_KO_DRUM_LEVEL" address="112"/>
+	<register name="RELIQ_UNIT_1_CARGO_COMPRESSOR_BULKHEAD_SEAL_TEMP" address="114"/>
+	<register name="RELIQ_UNIT_1_CARGO_COMPRESSOR_STAGE_1_SUCTION_PRESSURE" address="116"/>
+	<register name="RELIQ_UNIT_1_CARGO_COMPRESSOR_STAGE_1_DISCHARGE_PRESSURE" address="118"/>
+	<register name="RELIQ_UNIT_1_CARGO_COMPRESSOR_STAGE_1_SUCTION_TEMPERATURE" address="120"/>
+	<register name="RELIQ_UNIT_1_CARGO_COMPRESSOR_STAGE_1_DISCHARGE_TEMPERATURE" address="122"/>
+	<register name="RELIQ_UNIT_1_CARGO_COMPRESSOR_STAGE_2_SUCTION_PRESSURE" address="124"/>
+	<register name="RELIQ_UNIT_1_CARGO_COMPRESSOR_STAGE_2_DISCHARGE_PRESSURE" address="126"/>
+	<register name="RELIQ_UNIT_1_CARGO_COMPRESSOR_STAGE_2_SUCTION_TEMPERATURE" address="128"/>
+	<register name="RELIQ_UNIT_1_CARGO_COMPRESSOR_STAGE_2_DISCHARGE_TEMPERATURE" address="130"/>
+	<register name="RELIQ_UNIT_1_INTERCOOLER_1_LEVEL_INDICATOR" address="132"/>
+	<register name="RELIQ_UNIT_1_INTERCOOLER_1_TEMPERATURE" address="134"/>
+	<register name="RELIQ_UNIT_1_INTERCOOLER_1_COIL_INLET_TEMPERATURE" address="136"/>
+	<register name="RELIQ_UNIT_1_INTERCOOLER_1_COIL_OUTLET_TEMPERATURE" address="138"/>
+	<register name="RELIQ_UNIT_1_CONDENSATE_OUTLET_PRESSURE_INDICATOR" address="140"/>
+	<register name="RELIQ_UNIT_1_LIQUID_RECEIVER_1_LEVEL_INDICATOR" address="142"/>
+	<register name="RELIQ_UNIT_1_LIQUID_RECEIVER_PRESSURE_INDICATOR" address="144"/>
+	<register name="RELIQ_UNIT_1_CARGO_COMP_LUBE_OIL_DIFFERENTIAL_PRESSURE" address="146"/>
+	<register name="GLYCOL_COOING_WATER_TEMP_COMPRESSOR_1_INLET" address="148"/>
+	<register name="DWP_1S_WINDING_TEMPERATURE" address="150"/>
+	<register name="DWP_1S_WINDING_TEMPERATURE_2" address="152"/>
+	<register name="DWP_1S_WINDING_TEMPERATURE_3" address="154"/>
+	<register name="DWP_1P_WINDING_TEMPERATURE" address="156"/>
+	<register name="DWP_1P_WINDING_TEMPERATURE_2" address="158"/>
+	<register name="DWP_1P_WINDING_TEMPERATURE_3" address="160"/>
+	<register name="COMPRESSOR_1_PUMP_MOTOR_WINDING_TEMPERATURE" address="162"/>
+	<register name="COMPRESSOR_1_PUMP_MOTOR_WINDING_TEMPERATURE_2" address="164"/>
+	<register name="COMPRESSOR_1_PUMP_MOTOR_WINDING_TEMPERATURE_3" address="166"/>
+	<register name="CARGO_TANK_2_DW_PUMP_MOTOR_CURRENT_STB" address="168"/>
+	<register name="CARGO_TANK_2_DW_PUMP_MOTOR_CURRENT_PORT_2" address="170"/>
+	<register name="CARGO_TANK_2S_DISCHARGE_VALVE_POSITION" address="172"/>
+	<register name="CARGO_TANK_2P_DISCHARGE_VALVE_POSITION" address="174"/>
+	<register name="CARGO_TANK_2_HOLD_SPACE_PRESSURE" address="176"/>
+	<register name="CARGO_TANK_2_HOLD_SPACE_TEMPERATURE" address="178"/>
+	<register name="RELIQ_UNIT_2_CARGO_COND_SW_OUTLET_TEMP" address="180"/>
+	<register name="RELIQ_UNIT_2_KO_DRUM_LEVEL_SWITCH" address="182"/>
+	<register name="RELIQ_UNIT_2_CARGO_COMPRESSOR_BULKHEAD_SEAL_TEMP" address="184"/>
+	<register name="RELIQ_UNIT_2_CARGO_COMPRESSOR_STAGE_1_SUCTION_PRESSURE" address="186"/>
+	<register name="RELIQ_UNIT_2_CARGO_COMPRESSOR_STAGE_1_DISCHARGE_PRESSURE" address="188"/>
+	<register name="RELIQ_UNIT_2_CARGO_COMPRESSOR_STAGE_1_SUCTION_TEMPERATURE" address="190"/>
+	<register name="RELIQ_UNIT_2_CARGO_COMPRESSOR_STAGE_1_DISCHARGE_TEMPERATURE" address="192"/>
+	<register name="RELIQ_UNIT_2_CARGO_COMPRESSOR_STAGE_2_SUCTION_PRESSURE" address="194"/>
+	<register name="RELIQ_UNIT_2_CARGO_COMPRESSOR_STAGE_2_DISCHARGE_PRESSURE" address="196"/>
+	<register name="RELIQ_UNIT_2_CARGO_COMPRESSOR_STAGE_2_SUCTION_TEMPERATURE" address="198"/>
+	<register name="RELIQ_UNIT_2_CARGO_COMPRESSOR_STAGE_2_DISCHARGE_TEMPERATURE" address="200"/>
+	<register name="RELIQ_UNIT_2_INTERCOOLER_1_LEVEL_INDICATOR" address="202"/>
+	<register name="RELIQ_UNIT_2_INTERCOOLER_1_TEMPERATURE" address="204"/>
+	<register name="RELIQ_UNIT_2_INTERCOOLER_1_COIL_INLET_TEMPERATURE" address="206"/>
+	<register name="RELIQ_UNIT_2_INTERCOOLER_1_COIL_OUTLET_TEMPERATURE" address="208"/>
+	<register name="RELIQ_UNIT_2_CONDENSATE_OUTLET_PRESSURE_INDICATOR" address="210"/>
+	<register name="RELIQ_UNIT_2_LIQUID_RECEIVER_1_LEVEL_INDICATOR" address="212"/>
+	<register name="RELIQ_UNIT_2_LIQUID_RECEIVER_PRESSURE_INDICATOR" address="214"/>
+	<register name="RELIQ_UNIT_2_CARGO_COMP_LUBE_OIL_DIFFERENTIAL_PRESSURE" address="216"/>
+	<register name="RELIQ_UNIT_2_GLYCOL_COOING_WATER_COMPRESSOR_INLET_TEMP" address="218"/>
+	<register name="DWP_2S_U_WINDING_TEMPERATURE" address="220"/>
+	<register name="DWP_2S_V_WINDING_TEMPERATURE" address="222"/>
+	<register name="DWP_2S_W_WINDING_TEMPERATURE" address="224"/>
+	<register name="DWP_2P_U_WINDING_TEMPERATURE" address="226"/>
+	<register name="DWP_2P_V_WINDING_TEMPERATURE" address="228"/>
+	<register name="DWP_2P_W_WINDING_TEMPERATURE" address="230"/>
+	
+			</innerRegisters>
+
+		</channel>
+	</dataNodeConfigs>
+<dataSubscriptionConfigs>
+	<dataSubscriptionConfig name="ModBusSubscription">
+		<nodeName>CHS_DATA2</nodeName>
+	</dataSubscriptionConfig>
+</dataSubscriptionConfigs>
+</modbusMachineAdapterConfig>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modbusMachineAdapterConfig>
+   <name>Onsite monitor modbus nodes</name>
+   <description>Onsite monitor modbus nodes</description>
+   <vesselId>1000007</vesselId>
+   <defaultUpdateInterval>1</defaultUpdateInterval>
+   <dataNodeConfigs>
+      <channel protocol="TCP_IP" tcpIpAddress="192.168.2.36" tcpIpPort="502" regBaseAddress="1">
+         <unit id="1">
+            <register name="AIS_DATA" dataType="SHORT" method="CONTINUOUS" address="148" registerType="HOLDING" description="AIS1" count="111" innerRegisters="1" />
+         </unit>
+		 
+		 <!--Inner Registers are used for continuous reading of addresses. The number of innerRegisters should match with the count given in parent
+		 register. The id of innerRegisters should match with the id of parent register. The data type of parent register should be of type ORIGINAL-->
+		 <innerRegisters id="1">
+
+         <register name="TAG_GROUP_148" dataType="INTEGER" address="148" description="TAG_GROUP_148"/>
+         <register name="TAG_GROUP_149" dataType="INTEGER" address="149" description="TAG_GROUP_149"/>
+         <register name="TAG_GROUP_150" dataType="INTEGER" address="150" description="TAG_GROUP_150"/>
+         <register name="TAG_GROUP_151" dataType="INTEGER" address="151" description="TAG_GROUP_151"/>
+         <register name="TAG_GROUP_152" dataType="INTEGER" address="152" description="TAG_GROUP_152"/>
+         <register name="TAG_GROUP_153" dataType="INTEGER" address="153" description="TAG_GROUP_153"/>
+         <register name="TAG_GROUP_154" dataType="INTEGER" address="154" description="TAG_GROUP_154"/>
+         <register name="TAG_GROUP_155" dataType="INTEGER" address="155" description="TAG_GROUP_155"/>
+         <register name="TAG_GROUP_156" dataType="INTEGER" address="156" description="TAG_GROUP_156"/>
+         <register name="TAG_GROUP_157" dataType="INTEGER" address="157" description="TAG_GROUP_157"/>
+         <register name="TAG_GROUP_158" dataType="INTEGER" address="158" description="TAG_GROUP_158"/>
+         <register name="TAG_GROUP_159" dataType="INTEGER" address="159" description="TAG_GROUP_159"/>
+         <register name="TAG_GROUP_160" dataType="INTEGER" address="160" description="TAG_GROUP_160"/>
+         <register name="TAG_GROUP_161" dataType="INTEGER" address="161" description="TAG_GROUP_161"/>
+         <register name="TAG_GROUP_162" dataType="INTEGER" address="162" description="TAG_GROUP_162"/>
+         <register name="TAG_GROUP_163" dataType="INTEGER" address="163" description="TAG_GROUP_163"/>
+         <register name="TAG_GROUP_164" dataType="INTEGER" address="164" description="TAG_GROUP_164"/>
+         <register name="TAG_GROUP_165" dataType="INTEGER" address="165" description="TAG_GROUP_165"/>
+         <register name="TAG_GROUP_166" dataType="INTEGER" address="166" description="TAG_GROUP_166"/>
+         <register name="TAG_GROUP_167" dataType="INTEGER" address="167" description="TAG_GROUP_167"/>
+         <register name="TAG_GROUP_168" dataType="INTEGER" address="168" description="TAG_GROUP_168"/>
+         <register name="TAG_GROUP_169" dataType="INTEGER" address="169" description="TAG_GROUP_169"/>
+         <register name="TAG_GROUP_170" dataType="INTEGER" address="170" description="TAG_GROUP_170"/>
+         <register name="TAG_GROUP_171" dataType="INTEGER" address="171" description="TAG_GROUP_171"/>
+         <register name="TAG_GROUP_172" dataType="INTEGER" address="172" description="TAG_GROUP_172"/>
+         <register name="TAG_GROUP_173" dataType="INTEGER" address="173" description="TAG_GROUP_173"/>
+         <register name="TAG_GROUP_174" dataType="INTEGER" address="174" description="TAG_GROUP_174"/>
+         <register name="TAG_GROUP_175" dataType="INTEGER" address="175" description="TAG_GROUP_175"/>
+         <register name="TAG_GROUP_176" dataType="INTEGER" address="176" description="TAG_GROUP_176"/>
+         <register name="TAG_GROUP_177" dataType="INTEGER" address="177" description="TAG_GROUP_177"/>
+         <register name="TAG_GROUP_178" dataType="INTEGER" address="178" description="TAG_GROUP_178"/>
+         <register name="TAG_GROUP_179" dataType="INTEGER" address="179" description="TAG_GROUP_179"/>
+         <register name="TAG_GROUP_180" dataType="INTEGER" address="180" description="TAG_GROUP_180"/>
+
+         <register name="ME_RPM" dataType="INTEGER" address="181" description="ME_RPM" process="0.01"/>
+         <register name="ME_FUEL_INDEX" dataType="INTEGER" address="182" description="ME_FUEL_INDEX" process="0.01"/>
+         
+         <register name="TAG_GROUP_183" dataType="INTEGER" address="183" description="TAG_GROUP_183"/>
+         <register name="TAG_GROUP_184" dataType="INTEGER" address="184" description="TAG_GROUP_184"/>
+
+         <register name="" dataType="INTEGER" address="185" description="NO1_GE_GEN_CURRENT" process="0.1"/>
+         <register name="NO1_GE_GEN_FREQUENCY_X10" dataType="INTEGER" address="186" description="NO1_GE_GEN_FREQUENCY_X10" process="0.1"/>
+         <register name="NO1_GE_GEN_POWER_X10" dataType="INTEGER" address="187" description="NO1_GE_GEN_POWER_X10" process="0.1"/>
+         <register name="NO1_GE_GEN_CURRENT_R_PHASE" dataType="INTEGER" address="188" description="NO1_GE_GEN_CURRENT_R_PHASE" process="0.1"/>
+         <register name="NO1_GE_GEN_CURRENT_S_PHASE" dataType="INTEGER" address="189" description="NO1_GE_GEN_CURRENT_S_PHASE" process="0.1"/>
+         <register name="NO1_GE_GEN_CURRENT_T_PHASE" dataType="INTEGER" address="190" description="NO1_GE_GEN_CURRENT_T_PHASE" process="0.1"/>
+         <register name="NO1_GE_GEN_VOLTAGE_X10" dataType="INTEGER" address="191" description="NO1_GE_GEN_VOLTAGE_X10" process="0.1"/>
+         <register name="NO1_GE_BUS_BAR_FREQUENCY_X10" dataType="INTEGER" address="192" description="NO1_GE_BUS_BAR_FREQUENCY_X10" process="0.1"/>
+         <register name="NO1_GE_BUS_BAR_VOLTAGE" dataType="INTEGER" address="193" description="NO1_GE_BUS_BAR_VOLTAGE" process="0.1"/>
+         
+         <register name="TAG_GROUP_194" dataType="INTEGER" address="194" description="TAG_GROUP_194"/>
+         <register name="TAG_GROUP_195" dataType="INTEGER" address="195" description="TAG_GROUP_195"/>
+
+         <register name="NO2_GE_GEN_CURRENT" dataType="INTEGER" address="196" description="NO2_GE_GEN_CURRENT" process="0.1"/>
+         <register name="NO2_GE_GEN_FREQUENCY_X10" dataType="INTEGER" address="197" description="NO2_GE_GEN_FREQUENCY_X10" process="0.1"/>
+         <register name="NO2_GE_GEN_POWER_X10" dataType="INTEGER" address="198" description="NO2_GE_GEN_POWER_X10" process="0.1"/>
+         <register name="NO2_GE_GEN_CURRENT_R_PHASE" dataType="INTEGER" address="199" description="NO2_GE_GEN_CURRENT_R_PHASE" process="0.1"/>
+         <register name="NO2_GE_GEN_CURRENT_S_PHASE" dataType="INTEGER" address="200" description="NO2_GE_GEN_CURRENT_S_PHASE" process="0.1"/>
+         <register name="NO2_GE_GEN_CURRENT_T_PHASE" dataType="INTEGER" address="201" description="NO2_GE_GEN_CURRENT_T_PHASE" process="0.1"/>
+         <register name="NO2_GE_GEN_VOLTAGE_X10" dataType="INTEGER" address="202" description="NO2_GE_GEN_VOLTAGE_X10" process="0.1"/>
+         <register name="NO2_GE_BUS_BAR_FREQUENCY_X10" dataType="INTEGER" address="203" description="NO2_GE_BUS_BAR_FREQUENCY_X10" process="0.1"/>
+         <register name="NO2_GE_BUS_BAR_VOLTAGE" dataType="INTEGER" address="204" description="NO2_GE_BUS_BAR_VOLTAGE" process="0.1"/>
+         
+         <register name="TAG_GROUP_205" dataType="INTEGER" address="205" description="TAG_GROUP_205"/>
+         <register name="TAG_GROUP_206" dataType="INTEGER" address="206" description="TAG_GROUP_206"/>
+
+         <register name="NO3_GE_GEN_CURRENT" dataType="INTEGER" address="207" description="NO3_GE_GEN_CURRENT" process="0.1"/>
+         <register name="NO3_GE_GEN_FREQUENCY_X10" dataType="INTEGER" address="208" description="NO3_GE_GEN_FREQUENCY_X10" process="0.1"/>
+         <register name="NO3_GE_GEN_POWER_X10" dataType="INTEGER" address="209" description="NO3_GE_GEN_POWER_X10" process="0.1"/>
+         <register name="NO3_GE_GEN_CURRENT_R_PHASE" dataType="INTEGER" address="210" description="NO3_GE_GEN_CURRENT_R_PHASE" process="0.1"/>
+         <register name="NO3_GE_GEN_CURRENT_S_PHASE" dataType="INTEGER" address="211" description="NO3_GE_GEN_CURRENT_S_PHASE" process="0.1"/>
+         <register name="NO3_GE_GEN_CURRENT_T_PHASE" dataType="INTEGER" address="212" description="NO3_GE_GEN_CURRENT_T_PHASE" process="0.1"/>
+         <register name="NO3_GE_GEN_VOLTAGE_X10" dataType="INTEGER" address="213" description="NO3_GE_GEN_VOLTAGE_X10" process="0.1"/>
+         <register name="NO3_GE_BUS_BAR_FREQUENCY_X10" dataType="INTEGER" address="214" description="NO3_GE_BUS_BAR_FREQUENCY_X10" process="0.1"/>
+         <register name="AIR_VENTILATION_NO1_AIR_COMP" dataType="INTEGER" address="215" description="AIR_VENTILATION_NO1_AIR_COMP" process="0.1"/>
+         
+         <register name="AIR_VENTILATION_NO2_AIR_COMP" dataType="INTEGER" address="216" description="AIR_VENTILATION_NO2_AIR_COMP" process="0.1"/>
+    
+ <register name="AIR_VENTILATION_SERVICE_AIR_COMP" dataType="INTEGER" address="217" description="AIR_VENTILATION_SERVICE_AIR_COMP" process="0.1"/>
+
+<register name="CONTROL_AIR_RESERVOIR_PRESS" dataType="INTEGER" address="218" description="CONTROL_AIR_RESERVOIR_PRESS" process="0.1"/>
+   
+ <register name="AIR_VENTILATION_SERVICE_AIR_COMP_RUN" dataType="INTEGER" address="219" description="CONTROL_AIR_RESERVOIR_PRESS" process="0.1"/>
+         
+
+
+ <register name="AIR_VENTILATION_SERVICE_AIR_COMP2_RUN" dataType="INTEGER" address="220" description="CONTROL_AIR_RESERVOIR_PRESS" process="0.1"/>
+        
+ <register name="AIR_VENTILATION_SERVICE_AIR_COMP1_CODN" dataType="INTEGER" address="221" description="CONTROL_AIR_RESERVOIR_PRESS" process="0.1"/>
+ <register name="AIR_VENTILATION_SERVICE_AIR_COMP2_CODN" dataType="INTEGER" address="222" description="CONTROL_AIR_RESERVOIR_PRESS" process="0.1"/>
+
+         <register name="FORE_HFO_TANK_S_LEVEL" dataType="INTEGER" address="223" description="FORE_HFO_TANK_S_LEVEL" process="0.01"/>
+         <register name="FORE_HFO_TANK_S_VOLUME" dataType="INTEGER" address="224" description="FORE_HFO3TANK_S_VOLUME" process="0.01"/>
+         <register name="FORE_HFO_TANK_P_LEVEL" dataType="INTEGER" address="225" description="FORE_HFO_TANK_P_LEVEL" process="0.01"/>
+         <register name="FORE_HFO_TANK_P_VOLUME" dataType="INTEGER" address="226" description="FORE_HFO_TANK_P_VOLUME" process="0.01"/>
+         <register name="AFT_HFO_TANK_S_LEVEL" dataType="INTEGER" address="227" description="AFT_HFO_TANK_S_LEVEL" process="0.01"/>
+         <register name="AFT_HFO_TANK_S_VOLUME" dataType="INTEGER" address="228" description="AFT_HFO_TANK_S_VOLUME" process="0.01"/>
+         <register name="AFT_HFO_TANK_P_LEVEL" dataType="INTEGER" address="229" description="AFT_HFO_TANK_P_LEVEL" process="0.01"/>
+         <register name="AFT_HFO_TANK_P_VOLUME" dataType="INTEGER" address="230" description="AFT_HFO_TANK_P_VOLUME" process="0.01"/>
+         <register name="HFO_SERV_TANK_LEVEL" dataType="INTEGER" address="231" description="HFO_SERV_TANK_LEVEL" process="0.01"/>
+         <register name="HFO_SERV_TANK_VOLUME" dataType="INTEGER" address="232" description="HFO_SERV_TANK_VOLUME" process="0.01"/>
+         <register name="HFO_SETT_TANK_LEVEL" dataType="INTEGER" address="233" description="HFO_SETT_TANK_LEVEL" process="0.01"/>
+         <register name="HFO_SETT_TANK_VOLUME" dataType="INTEGER" address="234" description="HFO_SETT_TANK_VOLUME" process="0.01"/>
+         <register name="MGO_STOR_TANK_S_LEVEL" dataType="INTEGER" address="235" description="MGO_STOR_TANK_S_LEVEL" process="0.01"/>
+         <register name="MGO_STOR_TANK_S_VOLUME" dataType="INTEGER" address="236" description="MGO_STOR_TANK_S_VOLUME" process="0.01"/>
+         <register name="MGO_STOR_TANK_P_LEVEL" dataType="INTEGER" address="237" description="MGO_STOR_TANK_P_LEVEL" process="0.01"/>
+         <register name="MGO_STOR_TANK_P_VOLUME" dataType="INTEGER" address="238" description="MGO_STOR_TANK_P_VOLUME" process="0.01"/>
+         <register name="NO1_MGO_SERV_TANK_LEVEL" dataType="INTEGER" address="239" description="NO1_MGO_SERV_TANK_LEVEL" process="0.01"/>
+         <register name="NO1_MGO_SERV_TANK_VOLUME" dataType="INTEGER" address="240" description="NO1_MGO_SERV_TANK_VOLUME" process="0.01"/>
+         <register name="NO2_MGO_SERV_TANK_LEVEL" dataType="INTEGER" address="241" description="NO2_MGO_SERV_TANK_LEVEL" process="0.01"/>
+         <register name="NO2_MGO_SERV_TANK_VOLUME" dataType="INTEGER" address="242" description="NO2_MGO_SERV_TANK_VOLUME" process="0.01"/>
+         <register name="FW_TANK_S_LEVEL" dataType="INTEGER" address="243" description="FW_TANK_S_LEVEL" process="0.01"/>
+         <register name="FW_TANK_S_VOLUME" dataType="INTEGER" address="244" description="FW_TANK_S_VOLUME" process="0.01"/>
+         <register name="FW_TANK_P_LEVEL" dataType="INTEGER" address="245" description="FW_TANK_P_LEVEL" process="0.01"/>
+         <register name="FW_TANK_P_VOLUME" dataType="INTEGER" address="246" description="FW_TANK_P_VOLUME" process="0.01"/>
+         <register name="GE1_FO_IN_PRESS" dataType="INTEGER" address="247" description="GE1_FO_IN_PRESS" process="0.01"/>
+         <register name="GE2_FO_IN_PRESS" dataType="INTEGER" address="248" description="GE2_FO_IN_PRESS" process="0.01"/>
+         <register name="GE3_FO_IN_PRESS" dataType="INTEGER" address="249" description="GE3_FO_IN_PRESS" process="0.01"/>
+         <register name="WIO_ME_LO_FORE_IN_TEMP" dataType="INTEGER" address="250" description="WIO_ME_LO_FORE_IN_TEMP" process="0.01"/>
+         
+	<register name="BOILERFLOWMETER" dataType="INTEGER" address="251" description="BOILER_FO_FLOWMETER" process="0.1"/>
+         <register name="BOILER_MGO_FLOWMETER" dataType="INTEGER" address="252" description="BOILER_MGO_FLOWMETER" process="0.1"/>
+         
+         <register name="TAG_GROUP_253" dataType="INTEGER" address="253" description="TAG_GROUP_253"/>
+
+         <register name="SSTAG_6" dataType="INTEGER" address="254" description="SSTAG_6" process="0.01"/>
+         <register name="SSTAG_7" dataType="INTEGER" address="255" description="SSTAG_7" process="0.01"/>
+         <register name="SSTAG_8" dataType="INTEGER" address="256" description="SSTAG_8" process="0.01"/>
+         <register name="SSTAG_9" dataType="INTEGER" address="257" description="SSTAG_9" process="0.01"/>
+         <register name="SSTAG_10" dataType="INTEGER" address="258" description="SSTAG_10" process="0.01"/>
+
+		 </innerRegisters>
+      </channel>
+   </dataNodeConfigs>
+   <dataSubscriptionConfigs>
+      <dataSubscriptionConfig name="ModBusSubscription">
+         <nodeName>AIS_DATA</nodeName>
+      </dataSubscriptionConfig>
+   </dataSubscriptionConfigs>
+</modbusMachineAdapterConfig>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modbusMachineAdapterConfig>
+	<name>Onsite monitor modbus nodes</name>
+	<description>Onsite monitor modbus nodes</description>
+	<vesselId>1000007</vesselId>
+	<dataNodeConfigs>
+		<channel protocol="TCP_IP" tcpIpAddress="192.168.1.22" tcpIpPort="502" regBaseAddress="1">
+			<unit id="5">				
+				<register name="N2_SHORT_HOLDING_DATA" dataType="SHORT" method="CONTINUOUS" address="102" registerType="HOLDING" description="N2_SHORT_HOLDING_DATA" count="11" innerRegisters="1"/>
+				<register name="N2_BOOLEAN_COIL_DATA" dataType="BOOLEAN" method="CONTINUOUS" address="202" registerType="COIL" description="N2_BOOLEAN_COIL_DATA" count="73" innerRegisters="2"/>
+			</unit>
+			<innerRegisters id="1">
+				<register name="N2_DIFFERENTIAL_PRESSURE_FILTERS" address="102" description="N2_DIFFERENTIAL_PRESSURE_FILTERS"/>
+				<register name="N2_FEED_AIR_PRESS" address="103" description="N2_FEED_AIR_PRESS"/>
+				<register name="N2_FEED_AIR_TEMP" address="104" description="N2_FEED_AIR_TEMP"/>
+				<register name="N2_SEPARATOR_FEED_TEMP" address="105" description="N2_SEPARATOR_FEED_TEMP"/>
+				<register name="N2_SEPARATOR_FEED_PRESSURE" address="106" description="N2_SEPARATOR_FEED_PRESSURE"/>
+				<register name="N2_PRODUCT_DEW_POINT" address="107" description="N2_PRODUCT_DEW_POINT"/>
+				<register name="N2_PRODUCT_OXYGEN_CONTENT" address="108" description="N2_PRODUCT_OXYGEN_CONTENT"/>
+				<register name="N2_CONTROL_VALVE_FCV_854_OPENING_PERCENT" address="109" description="N2_CONTROL_VALVE_FCV_854_OPENING_PERCENT"/>
+				<register name="N2_PRODUCT_FLOW" address="110" description="N2_PRODUCT_FLOW"/>
+				<register name="N2_N2_GEN_DISCHARGE_PRESSURE_N2_RECEIVER_PRESSURE" address="111" description="N2_N2_GEN_DISCHARGE_PRESSURE_N2_RECEIVER_PRESSURE"/>
+			</innerRegisters>
+			<innerRegisters id="2">
+				<register name="N2_FEED_AIR_FILTER_DIFF_PRESS_HIGH" address="202" registerType="COIL" description="N2_FEED_AIR_FILTER_DIFF_PRESS_HIGH"/>
+				<register name="N2_FEED_AIR_FILTER_DRAIN_FAILURE" address="203" registerType="COIL" description="N2_FEED_AIR_FILTER_DRAIN_FAILURE"/>
+				<register name="N2_FEED_AIR_TEMP_HIGH" address="204" registerType="COIL" description="N2_FEED_AIR_TEMP_HIGH"/>
+				<register name="N2_HEATER_TEMP_RISE_LOW" address="205" registerType="COIL" description="N2_HEATER_TEMP_RISE_LOW"/>
+				<register name="N2_SEPARATOR_FEED_TEMP_HIGH" address="206" registerType="COIL" description="N2_SEPARATOR_FEED_TEMP_HIGH"/>
+				<register name="N2_SEPARATOR_FEED_PRESSURE_LOW" address="207" registerType="COIL" description="N2_SEPARATOR_FEED_PRESSURE_LOW"/>
+				<register name="N2_PRODUCT_DEW_POINT_HIGH" address="208" registerType="COIL" description="N2_PRODUCT_DEW_POINT_HIGH"/>
+				<register name="N2_PRODUCT_OXYGEN_CONTENT_HIGH" address="209" registerType="COIL" description="N2_PRODUCT_OXYGEN_CONTENT_HIGH"/>
+				<register name="N2_PRODUCT_OXYGEN_CONTENT_HIGH_HIGH" address="210" registerType="COIL" description="N2_PRODUCT_OXYGEN_CONTENT_HIGH_HIGH"/>
+				<register name="N2_EMERGENCY_STOP" address="211" registerType="COIL" description="N2_EMERGENCY_STOP"/>
+				<register name="N2_COMPRESSOR_COMMON_ALARM" address="212" registerType="COIL" description="N2_COMPRESSOR_COMMON_ALARM"/>
+				<register name="N2_RIO_COMMUNICATION_FAILURE" address="215" registerType="COIL" description="N2_RIO_COMMUNICATION_FAILURE"/>
+				<register name="N2_LOOP_ERROR_TT_8_39" address="232" registerType="COIL" description="N2_LOOP_ERROR_TT_8_39"/>
+				<register name="N2_LOOP_ERROR_TT_8_42" address="233" registerType="COIL" description="N2_LOOP_ERROR_TT_8_42"/>
+				<register name="N2_LOOP_ERROR_PT_8_45" address="234" registerType="COIL" description="N2_LOOP_ERROR_PT_8_45"/>
+				<register name="N2_LOOP_ERROR_MT_8_49" address="235" registerType="COIL" description="N2_LOOP_ERROR_MT_8_49"/>
+				<register name="N2_LOOP_ERROR_AT_8_50" address="236" registerType="COIL" description="N2_LOOP_ERROR_AT_8_50"/>
+				<register name="N2_LOOP_ERROR_PT_8_58" address="238" registerType="COIL" description="N2_LOOP_ERROR_PT_8_58"/>
+				<register name="N2_LOOP_ERROR_FT_8_54" address="239" registerType="COIL" description="N2_LOOP_ERROR_FT_8_54"/>
+				<register name="N2_FEED_AIR_FILTER_CHANGE_DUE" address="240" registerType="COIL" description="N2_FEED_AIR_FILTER_CHANGE_DUE"/>
+				<register name="N2_O2_SENSOR_CHANGE_DUE" address="241" registerType="COIL" description="N2_O2_SENSOR_CHANGE_DUE"/>
+				<register name="N2_LOOP_ERROR_PT_8_32" address="242" registerType="COIL" description="N2_LOOP_ERROR_PT_8_32"/>
+				<register name="N2_VALVE_XV_8_55A" address="253" registerType="COIL" description="N2_VALVE_XV_8_55A"/>
+				<register name="N2_SYSTEM_ST_BY" address="271" registerType="COIL" description="N2_SYSTEM_ST_BY"/>
+				<register name="N2_SYSTEM_RUNNING" address="272" registerType="COIL" description="N2_SYSTEM_RUNNING"/>
+				<register name="N2_COMPRESSOR_RUNNING" address="273" registerType="COIL" description="N2_COMPRESSOR_RUNNING"/>
+				<register name="N2_COMPRESSOR_CROSS_OVER" address="274" registerType="COIL" description="N2_COMPRESSOR_CROSS_OVER"/>
+			</innerRegisters>	
+		</channel>
+	</dataNodeConfigs>
+	<dataSubscriptionConfigs>
+		<dataSubscriptionConfig name="N2Subscription">
+			<nodeName>N2_SHORT_HOLDING_DATA</nodeName>
+			<nodeName>N2_BOOLEAN_COIL_DATA</nodeName>
+		</dataSubscriptionConfig>
+	</dataSubscriptionConfigs>
+</modbusMachineAdapterConfig>
+
+
+
+
+
+
+
+
+					

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?> <!--For Discrete boolean, the count should always be multiple of 8 and the inner registers should be less than or equal to the 
+count. In between missing registers should be filled with dummy data, as the reading is done for continuous registers.--> <modbusMachineAdapterConfig>
+	<name>Onsite monitor modbus nodes</name>
+	<description>Onsite monitor modbus nodes</description>
+	<vesselId>1000007</vesselId>
+	<dataNodeConfigs>
+		<channel protocol="TCP_IP" tcpIpAddress="192.168.2.36" tcpIpPort="502">
+			<unit id="3">
+				<register name="CHS_BOOLEAN_DATA" dataType="BOOLEAN" method="CONTINUOUS" address="240" registerType="DISCRETE" 
+description="BOOLEAN_DATA" count="120" innerRegisters="1"/>
+			</unit>
+			<innerRegisters id="1">
+				<register name="RELIQ_UNIT_3_CARGO_COMPRESSOR_STAGE_2_DISCHARGE_TEMPERATURE_HIGH" address="240" description="Reliq. Unit 3 Cargo 
+Compressor Stage 2 Discharge Temperature High"/>
+				<register name="RELIQ_UNIT_3_CARGO_COMPRESSOR_STAGE_2_DISCHARGE_TEMPERATURE_HIGH_HIGH" address="241" description="Reliq. Unit 3 Cargo 
+Compressor Stage 2 Discharge Temperature High High"/>
+				<register name="RELIQ_UNIT_3_INTERCOOLER_LEVEL_LOW" address="242" description="Reliq. Unit 3 Intercooler Level Low"/>
+				<register name="RELIQ_UNIT_3_INTERCOOLER_LEVEL_HIGH" address="243" description="Reliq. Unit 3 Intercooler Level High"/>
+				<register name="RELIQ_UNIT_3_INTERCOOLER_LEVEL_HIGH_HIGH" address="244" description="Reliq. Unit 3 Intercooler Level High High"/>
+				<register name="RELIQ_UNIT_3_CONDENSATE_OUTLET_PRESSURE_HIGH" address="245" description="Reliq. Unit 3 condensate / outlet pressure 
+High"/>
+				<register name="RELIQ_UNIT_3_CONDENSATE_OUTLET_PRESSURE_HIGH_HIGH" address="246" description="Reliq. Unit 3 condensate / outlet 
+pressure High High"/>
+				<register name="RELIQ_UNIT_3_LIQUID_RECEIVER_1_LEVEL_HIGH" address="247" description="Reliq. Unit 3 Liquid Receiver 1 Level High"/>
+				<register name="RELIQ_UNIT_3_LIQUID_RECEIVER_1_LEVEL_HIGH_HIGH" address="248" description="Reliq. Unit 3 Liquid Receiver 1 Level High 
+High"/>
+				<register name="RELIQ_UNIT_3_CARGO_GLYCOL_OUTLET_FLOW" address="249" description="Reliq Unit 3 Cargo Glycol Outlet Flow"/>
+				<register name="RELIQ_UNIT_3_LIQUID_RECEIVER_PRESSURE_HIGH" address="250" description="Reliq. Unit 3 Liquid Receiver Pressure High"/>
+				<register name="RELIQ_UNIT_3_CARGO_COMP_LUBE_OIL_DIFFERENTIAL_PRESSURE_LOW" address="251" description="Reliq. Unit 3 Cargo Comp. Lube 
+Oil Differential Pressure Low"/>
+				<register name="RELIQ_UNIT_3_CARGO_COMP_LUBE_OIL_DIFFERENTIAL_PRESSURE_LOW_LOW" address="252" description="Reliq. Unit 3 Cargo Comp. 
+Lube Oil Differential Pressure Low Low"/>
+				<register name="COMPRESSOR_3_GLYCOL_COOING_INLET_WATER_TEMP_LOW_LOW" address="253" description="Compressor 3 Glycol cooing inlet 
+water temp Low Low"/>
+				<register name="COMPRESSOR_3_GLYCOL_COOING_INLET_WATER_TEMP_LOW" address="254" description="Compressor 3 Glycol cooing inlet water 
+temp Low"/>
+				<register name="COMPRESSOR_3_GLYCOL_COOING_INLET_WATER_TEMP_HIGH" address="255" description="Compressor 3 Glycol cooing inlet water 
+temp High"/>
+				<register name="COMPRESSOR_3_GLYCOL_COOING_INLET_WATER_TEMP_HIGH_HIGH" address="256" description="Compressor 3 Glycol cooing inlet 
+water temp High High"/>
+				<register name="COMPRESSOR_3_MOTOR_OVERLOAD_ALARM" address="257" description="Compressor 3 Motor Overload Alarm"/>
+				<register name="COMPRESSOR_3_PUMP_MOTOR_U_WINDING_TEMPERATURE_HIGH" address="258" description="Compressor 3 Pump Motor 'U' Winding 
+Temperature High"/>
+				<register name="COMPRESSOR_3_PUMP_MOTOR_U_WINDING_TEMPERATURE_HIGH_HIGH" address="259" description="Compressor 3 Pump Motor 'U' 
+Winding Temperature High High"/>
+				<register name="COMPRESSOR_3_PUMP_MOTOR_V_WINDING_TEMPERATURE_HIGH" address="260" description="Compressor 3 Pump Motor 'V' Winding 
+Temperature High"/>
+				<register name="COMPRESSOR_3_PUMP_MOTOR_V_WINDING_TEMPERATURE_HIGH_HIGH" address="261" description="Compressor 3 Pump Motor 'V' 
+Winding Temperature High High"/>
+				<register name="COMPRESSOR_3_PUMP_MOTOR_W_WINDING_TEMPERATURE_HIGH" address="262" description="Compressor 3 Pump Motor 'W' Winding 
+Temperature High"/>
+				<register name="COMPRESSOR_3_PUMP_MOTOR_W_WINDING_TEMPERATURE_HIGH_HIGH" address="263" description="Compressor 3 Pump Motor 'W' 
+Winding Temperature High High"/>
+				<register name="DECK_TANK_1_95_PERCENT_LEVEL_ALARM" address="264" description="Deck tank 1 95% level Alarm"/>
+				<register name="DECK_TANK_1_98_PERCENT_LEVEL_ALARM" address="265" description="Deck tank 1 98% level Alarm"/>
+				<register name="DECK_TANK_1_PRESSURE_LOW" address="266" description="Deck tank 1 Pressure Low"/>
+				<register name="DECK_TANK_1_PRESSURE_HIGH" address="267" description="Deck tank 1 Pressure High"/>
+				<register name="DECK_TANK_1_TEMP_BOTTOM_LOW" address="268" description="Deck tank 1 Temp. (Bottom) Low"/>
+				<register name="DECK_TANK_1_TEMP_BOTTOM_HIGH" address="269" description="Deck tank 1 Temp. (Bottom) High"/>
+				<register name="DECK_TANK_1_VAPOUR_TEMP_LOW" address="270" description="Deck tank 1 Vapour Temp. Low"/>
+				<register name="DECK_TANK_1_VAPOUR_TEMP_HIGH" address="271" description="Deck tank 1 Vapour Temp. High"/>
+				<register name="DECK_TANK_2_95_PERCENT_LEVEL_ALARM" address="272" description="Deck tank 2 95% level Alarm"/>
+				<register name="DECK_TANK_2_98_PERCENT_LEVEL_ALARM" address="273" description="Deck tank 2 98% level Alarm"/>
+				<register name="DECK_TANK_2_PRESSURE_LOW" address="274" description="Deck tank 2 Pressure Low"/>
+				<register name="DECK_TANK_2_PRESSURE_HIGH" address="275" description="Deck tank 2 Pressure High"/>
+				<register name="DECK_TANK_2_TEMP_BOTTOM_LOW" address="276" description="Deck tank 2 Temp. (Bottom) Low"/>
+				<register name="DECK_TANK_2_TEMP_BOTTOM_HIGH" address="277" description="Deck tank 2 Temp. (Bottom) High"/>
+				<register name="DECK_TANK_2_VAPOUR_TEMP_LOW" address="278" description="Deck tank 2 Vapour Temp. Low"/>
+				<register name="DECK_TANK_2_VAPOUR_TEMP_HIGH" address="279" description="Deck tank 2 Vapour Temp. High"/>
+				<register name="CROSSOVER_1_LIQUID_PRESSURE_HIGH" address="280" description="CrossOver 1 Liquid Pressure High"/>
+				<register name="CROSSOVER_1_LIQUID_PRESSURE_HIGH_HIGH" address="281" description="CrossOver 1 Liquid Pressure High High"/>
+				<register name="CROSSOVER_1_VAPOUR_PRESSURE_HIGH" address="282" description="CrossOver 1 Vapour Pressure High"/>
+				<register name="CROSSOVER_1_VAPOUR_PRESSURE_HIGH_HIGH" address="283" description="CrossOver 1 Vapour Pressure High High"/>
+				<register name="CROSSOVER_2_VAPOUR_PRESSURE_HIGH" address="284" description="CrossOver 2 Vapour Pressure High"/>
+				<register name="CROSSOVER_2_VAPOUR_PRESSURE_HIGH_HIGH" address="285" description="CrossOver 2 Vapour Pressure High High"/>
+				<register name="CROSSOVER_2_LIQUID_PRESSURE_HIGH" address="286" description="CrossOver 2 Liquid Pressure High"/>
+				<register name="CROSSOVER_2_LIQUID_PRESSURE_HIGH_HIGH" address="287" description="CrossOver 2 Liquid Pressure High High"/>
+				<register name="BOOSTER_PUMP_COMMON_SUCTION_PRESSURE_LOW_LOW" address="288" description="Booster pump common suction pressure Low 
+Low"/>
+				<register name="BOOSTER_PUMP_COMMON_SUCTION_PRESSURE_LOW" address="289" description="Booster pump common suction pressure Low"/>
+				<register name="BOOSTER_PUMP_1_DISCHARGE_PRESSURE_HIGH" address="290" description="Booster pump 1 Discharge pressure High"/>
+				<register name="BOOSTER_PUMP_1_DISCHARGE_PRESSURE_HIGH_HIGH" address="291" description="Booster pump 1 Discharge pressure High 
+High"/>
+				<register name="BOOSTER_PUMP_2_DISCHARGE_PRESSURE_HIGH" address="292" description="Booster pump 2 Discharge pressure High"/>
+				<register name="BOOSTER_PUMP_2_DISCHARGE_PRESSURE_HIGH_HIGH" address="293" description="Booster pump 2 Discharge pressure High 
+High"/>
+				<register name="BOOSTER_PUMP_1_PUMP_MOTOR_CURRENT_STB" address="294" description="Booster pump 1 Pump Motor Current Stb."/>
+				<register name="BOOSTER_PUMP_2_PUMP_MOTOR_CURRENT_PORT" address="295" description="Booster pump 2 Pump Motor Current Port."/>
+				<register name="BOOSTER_PUMP_1_MOTOR_UNDERCURRENT_ALARM" address="296" description="Booster pump 1 Motor Undercurrent Alarm"/>
+				<register name="BOOSTER_PUMP_2_MOTOR_UNDERCURRENT_ALARM" address="297" description="Booster pump 2 Motor Undercurrent Alarm"/>
+				<register name="BOOSTER_PUMP_1_MOTOR_OVERLOAD_ALARM" address="298" description="Booster pump 1 Motor Overload Alarm"/>
+				<register name="BOOSTER_PUMP_2_MOTOR_OVERLOAD_ALARM" address="299" description="Booster pump 2 Motor Overload Alarm"/>
+				<register name="BOOSTER_PUMP_1_MOTOR_U_WINDING_TEMPERATURE_HIGH" address="300" description="Booster Pump 1 Motor 'U' Winding 
+Temperature High"/>
+				<register name="BOOSTER_PUMP_1_MOTOR_U_WINDING_TEMPERATURE_HIGH_HIGH" address="301" description="Booster Pump 1 Motor 'U' Winding 
+Temperature High High"/>
+				<register name="BOOSTER_PUMP_1_MOTOR_V_WINDING_TEMPERATURE_HIGH" address="302" description="Booster Pump 1 Motor 'V' Winding 
+Temperature High"/>
+				<register name="BOOSTER_PUMP_1_MOTOR_V_WINDING_TEMPERATURE_HIGH_HIGH" address="303" description="Booster Pump 1 Motor 'V' Winding 
+Temperature High High"/>
+				<register name="BOOSTER_PUMP_1_MOTOR_W_WINDING_TEMPERATURE_HIGH" address="304" description="Booster Pump 1 Motor 'W' Winding 
+Temperature High"/>
+				<register name="BOOSTER_PUMP_1_MOTOR_W_WINDING_TEMPERATURE_HIGH_HIGH" address="305" description="Booster Pump 1 Motor 'W' Winding 
+Temperature High High"/>
+				<register name="BOOSTER_PUMP_2_MOTOR_U_WINDING_TEMPERATURE_HIGH" address="306" description="Booster Pump 2 Motor 'U' Winding 
+Temperature High"/>
+				<register name="BOOSTER_PUMP_2_MOTOR_U_WINDING_TEMPERATURE_HIGH_HIGH" address="307" description="Booster Pump 2 Motor 'U' Winding 
+Temperature High High"/>
+				<register name="BOOSTER_PUMP_2_MOTOR_V_WINDING_TEMPERATURE_HIGH" address="308" description="Booster Pump 2 Motor 'V' Winding 
+Temperature High"/>
+				<register name="BOOSTER_PUMP_2_MOTOR_V_WINDING_TEMPERATURE_HIGH_HIGH" address="309" description="Booster Pump 2 Motor 'V' Winding 
+Temperature High High"/>
+				<register name="BOOSTER_PUMP_2_MOTOR_W_WINDING_TEMPERATURE_HIGH" address="310" description="Booster Pump 2 Motor 'W' Winding 
+Temperature High"/>
+				<register name="BOOSTER_PUMP_2_MOTOR_W_WINDING_TEMPERATURE_HIGH_HIGH" address="311" description="Booster Pump 2 Motor 'W' Winding 
+Temperature High High"/>
+				<register name="CARGO_HEATER_OUTLET_PRESSURE_HIGH" address="312" description="Cargo heater outlet pressure High"/>
+				<register name="CARGO_HEATER_OUTLET_PRESSURE_HIGH_HIGH" address="313" description="Cargo heater outlet pressure High High"/>
+				<register name="CARGO_HEATER_OUTLET_TEMPERATURE_LOW" address="314" description="Cargo heater outlet temperature Low"/>
+				<register name="CARGO_HEATER_OUTLET_VAPOUR_PRESSURE_HIGH" address="315" description="Cargo heater outlet vapour pressure High"/>
+				<register name="CARGO_HEATER_OUTLET_VAPOUR_PRESSURE_HIGH_HIGH" address="316" description="Cargo heater outlet vapour pressure High 
+High"/>
+				<register name="SEAWATER_FLOW_CARGO_HEATER_DIFFERENTIAL_PRESSURE_LOW_LOW" address="317" description="Seawater flow cargo heater 
+differential pressure Low Low"/>
+				<register name="SEAWATER_FLOW_CARGO_HEATER_DIFFERENTIAL_PRESSURE_LOW" address="318" description="Seawater flow cargo heater 
+differential pressure Low"/>
+				<register name="SEAWATER_FLOW_CARGO_HEATER_DIFFERENTIAL_PRESSURE_HIGH" address="319" description="Seawater flow cargo heater 
+differential pressure High"/>
+				<register name="SEAWATER_FLOW_CARGO_HEATER_DIFFERENTIAL_PRESSURE_HIGH_HIGH" address="320" description="Seawater flow cargo heater 
+differential pressure High High"/>
+				<register name="SEAWATER_CARGO_CONDENSER_DIFFERENTIAL_PRESSURE_HIGH" address="321" description="Seawater cargo condenser differential 
+pressure High"/>
+				<register name="GLYCOL_TANK_LEVEL_LOW_LOW" address="322" description="Glycol tank level Low Low"/>
+				<register name="GLYCOL_PUMP_SUCTION_PRESSURE" address="323" description="Glycol pump suction pressure"/>
+				<register name="GLYCOL_PUMP_DISCHARGE_PRESSURE" address="324" description="Glycol pump discharge pressure"/>
+				<register name="DUMMY_DATA" address="325" registerType="DISCRETE" description="Dummy Data"/>
+				<register name="DUMMY_DATA" address="326" registerType="DISCRETE" description="Dummy Data"/>
+				<register name="DUMMY_DATA" address="327" registerType="DISCRETE" description="Dummy Data"/>
+				<register name="GLYCOL_TANK_TEMP_HIGH_HIGH" address="328" description="Glycol Tank Temp. High High"/>
+				<register name="GLYCOL_PUMP_1_OVERLOAD_AND_WINDING_TEMP_ALARM" address="329" description="Glycol pump 1 Overload and Winding Temp. 
+Alarm"/>
+				<register name="GLYCOL_PUMP_2_OVERLOAD_AND_WINDING_TEMP_ALARM" address="330" description="Glycol pump 2 Overload and Winding Temp. 
+Alarm"/>
+				<register name="VENT_MAST_1_CARGO_TANK" address="331" description="Vent Mast 1 (Cargo Tank)"/>
+				<register name="VENT_MAST_2_RELIQ_UNIT_AND_DECK_TANK" address="332" description="Vent Mast 2 (Reliq. Unit and Deck Tank)"/>
+				<register name="EM_SHUTDOWN_PRESSURE_SWITCH_LOW_ALARM" address="333" description="Em. Shutdown Pressure Switch Low Alarm"/>
+				<register name="INSTRUMENT_AIR_PRESSURE_LOW_ALARM" address="334" description="Instrument Air Pressure Low Alarm"/>
+				<register name="SOL_VALVE_CABINET_PRESSURE_LOW_ALARM" address="335" description="Sol Valve Cabinet Pressure Low Alarm"/>
+				<register name="SOL_VALVE_CABINET_PRESSURE_SWITCH_LOW_ALARM" address="336" description="Sol Valve Cabinet Pressure Switch Low 
+Alarm"/>
+				<register name="HYDRAULIC_POWER_PACK_PRESSURE_LOW_ALARM" address="337" description="Hydraulic Power Pack Pressure Low Alarm"/>
+				<register name="GAS_FREE_1_MOTOR_OVERLOAD_AND_WINDING_TEMP_ALARM" address="338" description="Gas Free 1 motor Overload and Winding 
+Temp. Alarm"/>
+				<register name="GAS_FREE_2_MOTOR_OVERLOAD_AND_WINDING_TEMP_ALARM" address="339" description="Gas Free 2 motor Overload and Winding 
+Temp. Alarm"/>
+				<register name="OVERFILL_OVERRIDE_SWITCH" address="340" description="Overfill override switch"/>
+				<register name="DUMMY_DATA" address="341" registerType="DISCRETE" description="Dummy Data"/>
+				<register name="DUMMY_DATA" address="342" registerType="DISCRETE" description="Dummy Data"/>
+				<register name="DUMMY_DATA" address="343" registerType="DISCRETE" description="Dummy Data"/>
+				<register name="CARGO_TANK_1_CONDENSATE_VALVE_OPEN" address="344" description="Cargo Tank 1 Condensate valve Open"/>
+				<register name="CARGO_TANK_1_CONDENSATE_VALVE_CLOSE" address="345" description="Cargo Tank 1 Condensate valve Close"/>
+				<register name="CARGO_TANK_1_VAPOUR_VALVE_OPEN" address="346" description="Cargo Tank 1 Vapour valve Open"/>
+				<register name="CARGO_TANK_1_VAPOUR_VALVE_CLOSE" address="347" description="Cargo Tank 1 Vapour valve Close"/>
+				<register name="CARGO_TANK_1_LIQUID_TO_CONDENSATE_VALVE_OPEN" address="348" description="Cargo Tank 1 Liquid to Condensate valve 
+Open"/>
+				<register name="CARGO_TANK_1_LIQUID_TO_CONDENSATE_VALVE_CLOSE" address="349" description="Cargo Tank 1 Liquid to Condensate valve 
+Close"/>
+				<register name="DUMMY_DATA" address="350" registerType="DISCRETE" description="Dummy Data"/>
+				<register name="DUMMY_DATA" address="351" registerType="DISCRETE" description="Dummy Data"/>
+				<register name="CARGO_TANK_2_CONDENSATE_VALVE_OPEN" address="352" description="Cargo Tank 2 Condensate valve Open"/>
+				<register name="CARGO_TANK_2_CONDENSATE_VALVE_CLOSE" address="353" description="Cargo Tank 2 Condensate valve Close"/>
+				<register name="CARGO_TANK_2_VAPOUR_VALVE_OPEN" address="354" description="Cargo Tank 2 Vapour valve Open"/>
+				<register name="CARGO_TANK_2_VAPOUR_VALVE_CLOSE" address="355" description="Cargo Tank 2 Vapour valve Close"/>
+				<register name="CARGO_TANK_2_LIQUID_TO_CONDENSATE_VALVE_OPEN" address="356" description="Cargo Tank 2 Liquid to Condensate valve 
+Open"/>
+				<register name="CARGO_TANK_2_LIQUID_TO_CONDENSATE_VALVE_CLOSE" address="357" description="Cargo Tank 2 Liquid to Condensate valve 
+Close"/>
+			</innerRegisters>
+		</channel>
+	</dataNodeConfigs>
+	<dataSubscriptionConfigs>
+		<dataSubscriptionConfig name="ModBusSubscription">
+			<nodeName>CHS_BOOLEAN_DATA</nodeName>
+		</dataSubscriptionConfig>
+	</dataSubscriptionConfigs>
+</modbusMachineAdapterConfig>

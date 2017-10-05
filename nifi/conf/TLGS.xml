@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modbusMachineAdapterConfig>
+   <name>Onsite monitor modbus nodes</name>
+   <description>Onsite monitor modbus nodes</description>
+   <vesselId>1000007</vesselId>
+   <defaultUpdateInterval>1</defaultUpdateInterval>
+   <dataNodeConfigs>
+      <channel protocol="TCP_IP" tcpIpAddress="192.168.1.25" tcpIpPort="502" regBaseAddress="0">
+         <unit id="1">
+            <register name="TLGS_DATA" dataType="FLOAT" method="CONTINUOUS" address="0" registerType="HOLDING" description="TLGS1" count="56" innerRegisters="1" />
+         </unit>
+
+                 <!--Inner Registers are used for continuous reading of addresses. The number of innerRegisters should match with the count given in parent
+                 register. The id of innerRegisters should match with the id of parent register. The data type of parent register should be of type ORIGINAL-->
+                 <innerRegisters id="1">
+					<register name="TLGS_FORE_DRAFT_LEVEL_SENSOR" dataType="FLOAT" address="0" registerType="HOLDING" description="FORE DRAFT LEVEL SENSOR"/>
+					<register name="TLGS_MID_P_DRAFT_LEVEL_SENSOR" dataType="FLOAT" address="2" registerType="HOLDING" description="MID P DRAFT LEVEL SENSOR"/>
+					<register name="TLGS_MID_S_DRAFT_LEVEL_SENSOR" dataType="FLOAT" address="4" registerType="HOLDING" description="MID S DRAFT LEVEL SENSOR"/>
+					<register name="TLGS_AFT_DRAFT_LEVEL_SENSOR" dataType="FLOAT" address="6" registerType="HOLDING" description="AFT DRAFT LEVEL SENSOR"/>
+					<register name="TLGS_FORE_DRAFT_LEVEL_MARK" dataType="FLOAT" address="8" registerType="HOLDING" description="FORE DRAFT LEVEL MARK"/>
+					<register name="TLGS_MID_P_DRAFT_LEVEL_MARK" dataType="FLOAT" address="10" registerType="HOLDING" description="MID P DRAFT LEVEL MARK"/>
+					<register name="TLGS_MID_S_DRAFT_LEVEL_MARK" dataType="FLOAT" address="12" registerType="HOLDING" description="MID S DRAFT LEVEL MARK"/>
+					<register name="TLGS_AFT_DRAFT_LEVEL_MARK" dataType="FLOAT" address="14" registerType="HOLDING" description="AFT DRAFT LEVEL MARK"/>
+					<register name="TLGS_FORE_DRAFT_LEVEL_PERPENDICULAR" dataType="FLOAT" address="16" registerType="HOLDING" description="FORE DRAFT LEVEL PERPENDICULAR"/>
+					<register name="TLGS_MID_P_DRAFT_LEVEL_PERPENDICULAR" dataType="FLOAT" address="18" registerType="HOLDING" description="MID P DRAFT LEVEL PERPENDICULAR"/>
+					<register name="TLGS_MID_S_DRAFT_LEVEL_PERPENDICULAR" dataType="FLOAT" address="20" registerType="HOLDING" description="MID S DRAFT LEVEL PERPENDICULAR"/>
+					<register name="TLGS_AFT_DRAFT_LEVEL_PERPENDICULAR" dataType="FLOAT" address="22" registerType="HOLDING" description="AFT DRAFT LEVEL PERPENDICULAR"/>
+					<register name="TLGS_FPT_LEVEL" dataType="FLOAT" address="24" registerType="HOLDING" description="FPT LEVEL"/>
+					<register name="TLGS_NO1_WB_TK_P_LEVEL" dataType="FLOAT" address="26" registerType="HOLDING" description="NO1 WB TK P LEVEL"/>
+					<register name="TLGS_NO1_WB_TK_S_LEVEL" dataType="FLOAT" address="28" registerType="HOLDING" description="NO1 WB TK S LEVEL"/>
+					<register name="TLGS_NO2_WB_TK_P_LEVEL" dataType="FLOAT" address="30" registerType="HOLDING" description="NO2 WB TK P LEVEL"/>
+					<register name="TLGS_NO2_WB_TK_S_LEVEL" dataType="FLOAT" address="32" registerType="HOLDING" description="NO2 WB TK S LEVEL"/>
+					<register name="TLGS_NO3_WB_TK_P_LEVEL" dataType="FLOAT" address="34" registerType="HOLDING" description="NO3 WB TK P LEVEL"/>
+					<register name="TLGS_NO3_WB_TK_S_LEVEL" dataType="FLOAT" address="36" registerType="HOLDING" description="NO3 WB TK S LEVEL"/>
+					<register name="TLGS_NO4_WB_TK_P_LEVEL" dataType="FLOAT" address="38" registerType="HOLDING" description="NO4 WB TK P LEVEL"/>
+					<register name="TLGS_NO4_WB_TK_S_LEVEL" dataType="FLOAT" address="40" registerType="HOLDING" description="NO4 WB TK S LEVEL"/>
+					<register name="TLGS_APT_LEVEL" dataType="FLOAT" address="42" registerType="HOLDING" description="APT LEVEL"/>
+					<register name="TLGS_FWT_P_LEVEL" dataType="FLOAT" address="44" registerType="HOLDING" description="FWT P LEVEL"/>
+					<register name="TLGS_FWT_S_LEVEL" dataType="FLOAT" address="46" registerType="HOLDING" description="FWT S LEVEL"/>
+					<register name="TLGS_FORE_HFO_TK_P_LEVEL" dataType="FLOAT" address="48" registerType="HOLDING" description="FORE HFO TK P LEVEL"/>
+					<register name="TLGS_FORE_HFO_TK_S_LEVEL" dataType="FLOAT" address="50" registerType="HOLDING" description="FORE HFO TK S LEVEL"/>
+					<register name="TLGS_AFT_HFO_TK_P_LEVEL" dataType="FLOAT" address="52" registerType="HOLDING" description="AFT HFO TK P LEVEL"/>
+					<register name="TLGS_AFT_HFO_TK_S_LEVEL" dataType="FLOAT" address="54" registerType="HOLDING" description="AFT HFO TK S LEVEL"/>
+					<register name="TLGS_NO1_HFO_SETT_TK_LEVEL" dataType="FLOAT" address="56" registerType="HOLDING" description="NO1 HFO SETT TK LEVEL"/>
+					<register name="TLGS_NO1_HFO_SERV_TK_LEVEL" dataType="FLOAT" address="58" registerType="HOLDING" description="NO1 HFO SERV TK LEVEL"/>
+					<register name="TLGS_NO1_MGO_SERV_TK_LEVEL" dataType="FLOAT" address="60" registerType="HOLDING" description="NO1 MGO SERV TK LEVEL"/>
+					<register name="TLGS_NO2_MGO_SERV_TK_LEVEL" dataType="FLOAT" address="62" registerType="HOLDING" description="NO2 MGO SERV TK LEVEL"/>
+					<register name="TLGS_NO1_MGO_STOR_TK_LEVEL" dataType="FLOAT" address="64" registerType="HOLDING" description="NO1 MGO STOR TK LEVEL"/>
+					<register name="TLGS_NO2_MGO_STOR_TK_LEVEL" dataType="FLOAT" address="66" registerType="HOLDING" description="NO2 MGO STOR TK LEVEL"/>
+					<register name="TLGS_FPT_VOLUME" dataType="FLOAT" address="68" registerType="HOLDING" description="FPT VOLUME"/>
+					<register name="TLGS_NO1_WB_TK_P_VOLUME" dataType="FLOAT" address="70" registerType="HOLDING" description="NO1 WB TK P VOLUME"/>
+					<register name="TLGS_NO1_WB_TK_S_VOLUME" dataType="FLOAT" address="72" registerType="HOLDING" description="NO1 WB TK S VOLUME"/>
+					<register name="TLGS_NO2_WB_TK_P_VOLUME" dataType="FLOAT" address="74" registerType="HOLDING" description="NO2 WB TK P VOLUME"/>
+					<register name="TLGS_NO2_WB_TK_S_VOLUME" dataType="FLOAT" address="76" registerType="HOLDING" description="NO2 WB TK S VOLUME"/>
+					<register name="TLGS_NO3_WB_TK_P_VOLUME" dataType="FLOAT" address="78" registerType="HOLDING" description="NO3 WB TK P VOLUME"/>
+					<register name="TLGS_NO3_WB_TK_S_VOLUME" dataType="FLOAT" address="80" registerType="HOLDING" description="NO3 WB TK S VOLUME"/>
+					<register name="TLGS_NO4_WB_TK_P_VOLUME" dataType="FLOAT" address="82" registerType="HOLDING" description="NO4 WB TK P VOLUME"/>
+					<register name="TLGS_NO4_WB_TK_S_VOLUME" dataType="FLOAT" address="84" registerType="HOLDING" description="NO4 WB TK S VOLUME"/>
+					<register name="TLGS_APT_VOLUME" dataType="FLOAT" address="86" registerType="HOLDING" description="APT VOLUME"/>
+					<register name="TLGS_FWT_P_VOLUME" dataType="FLOAT" address="88" registerType="HOLDING" description="FWT P VOLUME"/>
+					<register name="TLGS_FWT_S_VOLUME" dataType="FLOAT" address="90" registerType="HOLDING" description="FWT S VOLUME"/>
+					<register name="TLGS_FORE_HFO_TK_P_VOLUME" dataType="FLOAT" address="92" registerType="HOLDING" description="FORE HFO TK P VOLUME"/>
+					<register name="TLGS_FORE_HFO_TK_S_VOLUME" dataType="FLOAT" address="94" registerType="HOLDING" description="FORE HFO TK S VOLUME"/>
+					<register name="TLGS_AFT_HFO_TK_P_VOLUME" dataType="FLOAT" address="96" registerType="HOLDING" description="AFT HFO TK P VOLUME"/>
+					<register name="TLGS_AFT_HFO_TK_S_VOLUME" dataType="FLOAT" address="98" registerType="HOLDING" description="AFT HFO TK S VOLUME"/>
+					<register name="TLGS_NO1_HFO_SETT_TK_VOLUME" dataType="FLOAT" address="100" registerType="HOLDING" description="NO1 HFO SETT TK VOLUME"/>
+					<register name="TLGS_NO1_HFO_SERV_TK_VOLUME" dataType="FLOAT" address="102" registerType="HOLDING" description="NO1 HFO SERV TK VOLUME"/>
+					<register name="TLGS_NO1_MGO_SERV_TK_VOLUME" dataType="FLOAT" address="104" registerType="HOLDING" description="NO1 MGO SERV TK VOLUME"/>
+					<register name="TLGS_NO2_MGO_SERV_TK_VOLUME" dataType="FLOAT" address="106" registerType="HOLDING" description="NO2 MGO SERV TK VOLUME"/>
+					<register name="TLGS_NO1_MGO_STOR_TK_VOLUME" dataType="FLOAT" address="108" registerType="HOLDING" description="NO1 MGO STOR TK VOLUME"/>
+					<register name="TLGS_NO2_MGO_STOR_TK_VOLUME" dataType="FLOAT" address="110" registerType="HOLDING" description="NO2 MGO STOR TK VOLUME"/>
+					</innerRegisters>
+      </channel>
+   </dataNodeConfigs>
+   <dataSubscriptionConfigs>
+      <dataSubscriptionConfig name="ModBusSubscription">
+         <nodeName>TLGS_DATA</nodeName>
+      </dataSubscriptionConfig>
+   </dataSubscriptionConfigs>
+</modbusMachineAdapterConfig>

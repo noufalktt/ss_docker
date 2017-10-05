@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modbusMachineAdapterConfig>
+	<name>Onsite monitor modbus nodes</name>
+	<description>Onsite monitor modbus nodes</description>
+	<vesselId>1000007</vesselId>
+	<defaultUpdateInterval>1</defaultUpdateInterval>
+	<dataNodeConfigs>
+		<channel protocol="TCP_IP" tcpIpAddress="192.168.2.36" tcpIpPort="502" regBaseAddress="0">
+			<unit id="18">
+				<register name="CHS_DATA" dataType="FLOAT" method="CONTINUOUS" address="332" registerType="HOLDING" description="CHS1" count="50" innerRegisters="1" />
+			</unit>
+
+			<!--Inner Registers are used for continuous reading of addresses. The number of innerRegisters should match with the count given in parent
+			register. The id of innerRegisters should match with the id of parent register. The data type of parent register should be of type ORIGINAL-->
+			<innerRegisters id="1">
+
+		<register name="SEAWATER_FLOW_IN_THE_CARGO_HEATER" address="332"/>
+		<register name="DIFF_PRESURE_SEAWATER_CARGO_CONDENSER" address="334"/>
+		<register name="BOOSTER_PUMP_COMMON_SUCTION_PRESSURE" address="336"/>
+		<register name="BOOSTER_PUMP_DISCHARGE_PRESSURE" address="338"/>
+		<register name="BOOSTER_PUMP_DISCHARGE_PRESSURE_2" address="340"/>
+		<register name="BOOSTER_PUMP_1_CURRENT" address="342"/>
+		<register name="BOOSTER_PUMP_2_CURRENT" address="344"/>
+		<register name="BOOSTER_PUMP_1_MOTOR_U_WINDING" address="346"/>
+		<register name="BOOSTER_PUMP_1_MOTOR_V_WINDING" address="348"/>
+		<register name="BOOSTER_PUMP_1_MOTOR_W_WINDING" address="350"/>
+		<register name="BOOSTER_PUMP_2_MOTOR_U_WINDING" address="352"/>
+		<register name="BOOSTER_PUMP_2_MOTOR_V_WINDING" address="354"/>
+		<register name="BOOSTER_PUMP_2_MOTOR_W_WINDING" address="356"/>
+		<register name="GLYCOL_PUMP_SUCTION_PRESSURE_2" address="358"/>
+		<register name="GLYCOL_PUMP_DISCHARGE_PRESSURE_2" address="360"/>
+		<register name="GLYCOL_PUMP_HEATING_DISCHARGE_PRESSURE" address="362"/>
+		<register name="INSTRUMENT_AIR_SUPPLY_PRESSURE" address="364"/>
+		<register name="HYDRAULIC_POWER_PACK_PRESSURE" address="366"/>
+		<register name="SOLENOID_VALVE_CABINET_PRESSURE" address="368"/>
+		<register name="CARGO_TANK_1S_LIQUID_FILLING_VALVE_POSITION" address="370"/>
+		<register name="CARGO_TANK_1P_LIQUID_FILLING_VALVE_POSITION" address="372"/>
+		<register name="CARGO_TANK_2S_LIQUID_FILLING_VALVE_POSITION" address="374"/>
+		<register name="CARGO_TANK_2P_LIQUID_FILLING_VALVE_POSITION" address="376"/>
+		<register name="CARGO_TANK_3S_LIQUID_FILLING_VALVE_POSITION" address="378"/>
+		<register name="CARGO_TANK_3P_LIQUID_FILLING_VALVE_POSITION" address="380"/>
+
+
+			</innerRegisters>
+		</channel>
+	</dataNodeConfigs>
+	<dataSubscriptionConfigs>
+		<dataSubscriptionConfig name="ModBusSubscription">
+			<nodeName>CHS_DATA</nodeName>
+		</dataSubscriptionConfig>
+	</dataSubscriptionConfigs>
+</modbusMachineAdapterConfig>

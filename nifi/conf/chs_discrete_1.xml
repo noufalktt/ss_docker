@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?> <!--For Discrete boolean, the count should always be multiple of 8 and the inner registers should be less than or equal to the 
+count. In between missing registers should be filled with dummy data, as the reading is done for continuous registers.--> <modbusMachineAdapterConfig>
+	<name>Onsite monitor modbus nodes</name>
+	<description>Onsite monitor modbus nodes</description>
+	<vesselId>1000007</vesselId>
+	<dataNodeConfigs>
+		<channel protocol="TCP_IP" tcpIpAddress="192.168.2.36" tcpIpPort="502">
+			<unit id="3">
+				<register name="CHS_BOOLEAN_DATA" dataType="BOOLEAN" method="CONTINUOUS" address="0" registerType="DISCRETE" description="BOOLEAN_DATA" 
+count="120" innerRegisters="1"/>
+			</unit>
+			<innerRegisters id="1">
+				<register name="CARGO_TANK_1_95_PERCENT_LEVEL_STB_ALARM" address="0" registerType="DISCRETE" description="Cargo tank 1 95% level Stb 
+Alarm"/>
+				<register name="CARGO_TANK_1_99_PERCENT_LEVEL_STB_ALARM" address="1" registerType="DISCRETE" description="Cargo tank 1 99% level Stb 
+Alarm"/>
+				<register name="CARGO_TANK_1_95_PERCENT_LEVEL_PORT_ALARM" address="2" registerType="DISCRETE" description="Cargo tank 1 95% level Port 
+Alarm"/>
+				<register name="CARGO_TANK_1_99_PERCENT_LEVEL_PORT_ALARM" address="3" registerType="DISCRETE" description="Cargo tank 1 99% level Port 
+Alarm"/>
+				<register name="NO1_S_CARGO_TANK_LEVEL_ALARM" address="4" registerType="DISCRETE" description="NO.1 (S) Cargo Tank Level Alarm"/>
+				<register name="NO1_P_CARGO_TANK_LEVEL_ALARM" address="5" registerType="DISCRETE" description="NO.1 (P) Cargo Tank Level Alarm"/>
+				<register name="NO1_CARGO_TANK_PRESSURE_LOW" address="6" registerType="DISCRETE" description="NO.1 Cargo Tank Pressure Low"/>
+				<register name="NO1_CARGO_TANK_PRESSURE_HIGH" address="7" registerType="DISCRETE" description="NO.1 Cargo Tank Pressure High"/>
+				<register name="NO1_CARGO_TANK_PRESSURE_LOWLOW" address="8" registerType="DISCRETE" description="NO.1 Cargo Tank Pressure LowLow"/>
+				<register name="NO1_CARGO_TANK_PRESSURE_HIGHHIGH" address="9" registerType="DISCRETE" description="NO.1 Cargo Tank Pressure HighHigh"/>
+				<register name="NO1_TANK_HOLD_SPACE_LEVEL_HIGH" address="10" registerType="DISCRETE" description="NO. 1 Tank Hold Space Level High"/>
+				<register name="CARGO_TANK_1_STBD_SIDE_LIQUID_TEMP_LOW_AT_BOTTOM" address="11" registerType="DISCRETE" description="Cargo Tank 1 stbd 
+side liquid temp low at bottom"/>
+				<register name="CARGO_TANK_1_STBD_SIDE_LIQUID_TEMP_HIGH_AT_BOTTOM" address="12" registerType="DISCRETE" description="Cargo Tank 1 stbd 
+side liquid temp high at bottom"/>
+				<register name="CARGO_TANK_1_PORT_SIDE_LIQUID_TEMP_LOW_AT_BOTTOM" address="13" registerType="DISCRETE" description="Cargo Tank 1 port 
+side liquid temp low at bottom"/>
+				<register name="CARGO_TANK_1_PORT_SIDE_LIQUID_TEMP_HIGH_AT_BOTTOM" address="14" registerType="DISCRETE" description="Cargo Tank 1 port 
+side liquid temp high at bottom"/>
+				<register name="CARGO_TANK_1_STBD_SIDE_LIQUID_TEMP_LOW_AT_MIDDLE" address="15" registerType="DISCRETE" description="Cargo Tank 1 stbd 
+side liquid temp low at middle"/>
+				<register name="CARGO_TANK_1_STBD_SIDE_LIQUID_TEMP_HIGH_AT_MIDDLE" address="16" registerType="DISCRETE" description="Cargo Tank 1 stbd 
+side liquid temp high at middle"/>
+				<register name="CARGO_TANK_1_PORT_SIDE_LIQUID_TEMP_LOW_AT_MIDDLE" address="17" registerType="DISCRETE" description="Cargo Tank 1 port 
+side liquid temp low at middle"/>
+				<register name="CARGO_TANK_1_PORT_SIDE_LIQUID_TEMP_HIGH_AT_MIDDLE" address="18" registerType="DISCRETE" description="Cargo Tank 1 port 
+side liquid temp high at middle"/>
+				<register name="CARGO_TANK_1_STBD_SIDE_LIQUID_TEMP_LOW_AT_TOP" address="19" registerType="DISCRETE" description="Cargo Tank 1 stbd side 
+liquid temp low at top"/>
+				<register name="CARGO_TANK_1_STBD_SIDE_LIQUID_TEMP_HIGH_AT_TOP" address="20" registerType="DISCRETE" description="Cargo Tank 1 stbd side 
+liquid temp high at top"/>
+				<register name="CARGO_TANK_1_PORT_SIDE_LIQUID_TEMP_LOW_AT_TOP" address="21" registerType="DISCRETE" description="Cargo Tank 1 port side 
+liquid temp low at top"/>
+				<register name="CARGO_TANK_1_PORT_SIDE_LIQUID_TEMP_HIGH_AT_TOP" address="22" registerType="DISCRETE" description="Cargo Tank 1 port side 
+liquid temp high at top"/>
+				<register name="CARGO_TANK_1_STBD_SIDE_VAPOUR_TEMP_AT_100_PERCENT" address="23" registerType="DISCRETE" description="Cargo Tank 1 stbd 
+side vapour temp at 100%"/>
+				<register name="CARGO_TANK_1_STBD_SIDE_VAPOUR_TEMP_AT_100_PERCENT_2" address="24" registerType="DISCRETE" description="Cargo Tank 1 stbd 
+side vapour temp at 100%"/>
+				<register name="CARGO_TANK_1_DW_PUMP_MOTOR_CURRENT_STB" address="25" registerType="DISCRETE" description="Cargo Tank 1 DW Pump Motor 
+Current Stb."/>
+				<register name="CARGO_TANK_1_DW_PUMP_MOTOR_CURRENT_PORT" address="26" registerType="DISCRETE" description="Cargo Tank 1 DW Pump Motor 
+Current Port."/>
+				<register name="CARGO_TANK_1_DW_STB_PUMP_MOTOR_UNDERCURRENT_ALARM" address="27" registerType="DISCRETE" description="Cargo Tank 1 DW 
+(Stb) Pump Motor Undercurrent Alarm"/>
+				<register name="CARGO_TANK_1_DW_PORT_PUMP_MOTOR_UNDERCURRENT_ALARM" address="28" registerType="DISCRETE" description="Cargo Tank 1 DW 
+(Port) Pump Motor Undercurrent Alarm"/>
+				<register name="CARGO_TANK_1_DW_STB_PUMP_MOTOR_OVERLOAD_ALARM" address="29" registerType="DISCRETE" description="Cargo Tank 1 DW (Stb) 
+Pump Motor Overload Alarm"/>
+				<register name="CARGO_TANK_1_DW_PORT_PUMP_MOTOR_OVERLOAD_ALARM" address="30" registerType="DISCRETE" description="Cargo Tank 1 DW (Port) 
+Pump Motor Overload Alarm"/>
+				<register name="DWP_1S_U_WINDING_TEMPERATURE_HIGH" address="31" registerType="DISCRETE" description="DWP -1S 'U' Winding Temperature 
+High"/>
+				<register name="DWP_1S_U_WINDING_TEMPERATURE_HIGH_HIGH" address="32" registerType="DISCRETE" description="DWP -1S 'U' Winding Temperature 
+High High"/>
+				<register name="DWP_1S_V_WINDING_TEMPERATURE_HIGH" address="33" registerType="DISCRETE" description="DWP -1S 'V' Winding Temperature 
+High"/>
+				<register name="DWP_1S_V_WINDING_TEMPERATURE_HIGH_HIGH" address="34" registerType="DISCRETE" description="DWP -1S 'V' Winding Temperature 
+High High"/>
+				<register name="DWP_1S_W_WINDING_TEMPERATURE_HIGH" address="35" registerType="DISCRETE" description="DWP -1S 'W' Winding Temperature 
+High"/>
+				<register name="DWP_1S_W_WINDING_TEMPERATURE_HIGH_HIGH" address="36" registerType="DISCRETE" description="DWP -1S 'W' Winding Temperature 
+High High"/>
+				<register name="DWP_1P_U_WINDING_TEMPERATURE_HIGH" address="37" registerType="DISCRETE" description="DWP -1P 'U' Winding Temperature 
+High"/>
+				<register name="DWP_1P_U_WINDING_TEMPERATURE_HIGH_HIGH" address="38" registerType="DISCRETE" description="DWP -1P 'U' Winding Temperature 
+High High"/>
+				<register name="DWP_1P_V_WINDING_TEMPERATURE_HIGH" address="39" registerType="DISCRETE" description="DWP -1P 'V' Winding Temperature 
+High"/>
+				<register name="DWP_1P_V_WINDING_TEMPERATURE_HIGH_HIGH" address="40" registerType="DISCRETE" description="DWP -1P 'V' Winding Temperature 
+High High"/>
+				<register name="DWP_1P_W_WINDING_TEMPERATURE_HIGH" address="41" registerType="DISCRETE" description="DWP -1P 'W' Winding Temperature 
+High"/>
+				<register name="DWP_1P_W_WINDING_TEMPERATURE_HIGH_HIGH" address="42" registerType="DISCRETE" description="DWP -1P 'W' Winding Temperature 
+High High"/>
+				<register name="CARGO_TANK_1_HOLD_SPACE_PRESSURE_LOW" address="43" registerType="DISCRETE" description="Cargo Tank 1 hold space pressure 
+Low"/>
+				<register name="CARGO_TANK_1_HOLD_SPACE_PRESSURE_HIGH" address="44" registerType="DISCRETE" description="Cargo Tank 1 hold space pressure 
+High"/>
+				<register name="CARGO_TANK_1_HOLD_SPACE_TEMPERATURE_LOW" address="45" registerType="DISCRETE" description="Cargo Tank 1 hold space 
+temperature Low"/>
+				<register name="CARGO_COND_RELIQ_UNIT_1_SW_DIFF_OUTLET_TEMP_HIGH" address="46" registerType="DISCRETE" description="Cargo cond. Reliq. 
+Unit 1 SW. Diff. Outlet Temp. High"/>
+				<register name="CARGO_COND_RELIQ_UNIT_1_SW_DIFF_OUTLET_TEMP_HIGH_2" address="47" registerType="DISCRETE" description="Cargo cond. Reliq. 
+Unit 1 SW. Diff. Outlet Temp. High"/>
+				<register name="RELIQ_UNIT_1_KO_DRUM_LEVEL_HIGH" address="48" registerType="DISCRETE" description="Reliq. Unit 1 KO Drum level High"/>
+				<register name="RELIQ_UNIT_1_KO_DRUM_LEVEL_HIGH_HIGH" address="49" registerType="DISCRETE" description="Reliq. Unit 1 KO Drum level High 
+High"/>
+				<register name="RELIQ_UNIT_1_CARGO_COMPRESSOR_BULKHEAD_SEAL_TEMP_HIGH" address="50" registerType="DISCRETE" description="Reliq. Unit 1 
+Cargo compressor bulkhead seal temp. high"/>
+				<register name="RELIQ_UNIT_1_CARGO_COMPRESSOR_BULKHEAD_SEAL_TEMP_HIGH_HIGH" address="51" registerType="DISCRETE" description="Reliq. Unit 
+1 Cargo compressor bulkhead seal temp. High High"/>
+				<register name="RELIQ_UNIT_1_CARGO_COMPRESSOR_STAGE_1_SUCTION_PRESSURE_LOW_LOW" address="52" registerType="DISCRETE" description="Reliq. 
+Unit 1 Cargo Compressor Stage 1 Suction Pressure Low Low"/>
+				<register name="RELIQ_UNIT_1_CARGO_COMPRESSOR_STAGE_1_SUCTION_PRESSURE_LOW" address="53" registerType="DISCRETE" description="Reliq. Unit 
+1 Cargo Compressor Stage 1 Suction Pressure Low"/>
+				<register name="RELIQ_UNIT_1_CARGO_COMPRESSOR_STAGE_1_SUCTION_PRESSURE_HIGH" address="54" registerType="DISCRETE" description="Reliq. 
+Unit 1 Cargo Compressor Stage 1 Suction Pressure High"/>
+				<register name="RELIQ_UNIT_1_CARGO_COMPRESSOR_STAGE_1_SUCTION_PRESSURE_HIGH_HIGH" address="55" registerType="DISCRETE" 
+description="Reliq. Unit 1 Cargo Compressor Stage 1 Suction Pressure High High"/>
+				<register name="DUMMY_DATA" address="56" registerType="DISCRETE" description="Dummy Data"/>
+				<register name="DUMMY_DATA" address="57" registerType="DISCRETE" description="Dummy Data"/>
+				<register name="RELIQ_UNIT_1_CARGO_COMPRESSOR_STAGE_1_DISCHARGE_TEMPERATURE_HIGH" address="58" registerType="DISCRETE" 
+description="Reliq. Unit 1 Cargo Compressor Stage 1 Discharge Temperature High"/>
+				<register name="RELIQ_UNIT_1_CARGO_COMPRESSOR_STAGE_1_DISCHARGE_TEMPERATURE_HIGH_HIGH" address="59" registerType="DISCRETE" 
+description="Reliq. Unit 1 Cargo Compressor Stage 1 Discharge Temperature High High"/>
+				<register name="RELIQ_UNIT_1_CARGO_COMPRESSOR_STAGE_2_SUCTION_PRESSURE_LOW" address="60" registerType="DISCRETE" description="Reliq. Unit 
+1 Cargo Compressor Stage 2 Suction Pressure Low"/>
+				<register name="RELIQ_UNIT_1_CARGO_COMPRESSOR_STAGE_2_SUCTION_PRESSURE_LOW_LOW" address="61" registerType="DISCRETE" description="Reliq. 
+Unit 1 Cargo Compressor Stage 2 Suction Pressure Low Low"/>
+				<register name="RELIQ_UNIT_1_CARGO_COMPRESSOR_STAGE_2_DISCHARGE_PRESSURE_HIGH" address="62" registerType="DISCRETE" description="Reliq. 
+Unit 1 Cargo Compressor Stage 2 Discharge Pressure High"/>
+				<register name="RELIQ_UNIT_1_CARGO_COMPRESSOR_STAGE_2_DISCHARGE_PRESSURE_HIGH_HIGH" address="63" registerType="DISCRETE" 
+description="Reliq. Unit 1 Cargo Compressor Stage 2 Discharge Pressure High High"/>
+				<register name="RELIQ_UNIT_1_CARGO_COMPRESSOR_STAGE_2_DISCHARGE_TEMPERATURE_HIGH" address="64" registerType="DISCRETE" 
+description="Reliq. Unit 1 Cargo Compressor Stage 2 Discharge Temperature High"/>
+				<register name="RELIQ_UNIT_1_CARGO_COMPRESSOR_STAGE_2_DISCHARGE_TEMPERATURE_HIGH_HIGH" address="65" registerType="DISCRETE" 
+description="Reliq. Unit 1 Cargo Compressor Stage 2 Discharge Temperature High High"/>
+				<register name="RELIQ_UNIT_1_INTERCOOLER_LEVEL_LOW" address="66" registerType="DISCRETE" description="Reliq. Unit 1 Intercooler Level 
+Low"/>
+				<register name="RELIQ_UNIT_1_INTERCOOLER_LEVEL_HIGH" address="67" registerType="DISCRETE" description="Reliq. Unit 1 Intercooler Level 
+High"/>
+				<register name="RELIQ_UNIT_1_INTERCOOLER_LEVEL_HIGH_HIGH" address="68" registerType="DISCRETE" description="Reliq. Unit 1 Intercooler 
+Level High High"/>
+				<register name="RELIQ_UNIT_1_CONDENSATE_OUTLET_PRESSURE_HIGH" address="69" registerType="DISCRETE" description="Reliq. Unit 1 condensate 
+/ outlet pressure High"/>
+				<register name="RELIQ_UNIT_1_CONDENSATE_OUTLET_PRESSURE_HIGH_HIGH" address="70" registerType="DISCRETE" description="Reliq. Unit 1 
+condensate / outlet pressure High High"/>
+				<register name="RELIQ_UNIT_1_LIQUID_RECEIVER_1_LEVEL_HIGH" address="71" registerType="DISCRETE" description="Reliq. Unit 1 Liquid 
+Receiver 1 Level High"/>
+				<register name="RELIQ_UNIT_1_LIQUID_RECEIVER_1_LEVEL_HIGH_HIGH" address="72" registerType="DISCRETE" description="Reliq. Unit 1 Liquid 
+Receiver 1 Level High High"/>
+				<register name="RELIQ_UNIT_1_CARGO_GLYCOL_OUTLET_FLOW" address="73" registerType="DISCRETE" description="Reliq Unit 1 Cargo Glycol Outlet 
+Flow"/>
+				<register name="RELIQ_UNIT_1_LIQUID_RECEIVER_PRESSURE_HIGH" address="74" registerType="DISCRETE" description="Reliq. Unit 1 Liquid 
+Receiver Pressure High"/>
+				<register name="RELIQ_UNIT_1_CARGO_COMP_LUBE_OIL_DIFFERENTIAL_PRESSURE_LOW" address="75" registerType="DISCRETE" description="Reliq. Unit 
+1 Cargo Comp. Lube Oil Differential Pressure Low"/>
+				<register name="RELIQ_UNIT_1_CARGO_COMP_LUBE_OIL_DIFFERENTIAL_PRESSURE_LOW_LOW" address="76" registerType="DISCRETE" description="Reliq. 
+Unit 1 Cargo Comp. Lube Oil Differential Pressure Low Low"/>
+				<register name="COMPRESSOR_1_GLYCOL_COOING_INLET_WATER_TEMP_LOW_LOW" address="77" registerType="DISCRETE" description="Compressor 1 
+Glycol cooing inlet water temp Low Low"/>
+				<register name="COMPRESSOR_1_GLYCOL_COOING_INLET_WATER_TEMP_LOW" address="78" registerType="DISCRETE" description="Compressor 1 Glycol 
+cooing inlet water temp Low"/>
+				<register name="COMPRESSOR_1_GLYCOL_COOING_INLET_WATER_TEMP_HIGH" address="79" registerType="DISCRETE" description="Compressor 1 Glycol 
+cooing inlet water temp High"/>
+				<register name="COMPRESSOR_1_GLYCOL_COOING_INLET_WATER_TEMP_HIGH_HIGH" address="80" registerType="DISCRETE" description="Compressor 1 
+Glycol cooing inlet water temp High High"/>
+				<register name="COMPRESSOR_1_MOTOR_OVERLOAD_ALARM" address="81" registerType="DISCRETE" description="Compressor 1 Motor Overload Alarm"/>
+				<register name="COMPRESSOR_1_PUMP_MOTOR_U_WINDING_TEMPERATURE_HIGH" address="82" registerType="DISCRETE" description="Compressor 1 Pump 
+Motor 'U' Winding Temperature High"/>
+				<register name="COMPRESSOR_1_PUMP_MOTOR_U_WINDING_TEMPERATURE_HIGH_HIGH" address="83" registerType="DISCRETE" description="Compressor 1 
+Pump Motor 'U' Winding Temperature High High"/>
+				<register name="COMPRESSOR_1_PUMP_MOTOR_V_WINDING_TEMPERATURE_HIGH" address="84" registerType="DISCRETE" description="Compressor 1 Pump 
+Motor 'V' Winding Temperature High"/>
+				<register name="COMPRESSOR_1_PUMP_MOTOR_V_WINDING_TEMPERATURE_HIGH_HIGH" address="85" registerType="DISCRETE" description="Compressor 1 
+Pump Motor 'V' Winding Temperature High High"/>
+				<register name="COMPRESSOR_1_PUMP_MOTOR_W_WINDING_TEMPERATURE_HIGH" address="86" registerType="DISCRETE" description="Compressor 1 Pump 
+Motor 'W' Winding Temperature High"/>
+				<register name="COMPRESSOR_1_PUMP_MOTOR_W_WINDING_TEMPERATURE_HIGH_HIGH" address="87" registerType="DISCRETE" description="Compressor 1 
+Pump Motor 'W' Winding Temperature High High"/>
+				<register name="CARGO_TANK_2_95_PERCENT_LEVEL_STB_ALARM" address="88" registerType="DISCRETE" description="Cargo tank 2 95% level Stb 
+Alarm"/>
+				<register name="CARGO_TANK_2_99_PERCENT_LEVEL_STB_ALARM" address="89" registerType="DISCRETE" description="Cargo tank 2 99% level Stb 
+Alarm"/>
+				<register name="CARGO_TANK_2_95_PERCENT_LEVEL_PORT_ALARM" address="90" registerType="DISCRETE" description="Cargo tank 2 95% level Port 
+Alarm"/>
+				<register name="CARGO_TANK_2_99_PERCENT_LEVEL_PORT_ALARM" address="91" registerType="DISCRETE" description="Cargo tank 2 99% level Port 
+Alarm"/>
+				<register name="NO2_S_CARGO_TANK_LEVEL_ALARM" address="92" registerType="DISCRETE" description="NO.2 (S) Cargo Tank Level Alarm"/>
+				<register name="NO2_P_CARGO_TANK_LEVEL_ALARM" address="93" registerType="DISCRETE" description="NO.2 (P) Cargo Tank Level Alarm"/>
+				<register name="NO2_CARGO_TANK_PRESSURE_LOW" address="94" registerType="DISCRETE" description="NO.2 Cargo Tank Pressure Low"/>
+				<register name="NO2_CARGO_TANK_PRESSURE_HIGH" address="95" registerType="DISCRETE" description="NO.2 Cargo Tank Pressure High"/>
+				<register name="NO2_CARGO_TANK_PRESSURE_LOWLOW" address="96" registerType="DISCRETE" description="NO.2 Cargo Tank Pressure LowLow"/>
+				<register name="NO2_CARGO_TANK_PRESSURE_HIGHHIGH" address="97" registerType="DISCRETE" description="NO.2 Cargo Tank Pressure HighHigh"/>
+				<register name="NO2_TANK_HOLD_SPACE_LEVEL_HIGH" address="98" registerType="DISCRETE" description="NO.2 Tank Hold Space Level High"/>
+				<register name="CARGO_TANK_2_STBD_SIDE_LIQUID_TEMP_LOW_AT_BOTTOM" address="99" registerType="DISCRETE" description="Cargo Tank 2 stbd 
+side liquid temp low at bottom"/>
+				<register name="CARGO_TANK_2_STBD_SIDE_LIQUID_TEMP_HIGH_AT_BOTTOM" address="100" registerType="DISCRETE" description="Cargo Tank 2 stbd 
+side liquid temp high at bottom"/>
+				<register name="CARGO_TANK_2_PORT_SIDE_LIQUID_TEMP_LOW_AT_BOTTOM" address="101" registerType="DISCRETE" description="Cargo Tank 2 port 
+side liquid temp low at bottom"/>
+				<register name="CARGO_TANK_2_PORT_SIDE_LIQUID_TEMP_HIGH_AT_BOTTOM" address="102" registerType="DISCRETE" description="Cargo Tank 2 port 
+side liquid temp high at bottom"/>
+				<register name="CARGO_TANK_2_STBD_SIDE_LIQUID_TEMP_LOW_AT_MIDDLE" address="103" registerType="DISCRETE" description="Cargo Tank 2 stbd 
+side liquid temp low at middle"/>
+				<register name="CARGO_TANK_2_STBD_SIDE_LIQUID_TEMP_HIGH_AT_MIDDLE" address="104" registerType="DISCRETE" description="Cargo Tank 2 stbd 
+side liquid temp high at middle"/>
+				<register name="CARGO_TANK_2_PORT_SIDE_LIQUID_TEMP_LOW_AT_MIDDLE" address="105" registerType="DISCRETE" description="Cargo Tank 2 port 
+side liquid temp low at middle"/>
+				<register name="CARGO_TANK_2_PORT_SIDE_LIQUID_TEMP_HIGH_AT_MIDDLE" address="106" registerType="DISCRETE" description="Cargo Tank 2 port 
+side liquid temp high at middle"/>
+				<register name="CARGO_TANK_2_STBD_SIDE_LIQUID_TEMP_LOW_AT_TOP" address="107" registerType="DISCRETE" description="Cargo Tank 2 stbd side 
+liquid temp low at top"/>
+				<register name="CARGO_TANK_2_STBD_SIDE_LIQUID_TEMP_HIGH_AT_TOP" address="108" registerType="DISCRETE" description="Cargo Tank 2 stbd side 
+liquid temp high at top"/>
+				<register name="CARGO_TANK_2_PORT_SIDE_LIQUID_TEMP_LOW_AT_TOP" address="109" registerType="DISCRETE" description="Cargo Tank 2 port side 
+liquid temp low at top"/>
+				<register name="CARGO_TANK_2_PORT_SIDE_LIQUID_TEMP_HIGH_AT_TOP" address="110" registerType="DISCRETE" description="Cargo Tank 2 port side 
+liquid temp high at top"/>
+				<register name="CARGO_TANK_2_STBD_SIDE_VAPOUR_TEMP_AT_100_PERCENT" address="111" registerType="DISCRETE" description="Cargo Tank 2 stbd 
+side vapour temp at 100%"/>
+				<register name="CARGO_TANK_2_STBD_SIDE_VAPOUR_TEMP_AT_100_PERCENT_2" address="112" registerType="DISCRETE" description="Cargo Tank 2 stbd 
+side vapour temp at 100%"/>
+				<register name="CARGO_TANK_2_DW_PUMP_MOTOR_CURRENT_STB_2" address="113" registerType="DISCRETE" description="Cargo Tank 2 DW Pump Motor 
+Current Stb."/>
+				<register name="CARGO_TANK_2_DW_PUMP_MOTOR_CURRENT_PORT" address="114" registerType="DISCRETE" description="Cargo Tank 2 DW Pump Motor 
+Current Port."/>
+				<register name="CARGO_TANK_2_DW_STB_PUMP_MOTOR_UNDERCURRENT_ALARM" address="115" registerType="DISCRETE" description="Cargo Tank 2 DW 
+(Stb) Pump Motor Undercurrent Alarm"/>
+				<register name="CARGO_TANK_2_DW_PORT_PUMP_MOTOR_UNDERCURRENT_ALARM" address="116" registerType="DISCRETE" description="Cargo Tank 2 DW 
+(Port) Pump Motor Undercurrent Alarm"/>
+				<register name="CARGO_TANK_2_DW_STB_PUMP_MOTOR_OVERLOAD_ALARM" address="117" registerType="DISCRETE" description="Cargo Tank 2 DW (Stb) 
+Pump Motor Overload Alarm"/>
+				<register name="CARGO_TANK_2_DW_PORT_PUMP_MOTOR_OVERLOAD_ALARM" address="118" registerType="DISCRETE" description="Cargo Tank 2 DW (Port) 
+Pump Motor Overload Alarm"/>
+				<register name="DWP_2S_U_WINDING_TEMPERATURE_HIGH" address="119" registerType="DISCRETE" description="DWP -2S 'U' Winding Temperature 
+High"/>
+			</innerRegisters>
+		</channel>
+	</dataNodeConfigs>
+	<dataSubscriptionConfigs>
+		<dataSubscriptionConfig name="ModBusSubscription">
+			<nodeName>CHS_BOOLEAN_DATA</nodeName>
+		</dataSubscriptionConfig>
+	</dataSubscriptionConfigs>
+</modbusMachineAdapterConfig>
