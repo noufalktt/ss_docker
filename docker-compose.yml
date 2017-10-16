@@ -1,13 +1,12 @@
-version:'3'
+version: '3'
 services:
- mosquitto:
-  image:'noufalthinkpalm/mosquitto'
-  restart:'always'
-  ports:
-   -'1883:1883'
- postgres:
-  image:'noufalthinkpalm/postgres'
-  restart:'always'
-  ports:
-   -'5432:5432'
-  
+  ss_mosquitto:
+    image: 'noufalthinkpalm/mosquitto'
+    restart: 'always'
+    ports:
+      - '1883:1883'
+  ss_postgres:
+    image: 'noufalthinkpalm/postgres'
+    restart: 'always'
+    ports:
+      - '5432:5432'
