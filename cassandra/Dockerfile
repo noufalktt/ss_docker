@@ -1,4 +1,4 @@
-FROM openjdk:8-jre
+FROM java8
 
 ENV SCRIPT_BASE_URL http://192.168.2.143
 # Install other packages
@@ -23,6 +23,6 @@ EXPOSE 9042
 
 #ENTRYPOINT ["/cas_entrypoint.sh"]
 
-#CMD ["cassandra","-Rf"]
+CMD ["cassandra","-Rf"]
 
 
