@@ -1,4 +1,4 @@
-FROM java8
+FROM noufalthinkpalm/java8
 
 ENV SCRIPT_BASE_URL http://192.168.2.143
 # Install other packages
